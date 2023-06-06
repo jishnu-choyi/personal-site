@@ -1,3 +1,4 @@
+import './styles.scss';
 import CTACard from "../CTACard";
 
 function CTACardList() {
@@ -19,7 +20,7 @@ function CTACardList() {
         },
         {
             title: "Education",
-            subTitle: "Campuses and network that made me who I am",
+            subTitle: "Campuses and friends that made me who I am",
             styles: {
                 backgroundColor: "#C47F38",
                 color: "#FFFFFF"
@@ -30,11 +31,16 @@ function CTACardList() {
         <div className="cta-card-list-container">
             {
                 cardData.map((item, index) => {
-                    return <CTACard key={index}
+                    // return <CTACard key={index}
+                    //     title={item.title} subTitle={item.subTitle}
+                    //     isTop={index === 0}
+                    //     styles={{ ...item.styles, zIndex: cardData.length - index, top: -(index * 32) + 'px' }}
+                    // />
+                    return <CTACard key={index} id={'cta-card-' + index}
                         title={item.title} subTitle={item.subTitle}
-                        isTop={index === 0}
-                        styles={{ ...item.styles, zIndex: cardData.length - index, top: -(index * 32) + 'px' }}
+                        styles={{ ...item.styles, zIndex: cardData.length - index }}
                     />
+
                 })
             }
         </div>

@@ -1,11 +1,14 @@
 //CTA stands for Call To Action
 import './styles.scss';
 
-function CTACard({ title, subTitle, isTop, styles }) {
+function CTACard({ id, title, subTitle, styles }) {
 
-    return (<div className={`cta-card-container${isTop ? ' top' : ''}`} style={styles}>
-        <div className="left">{title}</div>
-        <div className="right">{subTitle}</div>
-    </div>)
+    return (
+        <div id={id} className="cta-card-container" style={styles}>
+            <div className="cta-card-content">
+                <div className="cta-card-container-left">{title}</div>
+                <div className="cta-card-container-right">{subTitle}</div>
+            </div>
+        </div>)
 }
 export default CTACard;

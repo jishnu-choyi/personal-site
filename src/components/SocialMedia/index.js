@@ -10,11 +10,11 @@ function SocialMedia() {
     return (
         <div className="social-media-header">
             <div className="icon-container">
-                <TwitterIcon color="primary" />
-                <LinkedInIcon color="primary" />
-                <EmailRoundedIcon color="primary" />
-                <CallRoundedIcon color="primary" />
-                <GitHubIcon color="primary" />
+                <TwitterIcon color="primary" fontSize='medium' />
+                <LinkedInIcon color="primary" fontSize='medium' />
+                <EmailRoundedIcon color="primary" fontSize='medium' />
+                <CallRoundedIcon color="primary" fontSize='medium' />
+                <GitHubIcon color="primary" fontSize='medium' />
             </div>
         </div>
     );

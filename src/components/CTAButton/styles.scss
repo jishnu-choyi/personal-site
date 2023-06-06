@@ -1,0 +1,15 @@
+.cta-btn-container {
+    width: calc(33% - 12px);
+    text-align: center;
+
+    img {
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .cta-btn-text {
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 4px;
+    }
+}

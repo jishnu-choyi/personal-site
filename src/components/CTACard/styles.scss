@@ -1,23 +1,32 @@
 .cta-card-container {
     display: flex;
-    flex-direction: row;
-    padding: 48px 16px 16px 16px;
+    width: 100%;
     border-radius: 16px;
-    position: relative;
 
-    .left {
-        font-size: 13px;
-        font-weight: 500;
-        flex: 1;
-    }
-
-    .right {
-        font-size: 11px;
-        font-weight: 300;
-        flex: 1;
+    .cta-card-content {
+        display: flex;
+        flex-direction: row;
+        border-radius: 16px;
+        position: relative;
+        padding: 16px;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
-.cta-card-container.top {
-    padding: 16px;
+.cta-card-container-left {
+    font-size: 13px;
+    font-weight: 500;
+    flex: 1;
 }
+
+.cta-card-container-right {
+    font-size: 11px;
+    font-weight: 300;
+    flex: 1;
+}
+
+// .cta-card-container.top {
+//     padding: 16px;
+// }
