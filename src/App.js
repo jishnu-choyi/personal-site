@@ -1,23 +1,30 @@
+import './App.scss';
+import { ThemeProvider, createTheme } from "@mui/material";
 import CTACardList from "./components/CTACardList";
 import Header from "./components/Header";
+import Landing from './pages/Landing';
+
+// Or Create your Own theme:
+const iconTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#C47F38'
+    },
+    secondary: {
+      main: '#EBDED4'
+    }
+  }
+});
 
 function App() {
   return (
-    <div className="container">
+
+    <ThemeProvider theme={iconTheme}>
       <Header />
-      <div className="page-container">
-        <div className="left">
-          <div className="main-title">Hello, I am Jishnu</div>
-          <div className="main-image">
-
-          </div>
-        </div>
-        <div className="right">
-
-        </div>
-        <CTACardList />
+      <div className="container">
+        <Landing />
       </div>
-    </div>
+    </ThemeProvider >
   );
 }
 
