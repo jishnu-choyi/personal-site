@@ -8,7 +8,7 @@
         flex-direction: row;
         border-radius: 16px;
         position: relative;
-        padding: 16px;
+        padding: 16px 24px;
         align-items: center;
         width: 100%;
         box-sizing: border-box;
@@ -16,15 +16,15 @@
 }
 
 .cta-card-container-left {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     flex: 1;
 }
 
 .cta-card-container-right {
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 300;
-    flex: 1;
+    flex: 1.2;
 }
 
 // .cta-card-container.top {
