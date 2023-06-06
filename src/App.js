@@ -1,4 +1,3 @@
-import CTACard from "./components/CTACard";
 import CTACardList from "./components/CTACardList";
 
 function App() {

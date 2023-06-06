@@ -18,7 +18,12 @@ body {
   --font-mono: "Roboto Mono", Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 
   /* font-family: var(--font-sans,var(--font-sans-fallback)); */
-  background-color: #F4F4F4;
+  background-color: var(--bg-color);
+
+  /*---Color pallette----*/
+  --bg-color: #F4F4F4;
+  --light-brown: #EBDED4;
+  --dark-brown: #C47F38;
 }
 
 code {
