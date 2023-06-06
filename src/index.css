@@ -19,11 +19,14 @@ body {
 
   /* font-family: var(--font-sans,var(--font-sans-fallback)); */
   background-color: var(--bg-color);
+  color: var(--primary-text);
 
   /*---Color pallette----*/
   --bg-color: #F4F4F4;
   --light-brown: #EBDED4;
   --dark-brown: #C47F38;
+
+  --primary-text: #1B1A19;
 }
 
 code {
