@@ -16,7 +16,7 @@ function Landing() {
             <div className="left">
                 <div className="main-title">hello, I am <br />jishnu choyi</div>
                 <div className="main-container main-image">
-                    <img src={MainPhoto} />
+                    <img src={MainPhoto} alt='working desk' />
                 </div>
             </div>
             <div className="right">
