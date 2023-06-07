@@ -1,4 +1,4 @@
-import './styles.scss';
+import styles from './socialMedia.module.scss';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
@@ -8,8 +8,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 function SocialMedia() {
     return (
-        <div className="social-media-header">
-            <div className="icon-container">
+        <div className={styles["header"]}>
+            <div className={styles["icon-container"]}>
                 <TwitterIcon color="primary" fontSize='medium' />
                 <LinkedInIcon color="primary" fontSize='medium' />
                 <EmailRoundedIcon color="primary" fontSize='medium' />

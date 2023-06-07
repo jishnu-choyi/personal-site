@@ -1,9 +1,9 @@
-.cta-card-container {
+.container {
     display: flex;
     width: 100%;
     border-radius: 16px;
 
-    .cta-card-content {
+    .content {
         display: flex;
         flex-direction: row;
         border-radius: 16px;
@@ -15,18 +15,14 @@
     }
 }
 
-.cta-card-container-left {
+.left {
     font-size: 16px;
     font-weight: 500;
     flex: 1;
 }
 
-.cta-card-container-right {
+.right {
     font-size: 14px;
     font-weight: 300;
     flex: 1.2;
 }
-
-// .cta-card-container.top {
-//     padding: 16px;
-// }

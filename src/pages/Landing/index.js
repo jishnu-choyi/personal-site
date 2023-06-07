@@ -1,4 +1,4 @@
-import './styles.scss';
+import styles from './landing.module.scss';
 import SocialMedia from '../../components/SocialMedia';
 import CTACardList from '../../components/CTACardList';
 
@@ -12,18 +12,18 @@ import CTAButton from '../../components/CTAButton';
 function Landing() {
 
     return (
-        <div className="page-container">
-            <div className="left">
-                <div className="main-title">hello, I am <br />jishnu choyi</div>
-                <div className="main-container main-image">
+        <div className={styles["page-container"]}>
+            <div className={styles["left"]}>
+                <div className={styles["main-title"]}>hello, I am <br />jishnu choyi</div>
+                <div className={styles["main-container"] + ' ' + styles["main-image"]}>
                     <img src={MainPhoto} alt='working desk' />
                 </div>
             </div>
-            <div className="right">
+            <div className={styles["right"]}>
                 <SocialMedia />
-                <div className="main-container">
+                <div className={styles["main-container"]}>
                     <CTACardList />
-                    <div className="cta-images">
+                    <div className={styles["cta-images"]}>
                         <CTAButton imageSrc={StartupCTAPhoto} btnTxt={"start-ups"} />
                         <CTAButton imageSrc={SoftwareCTAPhoto} btnTxt={"software"} />
                         <CTAButton imageSrc={HardwareCTAPhoto} btnTxt={"hardware"} />

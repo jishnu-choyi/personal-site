@@ -1,0 +1,14 @@
+.header {
+    height: 116px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.icon-container {
+    width: 50%;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}

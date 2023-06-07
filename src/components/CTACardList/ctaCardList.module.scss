@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+    flex: 1;
+}
+
+#cta-card-0,
+#cta-card-1,
+#cta-card-2 {
+    position: absolute;
+    top: 0;
+}
+
+#cta-card-1,
+#cta-card-2 {
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
+#cta-card-0 {
+    height: 33.33%;
+}
+
+#cta-card-1 {
+    height: 66.67%;
+
+    .cta-card-content {
+        height: 50%;
+    }
+}
+
+#cta-card-2 {
+    height: 100%;
+
+    .cta-card-content {
+        height: 33.33%;
+    }
+}

@@ -1,4 +1,4 @@
-import './styles.scss';
+import styles from './ctaCardList.module.scss';
 import CTACard from "../CTACard";
 
 function CTACardList() {
@@ -28,15 +28,10 @@ function CTACardList() {
         }
     ];
     return (
-        <div className="cta-card-list-container">
+        <div className={styles["container"]}>
             {
                 cardData.map((item, index) => {
-                    // return <CTACard key={index}
-                    //     title={item.title} subTitle={item.subTitle}
-                    //     isTop={index === 0}
-                    //     styles={{ ...item.styles, zIndex: cardData.length - index, top: -(index * 32) + 'px' }}
-                    // />
-                    return <CTACard key={index} id={'cta-card-' + index}
+                    return <CTACard key={index} id={styles['cta-card-' + index]}
                         title={item.title} subTitle={item.subTitle}
                         styles={{ ...item.styles, zIndex: cardData.length - index }}
                     />
