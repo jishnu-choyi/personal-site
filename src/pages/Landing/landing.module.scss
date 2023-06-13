@@ -10,11 +10,12 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        height: 66vh;
+        min-height: 66vh;
         position: relative;
+        max-width: 512px;
 
         .main-container {
-            height: calc(100% - 116px);
+            height: calc(66vh - 116px);
             display: flex;
             flex-direction: column;
         }
@@ -56,6 +57,63 @@
                 width: calc(33% - 8px);
             }
         }
-
     }
 }
+
+
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+@media screen and ((orientation: portrait) or (max-height:600px)){
+    .page-container {
+        margin-top: 8px;
+        flex-direction: column;
+
+        .left,.right{
+            padding: 0 16px;            
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 512px;
+            margin: auto;            
+        }
+        .left{
+            min-height: auto;
+            .main-container{
+                height: auto;
+            }
+            .main-image{
+                img{
+                    width: 100%;
+                    height: auto;                    
+                }
+            }
+        }
+        .right{
+            min-height: 70vh;
+            .main-container {
+                height: calc(70vh - 116px);
+                max-height: 512px;
+                min-height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and ((orientation: landscape) or (min-height:960px)){
+    .page-container {
+        .left,.right{
+            min-height:auto;
+            .main-container{
+                max-height: 512px;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+}
+

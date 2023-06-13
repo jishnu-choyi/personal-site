@@ -12,3 +12,10 @@
     justify-content: space-between;
     margin-bottom: 16px;
 }
+
+@media screen and (orientation:portrait){
+    .header{
+        margin-top: 16px;
+        align-items: center;
+    }
+}
