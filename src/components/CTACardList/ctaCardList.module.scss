@@ -16,23 +16,20 @@
     flex-direction: column;
 }
 
-
 #cta-card-0 {
-    height: 33.33%;
+    height: 33.333333%;
 }
 
 #cta-card-1 {
-    height: 66.67%;
-
-    .cta-card-content {
-        height: 50%;
-    }
+    height: 66.666667%;
 }
 
 #cta-card-2 {
     height: 100%;
-
-    .cta-card-content {
-        height: 33.33%;
-    }
+}
+.cta-card-content-1 {
+    height: 50%;
+}
+.cta-card-content-2 {
+    height: 33.33%;
 }
