@@ -28,6 +28,7 @@ function CTACardList() {
             },
         },
     ];
+
     return (
         <div className={styles["container"]}>
             {cardData.map((item, index) => {
@@ -42,11 +43,9 @@ function CTACardList() {
                         }}
                     >
                         <div
-                            className={
-                                cardStyles["content"] +
-                                " " +
+                            className={`${cardStyles["content"]} ${
                                 styles["cta-card-content-" + index]
-                            }
+                            }`}
                         >
                             <div className={cardStyles["left"]}>
                                 {item.title}
