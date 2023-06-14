@@ -28,14 +28,17 @@ amplitude.init("71a74323057e3cdb289336830873113f", undefined, {
 });
 
 function App() {
-    amplitude.track("Page view");
+    // amplitude.track("Page view");
+    const renderedShowCases = showCases.map((data) => {
+        return <ShowCase key={data.id} showCaseData={data} />;
+    });
 
     return (
         <ThemeProvider theme={iconTheme}>
             <Header />
             <div className="container">
-                <Landing />
-                <ShowCase showCaseData={showCases[0]} />
+                {/* <Landing /> */}
+                {renderedShowCases}
             </div>
         </ThemeProvider>
     );

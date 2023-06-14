@@ -9,7 +9,15 @@ function ShowCase(props) {
 
     return (
         <div className={styles.container}>
-            <ShowCaseTab />
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "flex-start",
+                    marginLeft: "8px",
+                }}
+            >
+                <ShowCaseTab />
+            </div>
             <div className={styles.content}>
                 <div className={styles.col1}>
                     <ShowCaseHeader {...props} />
@@ -19,7 +27,13 @@ function ShowCase(props) {
                     <Skills skillIds={showCaseData.skillIds} />
                 </div>
             </div>
-            <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    marginRight: "8px",
+                }}
+            >
                 <ShowCaseTab mergeType="top-left" />
             </div>
         </div>
