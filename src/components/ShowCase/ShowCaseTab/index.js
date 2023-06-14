@@ -1,4 +1,4 @@
-import styles from "./showcasetab.module.scss";
+import styles from "./showCaseTab.module.scss";
 
 function ShowCaseTab(props) {
     const { mergeType } = props;

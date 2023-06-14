@@ -1,6 +1,12 @@
+.list-container{
+    display: flex;
+    flex-flow: wrap;
+}
 .container{
     display: inline;
     background-color: gainsboro;
     border-radius: 50px;
-    padding: 4px;
+    padding: 4px 12px;
+    margin: 4px;
+    font-size: 14px;
 }

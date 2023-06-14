@@ -3,7 +3,8 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import Header from "./components/Header";
 import Landing from "./pages/Landing";
 import ShowCase from "./components/ShowCase";
-//import * as amplitude from "@amplitude/analytics-browser";
+import showCases from "./views/work/work-data";
+import * as amplitude from "@amplitude/analytics-browser";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
@@ -17,18 +18,17 @@ const iconTheme = createTheme({
     },
 });
 
-// amplitude.init('71a74323057e3cdb289336830873113f', undefined, { defaultTracking: { sessions: true, pageViews: true, formInteractions: true, fileDownloads: true } });
+amplitude.init("71a74323057e3cdb289336830873113f", undefined, {
+    defaultTracking: {
+        sessions: true,
+        pageViews: true,
+        formInteractions: true,
+        fileDownloads: true,
+    },
+});
 
 function App() {
-    // amplitude.track('Page view');
-
-    const showCases = [
-        {
-            title: "Technical Co-founder",
-            brief: "Slated Technologies Inc, Dover, DE 19901",
-            skillIds: ["js", "ts", "angular", "react"],
-        },
-    ];
+    amplitude.track("Page view");
 
     return (
         <ThemeProvider theme={iconTheme}>

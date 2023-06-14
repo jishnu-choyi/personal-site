@@ -24,6 +24,6 @@ function Skills(props) {
             </div>
         );
     });
-    return <div>{renderedSkills}</div>;
+    return <div className={styles["list-container"]}>{renderedSkills}</div>;
 }
 export default Skills;
