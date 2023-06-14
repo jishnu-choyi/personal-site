@@ -37,7 +37,7 @@ function App() {
         <ThemeProvider theme={iconTheme}>
             <Header />
             <div className="container">
-                {/* <Landing /> */}
+                <Landing />
                 {renderedShowCases}
             </div>
         </ThemeProvider>
