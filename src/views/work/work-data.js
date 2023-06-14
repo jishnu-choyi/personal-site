@@ -18,7 +18,7 @@ const showCases = [
         title: "Technical Co-founder",
         brief: "Slated Technologies Inc, Dover, DE 19901",
         startDate: new Date("1 April 2021"),
-        endDate: new Date("1 April 2023"),
+        endDate: new Date("31 March 2023"),
         skillIds: ["js", "ts", "angular", "react"],
         highlights: <SlatedHighlights />,
     },
