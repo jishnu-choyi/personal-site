@@ -16,7 +16,10 @@ function ShowCase(props) {
                     marginLeft: "8px",
                 }}
             >
-                <ShowCaseTab />
+                <ShowCaseTab
+                    {...showCaseData}
+                    label={showCaseData.headerLabel}
+                />
             </div>
             <div className={styles.content}>
                 <div className={styles.col1}>
@@ -34,7 +37,12 @@ function ShowCase(props) {
                     marginRight: "8px",
                 }}
             >
-                <ShowCaseTab mergeType="top-left" />
+                {showCaseData.footerLabel && (
+                    <ShowCaseTab
+                        mergeType="top-left"
+                        label={showCaseData.footerLabel || "Read more..."}
+                    />
+                )}
             </div>
         </div>
     );

@@ -1,7 +1,8 @@
+import Link from "../../Link";
 import styles from "./showCaseTab.module.scss";
 
 function ShowCaseTab(props) {
-    const { mergeType } = props;
+    const { mergeType, label, url, urlLabel } = props;
     let showLeft = false,
         showRight = true;
     let mergeClassLeft = mergeType,
@@ -54,7 +55,14 @@ function ShowCaseTab(props) {
                 </div>
             )}
             <div className={`${styles.center} ${styles[baseClass]}`}>
-                tab content
+                <span>{label}</span>
+                {url && (
+                    <Link
+                        url={url}
+                        urlLabel={urlLabel}
+                        className={styles.link}
+                    />
+                )}
             </div>
             {showRight && (
                 <div className={styles.right}>

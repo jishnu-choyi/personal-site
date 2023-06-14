@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    align-items: flex-end;
+    color: var(--primary-text);
+    span{
+        margin-right: 4px;
+    }
+}
+.container:hover{
+    color: var(--hover-blue);    
+}

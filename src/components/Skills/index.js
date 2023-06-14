@@ -19,7 +19,8 @@ import MongoDbIcon from "../../assets/images/skill-logos/mongodb-icon-64.png";
 import NginxIcon from "../../assets/images/skill-logos/nginx-icon-64.png";
 import NodeJsIcon from "../../assets/images/skill-logos/nodejs-icon-64.png";
 import NodeJS2Icon from "../../assets/images/skill-logos/nodejs2-icon-64.png";
-import NvidiaRivaIcon from "../../assets/images/skill-logos/nvidia-riva-128.png";
+// import NvidiaRivaIcon from "../../assets/images/skill-logos/nvidia-riva-128.png";
+import NvidiaRivaIcon from "../../assets/images/skill-logos/nvidia-riva-64.png";
 import OpenGLIcon from "../../assets/images/skill-logos/opengl-icon-64.png";
 import PhpIcon from "../../assets/images/skill-logos/php-icon-64.png";
 import PostgreSqlIcon from "../../assets/images/skill-logos/postgresql-icon-64.png";
@@ -148,12 +149,24 @@ const skillMap = {
         label: "Firmware in assembly language",
         searchTerms: "Embedded MEMs DSP Digital signal processing",
     },
+    signalProcessing: {
+        id: "signalProcessing",
+        label: "Digital Signal Processing",
+        searchTerms: "DSP",
+    },
     devOps: {
         id: "devOps",
         label: "DevOps",
         searchTerms: "Google cloud GCP AWS",
         icon: DevOpsIcon,
     },
+    gcp: {
+        id: "gcp",
+        label: "GCP",
+        searchTerms: "Google cloud",
+        icon: GcpIcon,
+    },
+
     mlOps: {
         id: "mlOps",
         label: "MLOps",
@@ -171,6 +184,13 @@ const skillMap = {
         searchTerms: "",
         icon: K8sIcon,
     },
+    nvidiaRiva: {
+        id: "nvidiaRiva",
+        label: "Nvidia Riva",
+        searchTerms: "",
+        icon: NvidiaRivaIcon,
+    },
+
     microservices: {
         id: "microservices",
         label: "Microservices architecture",
@@ -197,13 +217,13 @@ const skillMap = {
     jira: {
         id: "jira",
         label: "Jira",
-        searchTerms: "Jira Agile Scrumm",
+        searchTerms: "Jira Agile Scrum",
         icon: JiraIcon,
     },
     agile: {
         id: "agile",
-        label: "Agile",
-        searchTerms: "Jira Agile Scrumm",
+        label: "Agile/Scrym",
+        searchTerms: "Jira Agile Scrum",
     },
     matlab: {
         id: "matlab",
