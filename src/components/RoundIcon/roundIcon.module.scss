@@ -1,0 +1,17 @@
+.container{
+    font-size: 24px;
+    color: #ffb953;
+    border: 1px solid gainsboro;
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.travel-icon{
+    transform: rotate(45deg);
+    color: #46a8fe;
+}

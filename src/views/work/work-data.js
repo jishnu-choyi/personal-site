@@ -7,12 +7,14 @@ import EnseaLogo from "../../assets/images/logos/ensea/Cergy-Pontoise_University
 
 import SlatedHighlights, { slatedData } from "./SlatedHighlights";
 import { juziData } from "./JuziHighlights";
-import { adiData } from "./AdiHighlights";
+import { adiData, adiTravelData } from "./AdiHighlights";
 
 const showCases = [
     slatedData,
     juziData,
     adiData,
+    adiTravelData,
+
     {
         id: "gida-softwareservices",
         url: "https://gida.in",

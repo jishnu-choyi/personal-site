@@ -1,5 +1,37 @@
 import React from "react";
 import AdiLogo from "../../assets/images/logos/adi/Analog_Devices_Logo-full.png";
+import styles from "./adi-highlights.module.scss";
+import Location from "../../components/Location";
+import RoundIcon from "../../components/RoundIcon";
+
+export const adiTravelData = {
+    id: "adi-travel",
+    itemType: "travel",
+
+    headerLabel: "Travel",
+    highlights: <AdiTravelHighlights />,
+    locations: [
+        { id: "boston", label: "Boston, MA" },
+        { id: "wilmington", label: "Wilmington, MA" },
+    ],
+    skillIds: ["patent", "spread-spectrum"],
+};
+function AdiTravelHighlights() {
+    return (
+        <div className={styles["travel-container"]}>
+            <RoundIcon type="trophy" />
+            <div className={styles["col1"]}>
+                Selected to attend the annual company conference (General
+                Technical Conference) held at Boston, MA to present a paper on a
+                more efficient self-test method using Spread-spectrum technique
+                <div className={styles["location-con"]}>
+                    <Location locationLabel="Boston, MA 🇺🇸" />
+                    <Location locationLabel="Wilmington, MA 🇺🇸" />
+                </div>
+            </div>
+        </div>
+    );
+}
 
 export const adiData = {
     id: "adi",

@@ -5,6 +5,7 @@ import Landing from "./pages/Landing";
 import ShowCase from "./components/ShowCase";
 import showCases from "./views/work/work-data";
 import * as amplitude from "@amplitude/analytics-browser";
+import Travel from "./components/Travel";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
@@ -30,7 +31,11 @@ amplitude.init("71a74323057e3cdb289336830873113f", undefined, {
 function App() {
     // amplitude.track("Page view");
     const renderedShowCases = showCases.map((data) => {
-        return <ShowCase key={data.id} showCaseData={data} />;
+        if (data.itemType === "travel") {
+            return <Travel key={data.id} showCaseData={data} />;
+        } else if (data.itemType === "work-exp") {
+            return <ShowCase key={data.id} showCaseData={data} />;
+        }
     });
 
     return (
