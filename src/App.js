@@ -7,6 +7,7 @@ import showCases from "./views/work/work-data";
 import * as amplitude from "@amplitude/analytics-browser";
 import Travel from "./components/Travel";
 import Education from "./components/Education";
+import ProgressBar from "./components/ProgressBar";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
