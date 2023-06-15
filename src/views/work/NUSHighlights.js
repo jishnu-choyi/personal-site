@@ -1,4 +1,3 @@
-// import styles from "./nus-highlights.module.scss";
 import NusLogo from "../../assets/images/logos/nus/nus_logo_full-horizontal.jpeg";
 
 export const nusData = {

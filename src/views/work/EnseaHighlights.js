@@ -1,5 +1,5 @@
 import styles from "./ensea-highlights.module.scss";
-import EnseaLogo from "../../assets/images/logos/ensea/Cergy-Pontoise_University_(logo).svg.png";
+import EnseaLogo from "../../assets/images/logos/ensea/logo.png";
 
 export const enseaData = {
     id: "ensea",
