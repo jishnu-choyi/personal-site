@@ -27,12 +27,14 @@ body {
 
   /*---Color pallette----*/
   --bg-color: #F4F4F4;
-  --light-brown: #EBDED4;
+  --light-brown: #EBDED4;  
   --dark-brown: #C47F38;
   --light-blue: rgba(4, 116, 214, 0.07);
 
   --primary-text: #1B1A19;
   --hover-blue:#184f95;
+
+  --location-light-brown: #ffefdfa8;
 }
 
 code {
