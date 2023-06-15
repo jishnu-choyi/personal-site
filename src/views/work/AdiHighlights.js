@@ -11,24 +11,24 @@ export const adiTravelData = {
     headerLabel: "Travel",
     highlights: <AdiTravelHighlights />,
     locations: [
-        { id: "boston", label: "Boston, MA" },
-        { id: "wilmington", label: "Wilmington, MA" },
+        { id: "boston", label: "Boston, MA   🇺🇸" },
+        { id: "wilmington", label: "Wilmington, MA  🇺🇸" },
     ],
     skillIds: ["patent", "spread-spectrum"],
 };
 function AdiTravelHighlights() {
     return (
         <div className={styles["travel-container"]}>
-            <RoundIcon type="trophy" />
             <div className={styles["col1"]}>
                 Selected to attend the annual company conference (General
                 Technical Conference) held at Boston, MA to present a paper on a
                 more efficient self-test method using Spread-spectrum technique
-                <div className={styles["location-con"]}>
+                {/* <div className={styles["location-con"]}>
                     <Location locationLabel="Boston, MA 🇺🇸" />
                     <Location locationLabel="Wilmington, MA 🇺🇸" />
-                </div>
+                </div> */}
             </div>
+            {/* <RoundIcon type="trophy" /> */}
         </div>
     );
 }

@@ -10,10 +10,10 @@ import { juziData } from "./JuziHighlights";
 import { adiData, adiTravelData } from "./AdiHighlights";
 
 const showCases = [
-    slatedData,
-    juziData,
     adiData,
     adiTravelData,
+    slatedData,
+    juziData,
 
     {
         id: "gida-softwareservices",

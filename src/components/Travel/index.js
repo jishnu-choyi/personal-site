@@ -1,9 +1,13 @@
 import ShowCaseTab from "../ShowCase/ShowCaseTab";
 import styles from "./travel.module.scss";
 import RoundIcon from "../RoundIcon";
+import Location from "../Location";
 
 export default function Travel(props) {
     const { showCaseData } = props;
+    const renderedLocations = showCaseData.locations.map((location) => {
+        return <Location key={location.id} locationLabel={location.label} />;
+    });
 
     return (
         <div className={styles.container}>
@@ -18,8 +22,11 @@ export default function Travel(props) {
                 />
             </div>
             <div className={styles.content}>
-                <div className={styles.col2}>{showCaseData.highlights}</div>
-                <RoundIcon type="travel" />
+                <div className={styles.col1}>
+                    <RoundIcon type="travel" style={{ marginLeft: "16px" }} />
+                    {showCaseData.highlights}
+                </div>
+                <div className={styles.col2}>{renderedLocations}</div>
             </div>
         </div>
     );
