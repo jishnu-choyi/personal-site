@@ -4,17 +4,20 @@ import RoundIcon from "../RoundIcon";
 import Location from "../Location";
 
 export default function Travel(props) {
-    const { showCaseData } = props;
+    const { showCaseData, hideConnection } = props;
     const renderedLocations = showCaseData.locations.map((location) => {
         return <Location key={location.id} locationLabel={location.label} />;
     });
+    const renderedRopes = (
+        <div className={styles["rope-con"]}>
+            <div className={styles["left-rope"]}></div>
+            <div className={styles["right-rope"]}></div>
+        </div>
+    );
 
     return (
         <div className={styles.container}>
-            <div className={styles["rope-con"]}>
-                <div className={styles["left-rope"]}></div>
-                <div className={styles["right-rope"]}></div>
-            </div>
+            {!hideConnection && renderedRopes}
             <div className={styles["top-tab-container"]}>
                 <ShowCaseTab
                     {...showCaseData}
