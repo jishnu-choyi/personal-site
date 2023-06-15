@@ -8,6 +8,9 @@ import * as amplitude from "@amplitude/analytics-browser";
 import Travel from "./components/Travel";
 import Education from "./components/Education";
 import ProgressBar from "./components/ProgressBar";
+import SlideImage from "./components/SlideImage";
+import TestImage from "./assets/images/test-image.jpg";
+import TestImageBg from "./assets/images/test-image-load-16.png";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
@@ -47,7 +50,12 @@ function App() {
             <Header />
             <div className="container">
                 {/* <Landing /> */}
-                {renderedShowCases}
+                <SlideImage
+                    alt="slide image"
+                    imagesrc={TestImage}
+                    bgimagesrc={TestImageBg}
+                />
+                {/* {renderedShowCases} */}
             </div>
         </ThemeProvider>
     );

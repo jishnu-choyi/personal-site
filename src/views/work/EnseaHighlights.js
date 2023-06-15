@@ -15,6 +15,7 @@ export const enseaData = {
     startDate: new Date("1 May 2008"),
     endDate: new Date("31 July 2008"),
     skillIds: ["firmwareC", "robotics"],
+    locations: [{ id: "paris", label: "Cergy-Pontoise, France 🇫🇷" }],
     highlights: <EnseaHighlights />,
 };
 

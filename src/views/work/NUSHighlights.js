@@ -14,6 +14,7 @@ export const nusData = {
     startDate: new Date("1 Jul 2008"),
     endDate: new Date("31 Dec 2008"),
     skillIds: ["electrical", "physics"],
+    locations: [{ id: "singapore", label: "Singapore 🇸🇬" }],
 };
 
 function NusHighlights() {

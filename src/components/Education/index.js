@@ -1,3 +1,4 @@
+import Location from "../Location";
 import ShowCaseContent from "../ShowCase/ShowCaseContent";
 import ShowCaseHeader from "../ShowCase/ShowCaseHeader";
 import ShowCaseTab from "../ShowCase/ShowCaseTab";
@@ -6,6 +7,9 @@ import styles from "./education.module.scss";
 
 function Education(props) {
     const { showCaseData } = props;
+    const renderedLocations = showCaseData.locations?.map((location) => {
+        return <Location key={location.id} locationLabel={location.label} />;
+    });
 
     return (
         <div className={styles.container}>
@@ -33,6 +37,7 @@ function Education(props) {
                 </div>
                 <div className={styles.col2}>
                     <Skills skillIds={showCaseData.skillIds} />
+                    {renderedLocations}
                 </div>
             </div>
             <div
