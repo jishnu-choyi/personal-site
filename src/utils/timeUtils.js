@@ -12,7 +12,7 @@ export const formatDuration = (startDate, endDate) => {
         months = 0;
         years++;
     }
-    let yrStr = years > 0 ? `${years} yr${years > 1 ? "s" : ""}` : ``;
+    let yrStr = years > 0 ? `${years} year${years > 1 ? "s" : ""}` : ``;
     let moStr =
         months > 0
             ? `${years > 0 ? " " : ""}${months} month${months > 1 ? "s" : ""}`
