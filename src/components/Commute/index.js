@@ -1,7 +1,5 @@
 import styles from "./commute.module.scss";
-//import IoLocationSharp from "react-icons/io";
-import { MdOutlineVideoCameraFront } from "react-icons/md";
-import { BsPersonVideo2 } from "react-icons/bs";
+import { BsPersonVideo } from "react-icons/bs";
 import { BsPersonVideo3 } from "react-icons/bs";
 import { BsPersonFill } from "react-icons/bs";
 
@@ -23,11 +21,8 @@ function Commute(props) {
 
     return (
         <div className={styles.container}>
-            {commuteType === "remote2" && (
-                <MdOutlineVideoCameraFront className={styles.icon} />
-            )}
             {commuteType === "remote" && (
-                <BsPersonVideo2 className={styles.icon} />
+                <BsPersonVideo className={styles.icon} />
             )}
             {commuteType === "hybrid" && (
                 <BsPersonVideo3 className={styles.icon} />
