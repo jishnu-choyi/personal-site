@@ -6,6 +6,7 @@ import ShowCase from "./components/ShowCase";
 import showCases from "./views/work/work-data";
 import * as amplitude from "@amplitude/analytics-browser";
 import Travel from "./components/Travel";
+import Education from "./components/Education";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
@@ -33,6 +34,8 @@ function App() {
     const renderedShowCases = showCases.map((data) => {
         if (data.itemType === "travel") {
             return <Travel key={data.id} showCaseData={data} />;
+        } else if (data.itemType === "education") {
+            return <Education key={data.id} showCaseData={data} />;
         } else if (data.itemType === "work-exp") {
             return <ShowCase key={data.id} showCaseData={data} />;
         }

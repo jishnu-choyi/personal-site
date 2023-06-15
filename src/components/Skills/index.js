@@ -280,6 +280,22 @@ const skillMap = {
         searchTerms: "python",
         icon: PythonIcon,
     },
+    cgpa: {
+        id: "cgpa",
+        label: "CGPA: 9.0/10",
+        searchTerms: "",
+    },
+    physics: {
+        id: "physics",
+        label: "Minor in physics",
+        searchTerms: "physics",
+    },
+    vlsi: {
+        id: "vlsi",
+        //label: "Micro-electronics & VLSI design (Masters specialization)",
+        label: "Micro-electronics & VLSI design",
+        searchTerms: "electronics ",
+    },
 };
 
 function Skills(props) {

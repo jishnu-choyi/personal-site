@@ -1,15 +1,16 @@
 import GidaLogo from "../../assets/images/logos/gida/logo.png";
 import YokyLogo from "../../assets/images/logos/yoky/logo_black-full.png";
 import GtsLogo from "../../assets/images/logos/gts/logo.642f4f3c.png";
-import IITMLogo from "../../assets/images/logos/iitm/IIT_Madras_Logo.svg.png";
 import NusLogo from "../../assets/images/logos/nus/nus_logo_full-horizontal.jpeg";
 import EnseaLogo from "../../assets/images/logos/ensea/Cergy-Pontoise_University_(logo).svg.png";
 
 import SlatedHighlights, { slatedData } from "./SlatedHighlights";
 import { juziData } from "./JuziHighlights";
 import { adiData, adiTravelData } from "./AdiHighlights";
+import { iitmData } from "./IITMHighlights";
 
 const showCases = [
+    iitmData,
     adiData,
     adiTravelData,
     slatedData,
