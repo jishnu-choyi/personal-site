@@ -4,7 +4,7 @@ import S from "./showCaseHeader.module.scss";
 import { formatDuration, getMonthAndYear } from "../../../utils/timeUtils";
 
 function ShowCaseHeader(props) {
-    const { showCaseData } = props;
+    const { showCaseData, style } = props;
     const { startDate, endDate } = showCaseData;
 
     const jobTitleCls = classNames(S["job-title"], S["main-text"]);
@@ -19,7 +19,7 @@ function ShowCaseHeader(props) {
     const renderedDuration = formatDuration(startDate, endDate);
 
     return (
-        <div className={S["container"]}>
+        <div className={S["container"]} style={style}>
             <Logo image={showCaseData.image} />
             <div className={S["job"]}>
                 <div className={jobTitleCls}>{showCaseData.title}</div>

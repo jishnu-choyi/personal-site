@@ -296,6 +296,16 @@ const skillMap = {
         label: "Micro-electronics & VLSI design",
         searchTerms: "electronics ",
     },
+    electrical: {
+        id: "electrical",
+        label: "Electrical Engg.",
+        searchTerms: "",
+    },
+    robotics: {
+        id: "robotics",
+        label: "Robotics",
+        searchTerms: "",
+    },
 };
 
 function Skills(props) {

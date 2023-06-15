@@ -23,8 +23,13 @@ function Education(props) {
             </div>
             <div className={styles.content}>
                 <div className={styles.col1}>
-                    <ShowCaseHeader {...props} />
-                    <ShowCaseContent {...props} />
+                    <ShowCaseHeader
+                        {...props}
+                        style={
+                            showCaseData.highlights ? {} : { height: "100%" }
+                        }
+                    />
+                    {showCaseData.highlights && <ShowCaseContent {...props} />}
                 </div>
                 <div className={styles.col2}>
                     <Skills skillIds={showCaseData.skillIds} />
