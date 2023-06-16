@@ -54,6 +54,7 @@ function App() {
             id: "1",
             imageSrc: TestImageH,
             bgImageSrc: TestImageBgH,
+            alt: "some alt caption",
         },
         {
             type: "slide",

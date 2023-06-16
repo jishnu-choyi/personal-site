@@ -5,14 +5,15 @@ import ProgressBar from "../ProgressBar";
 function SlideImage(props) {
     const { imagesrc, bgimagesrc, alt } = props;
     const [loaded, setLoaded] = useState(false);
-
-    const handleLoad = (event) => {
-        // console.log("handle load=", event, event.loaded, event.total);
-        setLoaded(true);
-    };
+    const [showCaption, setShowCaption] = useState(false);
 
     return (
-        <div className={styles.container} {...props}>
+        <div
+            className={styles.container}
+            {...props}
+            onMouseEnter={() => setShowCaption(true)}
+            onMouseLeave={() => setShowCaption(false)}
+        >
             {!loaded && (
                 <>
                     <ProgressBar
@@ -26,12 +27,17 @@ function SlideImage(props) {
                     />
                 </>
             )}
-            <img
-                className={styles["main-img"]}
-                onLoad={handleLoad}
-                src={imagesrc}
-                alt={alt}
-            />
+            <div className={styles["figure-con"]}>
+                <img
+                    className={styles["main-img"]}
+                    onLoad={() => setLoaded(true)}
+                    src={imagesrc}
+                    alt={alt}
+                />
+                {showCaption && alt && (
+                    <div className={styles["caption"]}>{alt}</div>
+                )}
+            </div>
         </div>
     );
 }

@@ -46,9 +46,10 @@ function Gallery(props) {
             return (
                 <SlideImage
                     key={slide.id}
-                    alt={slide.imageSrc || "slide image " + index}
+                    alt={slide.alt}
                     imagesrc={slide.imageSrc}
                     bgimagesrc={slide.bgImageSrc}
+                    caption={slide.caption}
                 />
             );
         }
