@@ -1,20 +1,29 @@
 .container{
     position: relative;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 4px 2px;
+    box-sizing: border-box;
+    border-radius: 4px;
     
-        .progress{
-            width: 75%;
-            z-index: 2;
-        }
-        .bg-img{
-            width: 100%;
-            position: absolute;
-        }
-    
-    .main-img{
-        width: 100%;
+    .progress{
+        width: 50%;
+        z-index: 2;
         position: absolute;
+        top: calc(50% - 16px);
+        left: 25%;
+        display: flex;
+    }
+    .bg-img{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 4px;
+    }    
+    .main-img{
+        height: 100%;
+        position: relative;
+        border-radius: 4px;
     }
 }

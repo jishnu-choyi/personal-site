@@ -10,15 +10,15 @@ function SlideImage(props) {
         console.log("handle load=", event, event.loaded, event.total);
         setLoaded(true);
     };
+
     return (
-        <div
-            className={styles.container}
-            {...props}
-            style={{ width: "100px", height: "200px", background: "black" }}
-        >
-            {!!loaded && (
+        <div className={styles.container} {...props}>
+            {!loaded && (
                 <>
-                    <ProgressBar className={styles.progress} />
+                    <ProgressBar
+                        className={styles.progress}
+                        displayType="rotate"
+                    />
                     <img
                         className={styles["bg-img"]}
                         src={bgimagesrc}

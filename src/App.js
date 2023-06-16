@@ -7,10 +7,13 @@ import showCases from "./views/work/work-data";
 import * as amplitude from "@amplitude/analytics-browser";
 import Travel from "./components/Travel";
 import Education from "./components/Education";
-import ProgressBar from "./components/ProgressBar";
-import SlideImage from "./components/SlideImage";
-import TestImage from "./assets/images/test-image.jpg";
-import TestImageBg from "./assets/images/test-image-load-16.png";
+import TestImageH from "./assets/images/test-image-horizontal.jpg";
+import TestImageBgH from "./assets/images/test-image-horizontal-16.png";
+import TestImageV from "./assets/images/test-image-vertical.jpg";
+import TestImageBgV from "./assets/images/test-image-vertical-16.png";
+import TestImageSq from "./assets/images/test-image-square.jpg";
+import TestImageBgSq from "./assets/images/test-image-square-16.png";
+import Gallery from "./components/Gallery";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
@@ -45,17 +48,34 @@ function App() {
         }
     });
 
+    const gallerySlides = [
+        {
+            type: "slide",
+            id: "1",
+            imageSrc: TestImageH,
+            bgImageSrc: TestImageBgH,
+        },
+        {
+            type: "slide",
+            id: "2",
+            imageSrc: TestImageV,
+            bgImageSrc: TestImageBgV,
+        },
+        {
+            type: "slide",
+            id: "3",
+            imageSrc: TestImageSq,
+            bgImageSrc: TestImageBgSq,
+        },
+    ];
+
     return (
         <ThemeProvider theme={iconTheme}>
             <Header />
             <div className="container">
                 {/* <Landing /> */}
-                <SlideImage
-                    alt="slide image"
-                    imagesrc={TestImage}
-                    bgimagesrc={TestImageBg}
-                />
                 {/* {renderedShowCases} */}
+                <Gallery gallerySlides={gallerySlides} />
             </div>
         </ThemeProvider>
     );

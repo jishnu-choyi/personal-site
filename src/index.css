@@ -33,9 +33,38 @@ body {
 
   --primary-text: #1B1A19;
   --hover-blue:#184f95;
+  --hover-blue-light: #177dff;
 
   --location-light-brown: #ffefdfa8;
+
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0px;
+    background: transparent;
+    height: 200%;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: var(--border-lightgray);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+    
+  ::-webkit-scrollbar:horizontal {
+   height: 0;
+   width: 0;
+   display: none;
+ }
+    
+ ::-webkit-scrollbar-thumb:horizontal {
+   display: none;
+ }
+  
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

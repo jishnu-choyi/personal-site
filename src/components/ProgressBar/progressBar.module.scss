@@ -1,6 +1,5 @@
-.container{
+.container.bar{
     height: 3px;
-    // border: 1px solid var(--light-brown);
     background-color: var(--light-brown);
     position: relative;
     border-radius: 3px;
@@ -11,5 +10,24 @@
         height: 100%;
         border-radius: 3px;
         background-color: var(--dark-brown);
+    }
+}
+.container.rotate{
+    transform: rotate(0);
+    animation: loading-rotation 3s infinite;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-brown);
+}
+
+@keyframes loading-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
     }
 }
