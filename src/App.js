@@ -67,6 +67,12 @@ function App() {
             imageSrc: TestImageSq,
             bgImageSrc: TestImageBgSq,
         },
+        {
+            type: "video",
+            id: "4",
+            youtubeUrl: "JIg5gayLbPc",
+            aspectRatio: 16 / 9,
+        },
     ];
 
     return (

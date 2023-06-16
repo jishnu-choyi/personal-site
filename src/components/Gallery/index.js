@@ -4,17 +4,17 @@ import {
     BsFillArrowLeftCircleFill,
     BsFillArrowRightCircleFill,
 } from "react-icons/bs";
+import SlideVideo from "../SlideVideo";
 
 function Gallery(props) {
     const { gallerySlides } = props;
     const renderedSlides = gallerySlides.map((slide, index) => {
         if (slide.type === "video") {
             return (
-                <SlideImage
+                <SlideVideo
                     key={slide.id}
-                    alt={slide.imageSrc || "slide image " + index}
-                    imagesrc={slide.imageSrc}
-                    bgimagesrc={slide.bgImageSrc}
+                    youtubeUrl={slide.youtubeUrl}
+                    aspectRatio={slide.aspectRatio || 1}
                 />
             );
         } else {
