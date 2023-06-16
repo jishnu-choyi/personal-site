@@ -1,11 +1,11 @@
 import styles from "./slideVideo.module.scss";
 
 function SlideVideo(props) {
-    const { youtubeUrl, aspectRatio, height } = props;
+    const { youtubeUrl, aspectRatio, height, style } = props;
     const defaultHeight = 192;
     const width = (height || defaultHeight) * (aspectRatio || 16 / 9);
     return (
-        <div className={styles.container} {...props}>
+        <div className={styles.container} style={style}>
             <iframe
                 width={width}
                 height={height || defaultHeight}

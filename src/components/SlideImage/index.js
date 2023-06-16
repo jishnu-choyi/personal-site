@@ -7,7 +7,7 @@ function SlideImage(props) {
     const [loaded, setLoaded] = useState(false);
 
     const handleLoad = (event) => {
-        console.log("handle load=", event, event.loaded, event.total);
+        // console.log("handle load=", event, event.loaded, event.total);
         setLoaded(true);
     };
 
