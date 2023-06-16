@@ -6,6 +6,7 @@ import {
 } from "react-icons/bs";
 import SlideVideo from "../SlideVideo";
 import { useEffect, useRef, useState } from "react";
+import Modal from "../Modal";
 
 function Gallery(props) {
     const { gallerySlides } = props;
@@ -55,8 +56,31 @@ function Gallery(props) {
         }
     });
 
+    const [showModal, setShowModal] = useState(false);
+
+    const handleClick = () => {
+        setShowModal(!showModal);
+    };
+    const handleClose = () => {
+        setShowModal(false);
+    };
+
+    const actionBar = (
+        <div className="flex">
+            actionBar
+            {/* <Button2 primary  onClick={handleClose}>I accept</Button2>
+        <Button2 secondary onClick={handleClose}>Cancel</Button2> */}
+        </div>
+    );
+    const modal = (
+        <Modal onClose={handleClose} actionBar={actionBar}>
+            Some content that goes inside modal
+        </Modal>
+    );
+
     return (
-        <div className={styles["container"]}>
+        <div className={styles["container"]} onClick={handleClick}>
+            {showModal && modal}
             <div
                 className={styles["scroll-container"]}
                 ref={galleryScrollRef}

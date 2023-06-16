@@ -1,8 +1,8 @@
-html{
+body {
   overflow-y: auto;
   overflow-x: hidden;
-}
-body {
+
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -63,8 +63,15 @@ body {
  }
   
 }
-
-
+.overflow-hidden{
+  overflow: hidden;
+}
+.modal-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
