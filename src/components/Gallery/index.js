@@ -7,6 +7,7 @@ import {
 import SlideVideo from "../SlideVideo";
 import { useEffect, useRef, useState } from "react";
 import Modal from "../Modal";
+import classNames from "classnames";
 
 function Gallery(props) {
     const { gallerySlides } = props;
@@ -20,7 +21,7 @@ function Gallery(props) {
         if (!scrollEl) return;
         setScrollLeftActive(scrollEl.scrollLeft !== 0);
         setScrollRightActive(
-            scrollEl.clientWidth + scrollEl.scrollLeft < scrollEl.scrollWidth
+            scrollEl.clientWidth + scrollEl.scrollLeft <= scrollEl.scrollWidth
         );
     };
     const handleLeftClick = (event) => {
@@ -59,7 +60,7 @@ function Gallery(props) {
     const [showModal, setShowModal] = useState(false);
 
     const handleClick = () => {
-        setShowModal(!showModal);
+        // setShowModal(!showModal);
     };
     const handleClose = () => {
         setShowModal(false);
@@ -92,19 +93,17 @@ function Gallery(props) {
             </div>
             <div className={styles["navigation"]}>
                 <BsFillArrowLeftCircleFill
-                    className={
-                        styles["nav-icon"] +
-                        " " +
-                        (scrollLeftActive ? "" : styles["inactive"])
-                    }
+                    className={classNames(
+                        styles["nav-icon"],
+                        scrollLeftActive ? "" : styles["inactive"]
+                    )}
                     onClick={handleLeftClick}
                 />
                 <BsFillArrowRightCircleFill
-                    className={
-                        styles["nav-icon"] +
-                        " " +
-                        (scrollRightActive ? "" : styles["inactive"])
-                    }
+                    className={classNames(
+                        styles["nav-icon"],
+                        scrollRightActive ? "" : styles["inactive"]
+                    )}
                     onClick={handleRightClick}
                 />
             </div>

@@ -80,8 +80,8 @@ function App() {
         <ThemeProvider theme={iconTheme}>
             <Header />
             <div className="container">
-                <Landing />
-                {renderedShowCases}
+                {/* <Landing />
+                {renderedShowCases} */}
                 <Gallery gallerySlides={gallerySlides} />
             </div>
         </ThemeProvider>
