@@ -6,6 +6,8 @@
     justify-content: center;
     img{
         height: 32px;
-        padding: 8px;
+        // padding: 8px;
+        padding: 4px 16px;
+        box-sizing: border-box;
     }
 }

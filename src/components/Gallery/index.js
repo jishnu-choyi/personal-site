@@ -5,7 +5,6 @@ import SlideVideo from "../SlideVideo";
 import { useEffect, useRef, useState } from "react";
 import Navigation from "../Navigation";
 import classNames from "classnames";
-import { Tooltip } from "@mui/material";
 import ToolTipWrapper from "../ToolTipWrapper";
 
 function Gallery(props) {
@@ -76,32 +75,34 @@ function Gallery(props) {
                     {renderedSlides}
                 </div>
             </div>
-            <div className={styles["action"]}>
-                <Navigation
-                    onPrev={handleLeftClick}
-                    onNext={handleRightClick}
-                    prevActive={scrollLeftActive}
-                    nextActive={scrollRightActive}
-                />
-                {onExpand && (
-                    <ToolTipWrapper
-                        arrow
-                        title="Expand this view"
-                        className={styles["expand-icon"]}
-                    >
-                        <BiExpand onClick={onExpand} />
-                    </ToolTipWrapper>
-                )}
-                {onCollapse && (
-                    <ToolTipWrapper
-                        arrow
-                        title="Collapse this view"
-                        className={styles["expand-icon"]}
-                    >
-                        <BiCollapse onClick={onCollapse} />
-                    </ToolTipWrapper>
-                )}
-            </div>
+            {gallerySlides.length > 1 && (
+                <div className={styles["action"]}>
+                    <Navigation
+                        onPrev={handleLeftClick}
+                        onNext={handleRightClick}
+                        prevActive={scrollLeftActive}
+                        nextActive={scrollRightActive}
+                    />
+                    {onExpand && (
+                        <ToolTipWrapper
+                            arrow
+                            title="Expand this view"
+                            className={styles["expand-icon"]}
+                        >
+                            <BiExpand onClick={onExpand} />
+                        </ToolTipWrapper>
+                    )}
+                    {onCollapse && (
+                        <ToolTipWrapper
+                            arrow
+                            title="Collapse this view"
+                            className={styles["expand-icon"]}
+                        >
+                            <BiCollapse onClick={onCollapse} />
+                        </ToolTipWrapper>
+                    )}
+                </div>
+            )}
         </div>
     );
 }

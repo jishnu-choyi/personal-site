@@ -1,5 +1,6 @@
 import styles from "./scrappy-highlights.module.scss";
 import ScrappyLogo from "../../assets/images/logos/scrappy/scrappy-logo.png";
+import GalleryWithModal from "../../components/GalleryWithModal";
 
 export const scrappyTravelData = {
     id: "scrappy-travel",
@@ -8,19 +9,32 @@ export const scrappyTravelData = {
 
     headerLabel: "Travel",
     highlights: <ScrappyTravelHighlights />,
+    skillIds: ["probono", "teaching", "diy"],
     locations: [
-        { id: "boston", label: "Boston, MA   🇺🇸" },
-        { id: "wilmington", label: "Wilmington, MA  🇺🇸" },
+        { id: "bhagalpur", label: "Bhagalpur, Bihar  🇮🇳" },
+        { id: "mumbai", label: "Mumbai, MH  🇮🇳" },
     ],
-    skillIds: ["patent", "spread-spectrum"],
 };
 function ScrappyTravelHighlights() {
     return (
         <div className={styles["scrappy-travel-container"]}>
             <div className={styles["col1"]}>
-                Selected to attend the annual company conference (General
-                Technical Conference) held at Boston, MA to present a paper on a
-                more efficient self-test method using Spread-spectrum technique
+                Helped school kids create DIY racing cars for an event called
+                “Scrappy races” as part of the Scrappy News project at
+                Bhagalpur, Bihar
+            </div>
+            <div className={styles["col2"]}>
+                <GalleryWithModal
+                    style={{ width: "100%", height: "200px" }}
+                    gallerySlides={[
+                        {
+                            type: "video",
+                            id: "1",
+                            youtubeUrl: "mCuhrYqGtjI",
+                            aspectRatio: 16 / 9,
+                        },
+                    ]}
+                />
             </div>
         </div>
     );

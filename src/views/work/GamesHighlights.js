@@ -9,18 +9,28 @@ export const gamesTravelData = {
     headerLabel: "Travel",
     highlights: <GamesTravelHighlights />,
     locations: [
-        { id: "boston", label: "Boston, MA   🇺🇸" },
-        { id: "wilmington", label: "Wilmington, MA  🇺🇸" },
+        { id: "bihar", label: "Bihar   🇮🇳" },
+        { id: "jharkhand", label: "Jharkhand  🇮🇳" },
+        { id: "chattisgarh", label: "Chattisgarh  🇮🇳" },
     ],
-    skillIds: ["patent", "spread-spectrum"],
+    skillIds: ["teacherTraining", "fieldTest"],
 };
 function GamesTravelHighlights() {
     return (
         <div className={styles["games-travel-container"]}>
             <div className={styles["col1"]}>
-                Selected to attend the annual company conference (General
-                Technical Conference) held at Boston, MA to present a paper on a
-                more efficient self-test method using Spread-spectrum technique
+                <ul>
+                    <li>
+                        Visited more than{" "}
+                        <b>10 schools in Patna, Nalanda & Ranchi & Raipur</b>{" "}
+                        (Bihar, Jharkhand & Chattisgarh)
+                    </li>
+                    <li>
+                        <b>Trained high school teachers</b> and incorporated
+                        changes to the games based on the conditions in which
+                        these games are played
+                    </li>
+                </ul>
             </div>
         </div>
     );

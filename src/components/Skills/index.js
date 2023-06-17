@@ -257,11 +257,6 @@ const skillMap = {
         label: "Supply chain",
         searchTerms: "",
     },
-    compliance: {
-        id: "compliance",
-        label: "Regulatory compliance",
-        searchTerms: "",
-    },
     nginx: {
         id: "nginx",
         label: "Nginx",
@@ -306,16 +301,62 @@ const skillMap = {
         label: "Robotics",
         searchTerms: "",
     },
+    diy: {
+        id: "diy",
+        label: "DIY",
+        searchTerms: "",
+    },
+    probono: {
+        id: "probono",
+        label: "Pro bono",
+        searchTerms: "",
+    },
+    patent: {
+        id: "patent",
+        label: "Patent",
+        searchTerms: "",
+    },
+    spreadSpectrum: {
+        id: "spreadSpectrum",
+        label: "Spread spectrum",
+        searchTerms: "",
+    },
+    teacherTraining: {
+        id: "teacherTraining",
+        label: "Teacher Training",
+        searchTerms: "",
+    },
+    fieldTest: {
+        id: "fieldTest",
+        label: "Field tests for games",
+        searchTerms: "",
+    },
+    teaching: {
+        id: "teaching",
+        label: "Teaching",
+        searchTerms: "",
+    },
+    compliance: {
+        id: "compliance",
+        label: "Regulatory compliance",
+        searchTerms: "",
+    },
+    certifications: {
+        id: "certifications",
+        label: "Wireless certifications: CE, FCC & RED",
+        searchTerms: "",
+    },
 };
 
 function Skills(props) {
     const { skillIds } = props;
     const renderedSkills = skillIds.map((id, index) => {
-        const icon = skillMap[id].icon;
+        console.log("id=", id);
+        const icon = skillMap[id]?.icon;
         return (
             <div key={id} className={styles.container}>
                 {icon && <img src={icon} alt={id} />}
-                <div>{skillMap[id].label}</div>
+                <div>{skillMap[id]?.label || "Unknown"}</div>
             </div>
         );
     });

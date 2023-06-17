@@ -2,6 +2,7 @@ import ShowCaseTab from "../ShowCase/ShowCaseTab";
 import styles from "./travel.module.scss";
 import RoundIcon from "../RoundIcon";
 import Location from "../Location";
+import Skills from "../Skills";
 
 export default function Travel(props) {
     const { showCaseData, hideConnection } = props;
@@ -29,7 +30,10 @@ export default function Travel(props) {
                     <RoundIcon type="travel" style={{ marginLeft: "16px" }} />
                     {showCaseData.highlights}
                 </div>
-                <div className={styles.col2}>{renderedLocations}</div>
+                <div className={styles.col2}>
+                    <Skills skillIds={showCaseData.skillIds || []} />
+                    {renderedLocations}
+                </div>
             </div>
         </div>
     );

@@ -1,21 +1,16 @@
 .scrappy-travel-container{
     display: flex;
     align-items: center;
+    margin: 0 8px;
     .col1{
         display: flex;
         flex-direction: column;
         margin-left: 16px;
         margin-right: 16px;
+        flex: 1;
     }
     .col2{
-        font-size: 24px;
-        color: #ffcc82;
-        border: 1px solid gainsboro;
-        border-radius: 40px;
-        min-width: 50px;
-        min-height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        flex:1;
+        min-width: 351px;
     }
 }

@@ -1,10 +1,10 @@
 import styles from "./adi-highlights.module.scss";
 import AdiLogo from "../../assets/images/logos/adi/Analog_Devices_Logo-full.png";
+import Link from "../../components/Link";
 
 export const adiTravelData = {
     id: "adi-travel",
     itemType: "travel",
-    commuteType: "onsite",
 
     headerLabel: "Travel",
     highlights: <AdiTravelHighlights />,
@@ -12,15 +12,16 @@ export const adiTravelData = {
         { id: "boston", label: "Boston, MA   🇺🇸" },
         { id: "wilmington", label: "Wilmington, MA  🇺🇸" },
     ],
-    skillIds: ["patent", "spread-spectrum"],
+    skillIds: ["patent", "spreadSpectrum"],
 };
 function AdiTravelHighlights() {
     return (
         <div className={styles["adi-travel-container"]}>
             <div className={styles["col1"]}>
-                Selected to attend the annual company conference (General
-                Technical Conference) held at Boston, MA to present a paper on a
-                more efficient self-test method using Spread-spectrum technique
+                <b>General Technical Conference</b> held at Boston, MA in 2011
+                to
+                <b> present a paper</b> on a more efficient self-test method
+                using Spread-spectrum technique
             </div>
         </div>
     );
@@ -30,6 +31,7 @@ export const adiData = {
     id: "adi",
     itemType: "work-exp",
     productType: "hardware",
+    commuteType: "onsite",
 
     headerLabel: "Work > Digital IC design",
     url: "https://www.analog.com/en/index.html",
@@ -47,17 +49,24 @@ export const adiData = {
 
 function AdiHighlights() {
     return (
-        <div style={{ padding: "8px" }}>
+        <div className={styles["adi-container"]}>
             <ul>
                 <li>
-                    Developed the firmware (in a proprietary assembly language)
-                    required for a MEMs based Accelerometer & Gyro IC developed
-                    for automobiles
+                    <b>Developed the firmware</b> (in a proprietary assembly
+                    language) required for a MEMs based Accelerometer & Gyro IC
+                    developed for automobiles
                 </li>
                 <li>
-                    Published a paper on an improved self-test method using
-                    Spread-spectrum at the annual company conference held at
-                    Boston, MA. A US patent granted for the same
+                    <b>Published a paper</b> on an improved self-test method
+                    using Spread-spectrum at the annual company conference held
+                    at Boston, MA.{" "}
+                    <b>
+                        <Link
+                            url="https://patents.google.com/patent/US20140250969"
+                            urlLabel="A US patent"
+                        />
+                    </b>{" "}
+                    granted for the same
                 </li>
             </ul>
         </div>

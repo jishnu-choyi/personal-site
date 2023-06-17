@@ -9,18 +9,27 @@ export const yokyTravelData = {
     headerLabel: "Travel",
     highlights: <YokyTravelHighlights />,
     locations: [
-        { id: "boston", label: "Boston, MA   🇺🇸" },
-        { id: "wilmington", label: "Wilmington, MA  🇺🇸" },
+        { id: "schenzhen", label: "Shenzhen, China  🇨🇳" },
+        { id: "delhi", label: "New Delhi, IN 🇮🇳" },
+        { id: "Ganghuaxing", label: "Ganghuaxing Industrial Zone  🇨🇳" },
     ],
-    skillIds: ["patent", "spread-spectrum"],
+    skillIds: ["compliance", "certifications"],
 };
 function YokyTravelHighlights() {
     return (
         <div className={styles["yoky-travel-container"]}>
             <div className={styles["col1"]}>
-                Selected to attend the annual company conference (General
-                Technical Conference) held at Boston, MA to present a paper on a
-                more efficient self-test method using Spread-spectrum technique
+                <ul>
+                    <li>
+                        Single point of contact for wireless labs in Shenzhen
+                        and New Delhi
+                    </li>
+                    <li>
+                        Supervised the wireless certification tests and made
+                        sure that the products will pass the tests and therefore
+                        be <b>ready for manufacturing</b>
+                    </li>
+                </ul>
             </div>
         </div>
     );
