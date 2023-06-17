@@ -3,9 +3,10 @@ import React from "react";
 
 const ToolTipWrapper = React.forwardRef(function ToolTipWrapper(props, ref) {
     //  Spread the props to the underlying DOM element.
+    const { title, arrow, ...rest } = props;
     return (
         <Tooltip {...props}>
-            <div {...props} ref={ref}>
+            <div {...rest} ref={ref}>
                 {props.children}
             </div>
         </Tooltip>

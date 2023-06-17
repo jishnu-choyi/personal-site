@@ -1,4 +1,5 @@
 import NusLogo from "../../assets/images/logos/nus/nus_logo_full-horizontal.jpeg";
+import NusLogoHalf from "../../assets/images/logos/nus/NUS_coat_of_arms.svg.png";
 
 export const nusData = {
     id: "nus",
@@ -8,7 +9,7 @@ export const nusData = {
     url: "https://nus.edu.sg/",
     urlLabel: "nus.edu.sg",
 
-    image: NusLogo,
+    image: NusLogoHalf,
     title: "Exchange Student at National University of Singapore (NUS)",
     brief: "Selected based on academic performance",
     startDate: new Date("1 Jul 2008"),

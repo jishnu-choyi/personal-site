@@ -81,9 +81,8 @@ function App() {
         <ThemeProvider theme={iconTheme}>
             <Header />
             <div className="container">
-                {/* <Landing />
-                {renderedShowCases} */}
-                {/* <Gallery gallerySlides={gallerySlides} /> */}
+                <Landing />
+                {renderedShowCases}
                 <GalleryWithModal
                     style={{ width: "50%", height: "200px" }}
                     gallerySlides={gallerySlides}
