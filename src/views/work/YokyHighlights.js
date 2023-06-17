@@ -4,6 +4,7 @@ import YokyLogo from "../../assets/images/logos/yoky/logo_black-full.png";
 export const yokyTravelData = {
     id: "yoky-travel",
     itemType: "travel",
+    commuteType: "onsite",
 
     headerLabel: "Travel",
     highlights: <YokyTravelHighlights />,

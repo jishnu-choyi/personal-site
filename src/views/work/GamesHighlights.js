@@ -4,6 +4,7 @@ import GtsLogo from "../../assets/images/logos/gts/logo.642f4f3c.png";
 export const gamesTravelData = {
     id: "games-travel",
     itemType: "travel",
+    commuteType: "onsite",
 
     headerLabel: "Travel",
     highlights: <GamesTravelHighlights />,

@@ -4,6 +4,7 @@ import AdiLogo from "../../assets/images/logos/adi/Analog_Devices_Logo-full.png"
 export const adiTravelData = {
     id: "adi-travel",
     itemType: "travel",
+    commuteType: "onsite",
 
     headerLabel: "Travel",
     highlights: <AdiTravelHighlights />,

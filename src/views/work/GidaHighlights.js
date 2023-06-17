@@ -7,6 +7,7 @@ export const gidaData = {
     id: "gida",
     itemType: "work-exp",
     productType: "software",
+    commuteType: "onsite",
 
     headerLabel: "Work > B2C e-commerce",
     url: "https://juzifruits.com",

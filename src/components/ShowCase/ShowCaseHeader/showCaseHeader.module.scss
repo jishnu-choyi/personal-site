@@ -7,13 +7,26 @@
     border-left: 1px solid gainsboro;
     border-right: 1px solid gainsboro;
     flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
-
+.company{
+    display: flex;
+    align-items: center;    
+}
 .time{
     padding: 8px;        
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
 }
 .duration{
     text-align: right;
+    display: flex;
+    align-items: center;
 }
 
 

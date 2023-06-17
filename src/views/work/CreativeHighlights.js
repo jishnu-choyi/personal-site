@@ -4,6 +4,7 @@ import ScrappyLogo from "../../assets/images/logos/scrappy/scrappy-logo.png";
 export const creativeTravelData = {
     id: "creative-travel",
     itemType: "travel",
+    commuteType: "hybrid",
 
     headerLabel: "Travel",
     highlights: <ScrappyTravelHighlights />,

@@ -7,6 +7,7 @@ export const juziData = {
     id: "juzi",
     itemType: "work-exp",
     productType: "software",
+    commuteType: "hybrid",
 
     headerLabel: "Work > B2C e-commerce",
     url: "https://juzifruits.com",

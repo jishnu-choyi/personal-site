@@ -5,6 +5,7 @@ export const slatedData = {
     id: "slated",
     itemType: "work-exp",
     productType: "software",
+    commuteType: "remote",
 
     headerLabel: "Work > SaaS software",
     url: "https://slated.ai",
