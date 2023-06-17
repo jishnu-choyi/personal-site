@@ -4,52 +4,37 @@ import {
     BsFillArrowLeftCircleFill,
     BsFillArrowRightCircleFill,
 } from "react-icons/bs";
-import { Tooltip } from "@mui/material";
 import ToolTipWrapper from "../ToolTipWrapper";
 
 function Navigation({ onPrev, onNext, prevActive, nextActive }) {
     return (
         <div className={styles["navigation"]}>
-            <Tooltip title={prevActive ? "Scroll left" : ""} placement="bottom">
-                <ToolTipWrapper>
-                    <BsFillArrowLeftCircleFill
-                        className={classNames(
-                            styles["nav-icon"],
-                            prevActive ? "" : styles["inactive"]
-                        )}
-                        onClick={onPrev}
-                    />
-                </ToolTipWrapper>
-            </Tooltip>
-            <Tooltip
+            <ToolTipWrapper
+                title={prevActive ? "Scroll left" : ""}
+                placement="bottom"
+                arrow
+            >
+                <BsFillArrowLeftCircleFill
+                    className={classNames(
+                        styles["nav-icon"],
+                        prevActive ? "" : styles["inactive"]
+                    )}
+                    onClick={onPrev}
+                />
+            </ToolTipWrapper>
+            <ToolTipWrapper
                 title={nextActive ? "Scroll right" : ""}
                 placement="bottom"
+                arrow
             >
-                <ToolTipWrapper>
-                    <BsFillArrowRightCircleFill
-                        className={classNames(
-                            styles["nav-icon"],
-                            nextActive ? "" : styles["inactive"]
-                        )}
-                        onClick={onNext}
-                    />
-                </ToolTipWrapper>
-            </Tooltip>
-
-            {/* <BsFillArrowLeftCircleFill
-                className={classNames(
-                    styles["nav-icon"],
-                    prevActive ? "" : styles["inactive"]
-                )}
-                onClick={onPrev}
-            /> */}
-            {/* <BsFillArrowRightCircleFill
-                className={classNames(
-                    styles["nav-icon"],
-                    nextActive ? "" : styles["inactive"]
-                )}
-                onClick={onNext}
-            /> */}
+                <BsFillArrowRightCircleFill
+                    className={classNames(
+                        styles["nav-icon"],
+                        nextActive ? "" : styles["inactive"]
+                    )}
+                    onClick={onNext}
+                />
+            </ToolTipWrapper>
         </div>
     );
 }

@@ -84,18 +84,22 @@ function Gallery(props) {
                     nextActive={scrollRightActive}
                 />
                 {onExpand && (
-                    <Tooltip title="Expand this view">
-                        <ToolTipWrapper className={styles["expand-icon"]}>
-                            <BiExpand onClick={onExpand} />
-                        </ToolTipWrapper>
-                    </Tooltip>
+                    <ToolTipWrapper
+                        arrow
+                        title="Expand this view"
+                        className={styles["expand-icon"]}
+                    >
+                        <BiExpand onClick={onExpand} />
+                    </ToolTipWrapper>
                 )}
                 {onCollapse && (
-                    <Tooltip title="Collapse this view">
-                        <ToolTipWrapper className={styles["expand-icon"]}>
-                            <BiCollapse onClick={onCollapse} />
-                        </ToolTipWrapper>
-                    </Tooltip>
+                    <ToolTipWrapper
+                        arrow
+                        title="Collapse this view"
+                        className={styles["expand-icon"]}
+                    >
+                        <BiCollapse onClick={onCollapse} />
+                    </ToolTipWrapper>
                 )}
             </div>
         </div>
