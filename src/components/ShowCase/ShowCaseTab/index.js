@@ -1,8 +1,9 @@
+import classNames from "classnames";
 import Link from "../../Link";
 import styles from "./showCaseTab.module.scss";
 
 function ShowCaseTab(props) {
-    const { mergeType, label, url, urlLabel } = props;
+    const { mergeType, label, url, urlLabel, itemType } = props;
     let showLeft = false,
         showRight = true;
     let mergeClassLeft = mergeType,
@@ -44,11 +45,16 @@ function ShowCaseTab(props) {
             baseClass = "bottom";
             break;
     }
+    const colorCls = classNames(
+        itemType === "education" ? styles["green"] : "",
+        itemType === "travel" ? styles["brown"] : "",
+        itemType === "work-exp" ? styles["blue"] : ""
+    );
 
     return (
-        <div className={`${styles.header} ${styles[baseClass]}`}>
+        <div className={`${styles.header} ${styles[baseClass]} ${colorCls}`}>
             {showLeft && (
-                <div className={styles.left}>
+                <div className={`${styles["left"]} ${colorCls}`}>
                     <div
                         className={`${styles.forefront} ${styles[mergeClassLeft]}`}
                     ></div>
@@ -65,7 +71,7 @@ function ShowCaseTab(props) {
                 )}
             </div>
             {showRight && (
-                <div className={styles.right}>
+                <div className={`${styles["right"]} ${colorCls}`}>
                     <div
                         className={`${styles.forefront} ${styles[mergeClassRight]}`}
                     ></div>

@@ -36,6 +36,10 @@ body {
   --hover-blue-light: #177dff;
 
   --location-light-brown: #ffefdfa8;
+  --tab-brown: #fff5ea;
+  --tab-blue: #eff5fd;
+  --tab-green: #effdf2;
+
 
   ::-webkit-scrollbar {
     -webkit-appearance: none;
