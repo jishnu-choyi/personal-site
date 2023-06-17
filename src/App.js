@@ -14,6 +14,7 @@ import TestImageBgV from "./assets/images/test-image-vertical-16.png";
 import TestImageSq from "./assets/images/test-image-square.jpg";
 import TestImageBgSq from "./assets/images/test-image-square-16.png";
 import Gallery from "./components/Gallery";
+import GalleryWithModal from "./components/GalleryWithModal";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
@@ -82,7 +83,11 @@ function App() {
             <div className="container">
                 {/* <Landing />
                 {renderedShowCases} */}
-                <Gallery gallerySlides={gallerySlides} />
+                {/* <Gallery gallerySlides={gallerySlides} /> */}
+                <GalleryWithModal
+                    style={{ width: "50%" }}
+                    gallerySlides={gallerySlides}
+                />
             </div>
         </ThemeProvider>
     );

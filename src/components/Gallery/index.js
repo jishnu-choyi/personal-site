@@ -4,13 +4,14 @@ import {
     BsFillArrowLeftCircleFill,
     BsFillArrowRightCircleFill,
 } from "react-icons/bs";
+import { BiExpand } from "react-icons/bi";
 import SlideVideo from "../SlideVideo";
 import { useEffect, useRef, useState } from "react";
-import Modal from "../Modal";
+import Navigation from "../Navigation";
 import classNames from "classnames";
 
 function Gallery(props) {
-    const { gallerySlides } = props;
+    const { gallerySlides, onExpand, style, className } = props;
 
     const [scrollLeftActive, setScrollLeftActive] = useState(false);
     const [scrollRightActive, setScrollRightActive] = useState(false);
@@ -57,31 +58,11 @@ function Gallery(props) {
         }
     });
 
-    const [showModal, setShowModal] = useState(false);
-
-    const handleClick = () => {
-        // setShowModal(!showModal);
-    };
-    const handleClose = () => {
-        setShowModal(false);
-    };
-
-    const actionBar = (
-        <div className="flex">
-            actionBar
-            {/* <Button2 primary  onClick={handleClose}>I accept</Button2>
-        <Button2 secondary onClick={handleClose}>Cancel</Button2> */}
-        </div>
-    );
-    const modal = (
-        <Modal onClose={handleClose} actionBar={actionBar}>
-            Some content that goes inside modal
-        </Modal>
-    );
-
     return (
-        <div className={styles["container"]} onClick={handleClick}>
-            {showModal && modal}
+        <div
+            className={classNames(styles["container"], className)}
+            style={style}
+        >
             <div
                 className={styles["scroll-container"]}
                 ref={galleryScrollRef}
@@ -91,21 +72,19 @@ function Gallery(props) {
                     {renderedSlides}
                 </div>
             </div>
-            <div className={styles["navigation"]}>
-                <BsFillArrowLeftCircleFill
-                    className={classNames(
-                        styles["nav-icon"],
-                        scrollLeftActive ? "" : styles["inactive"]
-                    )}
-                    onClick={handleLeftClick}
+            <div className={styles["action"]}>
+                <Navigation
+                    onPrev={handleLeftClick}
+                    onNext={handleRightClick}
+                    prevActive={scrollLeftActive}
+                    nextActive={scrollRightActive}
                 />
-                <BsFillArrowRightCircleFill
-                    className={classNames(
-                        styles["nav-icon"],
-                        scrollRightActive ? "" : styles["inactive"]
-                    )}
-                    onClick={handleRightClick}
-                />
+                {onExpand && (
+                    <BiExpand
+                        onClick={onExpand}
+                        className={styles["expand-icon"]}
+                    />
+                )}
             </div>
         </div>
     );
