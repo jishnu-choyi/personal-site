@@ -51,6 +51,12 @@ function App() {
 
     const gallerySlides = [
         {
+            type: "video",
+            id: "4",
+            youtubeUrl: "JIg5gayLbPc",
+            aspectRatio: 16 / 9,
+        },
+        {
             type: "slide",
             id: "1",
             imageSrc: TestImageH,
@@ -69,12 +75,6 @@ function App() {
             imageSrc: TestImageSq,
             bgImageSrc: TestImageBgSq,
         },
-        {
-            type: "video",
-            id: "4",
-            youtubeUrl: "JIg5gayLbPc",
-            aspectRatio: 16 / 9,
-        },
     ];
 
     return (
@@ -85,7 +85,7 @@ function App() {
                 {renderedShowCases} */}
                 {/* <Gallery gallerySlides={gallerySlides} /> */}
                 <GalleryWithModal
-                    style={{ width: "50%" }}
+                    style={{ width: "50%", height: "200px" }}
                     gallerySlides={gallerySlides}
                 />
             </div>

@@ -1,17 +1,13 @@
 import styles from "./gallery.module.scss";
 import SlideImage from "../SlideImage";
-import {
-    BsFillArrowLeftCircleFill,
-    BsFillArrowRightCircleFill,
-} from "react-icons/bs";
-import { BiExpand } from "react-icons/bi";
+import { BiExpand, BiCollapse } from "react-icons/bi";
 import SlideVideo from "../SlideVideo";
 import { useEffect, useRef, useState } from "react";
 import Navigation from "../Navigation";
 import classNames from "classnames";
 
 function Gallery(props) {
-    const { gallerySlides, onExpand, style, className } = props;
+    const { gallerySlides, onExpand, onCollapse, style, className } = props;
 
     const [scrollLeftActive, setScrollLeftActive] = useState(false);
     const [scrollRightActive, setScrollRightActive] = useState(false);
@@ -26,13 +22,18 @@ function Gallery(props) {
         );
     };
     const handleLeftClick = (event) => {
-        galleryScrollRef.current.scrollLeft -= 200;
+        const scrollEl = galleryScrollRef.current;
+        if (!scrollEl) return;
+        scrollEl.scrollLeft -= Math.round(scrollEl.clientWidth * 0.75);
     };
     const handleRightClick = (event) => {
-        galleryScrollRef.current.scrollLeft += 200;
+        const scrollEl = galleryScrollRef.current;
+        if (!scrollEl) return;
+        scrollEl.scrollLeft += Math.round(scrollEl.clientWidth * 0.75);
     };
 
     useEffect(() => {
+        // console.log("useEffect", galleryScrollRef.current.clientHeight);
         updateScroll();
     });
 
@@ -43,6 +44,7 @@ function Gallery(props) {
                     key={slide.id}
                     youtubeUrl={slide.youtubeUrl}
                     aspectRatio={slide.aspectRatio || 1}
+                    height={galleryScrollRef?.current?.clientHeight - 8}
                 />
             );
         } else {
@@ -82,6 +84,12 @@ function Gallery(props) {
                 {onExpand && (
                     <BiExpand
                         onClick={onExpand}
+                        className={styles["expand-icon"]}
+                    />
+                )}
+                {onCollapse && (
+                    <BiCollapse
+                        onClick={onCollapse}
                         className={styles["expand-icon"]}
                     />
                 )}
