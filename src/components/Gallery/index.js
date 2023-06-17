@@ -5,6 +5,8 @@ import SlideVideo from "../SlideVideo";
 import { useEffect, useRef, useState } from "react";
 import Navigation from "../Navigation";
 import classNames from "classnames";
+import { Tooltip } from "@mui/material";
+import ToolTipWrapper from "../ToolTipWrapper";
 
 function Gallery(props) {
     const { gallerySlides, onExpand, onCollapse, style, className } = props;
@@ -82,16 +84,18 @@ function Gallery(props) {
                     nextActive={scrollRightActive}
                 />
                 {onExpand && (
-                    <BiExpand
-                        onClick={onExpand}
-                        className={styles["expand-icon"]}
-                    />
+                    <Tooltip title="Expand this view">
+                        <ToolTipWrapper className={styles["expand-icon"]}>
+                            <BiExpand onClick={onExpand} />
+                        </ToolTipWrapper>
+                    </Tooltip>
                 )}
                 {onCollapse && (
-                    <BiCollapse
-                        onClick={onCollapse}
-                        className={styles["expand-icon"]}
-                    />
+                    <Tooltip title="Collapse this view">
+                        <ToolTipWrapper className={styles["expand-icon"]}>
+                            <BiCollapse onClick={onCollapse} />
+                        </ToolTipWrapper>
+                    </Tooltip>
                 )}
             </div>
         </div>
