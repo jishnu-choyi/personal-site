@@ -6,7 +6,6 @@ import Gallery from "../Gallery";
 function GalleryWithModal({ gallerySlides, style, className }) {
     const [showModal, setShowModal] = useState(false);
     const handleExpand = () => {
-        console.log("handle expand");
         setShowModal(!showModal);
     };
     const handleClose = () => {
