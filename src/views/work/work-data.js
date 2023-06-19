@@ -17,14 +17,14 @@ import { enseaData } from "./EnseaHighlights";
 
 const showCases = [
     // slatedData,
-    //juziData,
+    juziData,
 
-    gidaData,
+    // gidaData,
 
     // gamesData,
     // gamesTravelData, //Bihar, Jharkhand, Chattisgarh
 
-    // yokyData,
+    //yokyData,
     // yokyTravelData, //China
 
     // scrappyData,

@@ -6,6 +6,7 @@ import BlenderIcon from "../../assets/images/skill-logos/blender-logo-64.png";
 import CIcon from "../../assets/images/skill-logos/c-icon-64.png";
 import CordovaIcon from "../../assets/images/skill-logos/cordova-icon-64.png";
 import CssIcon from "../../assets/images/skill-logos/css-icon-64.png";
+import CypressIcon from "../../assets/images/skill-logos/cypress-icon-64.png";
 import DevOpsIcon from "../../assets/images/skill-logos/devops-icon-64.png";
 import DockerIcon from "../../assets/images/skill-logos/docker-icon-64.png";
 import GcpIcon from "../../assets/images/skill-logos/gcp-icon-64.png";
@@ -67,6 +68,18 @@ const skillMap = {
         icon: TailwindIcon,
     },
     sass: { id: "sass", label: "SCSS", searchTerms: "scss", icon: SassIcon },
+    responsiveWeb: {
+        id: "responsiveWeb",
+        label: "Responsive design",
+        searchTerms: "",
+    },
+    automatedTesting: {
+        id: "automatedTesting",
+        label: "Cypress (Automated UI tests)",
+        searchTerms: "",
+        icon: CypressIcon,
+    },
+
     react: {
         id: "react",
         label: "React",

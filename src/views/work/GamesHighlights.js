@@ -132,7 +132,7 @@ function GameHighlights() {
                     gallerySlides={[
                         {
                             type: "video",
-                            id: "1",
+                            id: "mats-trailer",
                             youtubeUrl: "BCLmroRsuFk",
                             aspectRatio: 16 / 9,
                         },
@@ -154,7 +154,7 @@ function GameHighlights() {
                         },
                         {
                             type: "video",
-                            id: "2",
+                            id: "matn-trailer",
                             youtubeUrl: "tCh6kLZVj8E",
                             aspectRatio: 16 / 9,
                         },
@@ -202,7 +202,7 @@ function GameHighlights() {
                         },
                         {
                             type: "slide",
-                            id: "3",
+                            id: "impact-challenge",
                             imageSrc: GoogleImpactLogo,
                             bgImageSrc: GoogleImpactLogo_LR,
                             alt: "Google Impact Challenge 2013 Winners",
