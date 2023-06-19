@@ -25,12 +25,12 @@ function Gallery(props) {
     const handleLeftClick = (event) => {
         const scrollEl = galleryScrollRef.current;
         if (!scrollEl) return;
-        scrollEl.scrollLeft -= Math.round(scrollEl.clientWidth * 0.75);
+        scrollEl.scrollLeft -= Math.round(scrollEl.clientWidth * 1 - 4);
     };
     const handleRightClick = (event) => {
         const scrollEl = galleryScrollRef.current;
         if (!scrollEl) return;
-        scrollEl.scrollLeft += Math.round(scrollEl.clientWidth * 0.75);
+        scrollEl.scrollLeft += Math.round(scrollEl.clientWidth * 1 - 4);
     };
 
     useEffect(() => {

@@ -155,6 +155,11 @@ const skillMap = {
         searchTerms: "",
         icon: SolidworksIcon,
     },
+    productDesign: {
+        id: "productDesign",
+        label: "Product design",
+        searchTerms: "",
+    },
 
     webrtc: {
         id: "webrtc",

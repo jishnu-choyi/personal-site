@@ -2,8 +2,15 @@ import { useState } from "react";
 import styles from "./galleryWithModal.module.scss";
 import Modal from "../Modal";
 import Gallery from "../Gallery";
+import classNames from "classnames";
 
-function GalleryWithModal({ gallerySlides, style, className }) {
+function GalleryWithModal({
+    gallerySlides,
+    style,
+    className,
+    containerClassName,
+    containerStyle,
+}) {
     const [showModal, setShowModal] = useState(false);
     const handleExpand = () => {
         setShowModal(!showModal);
@@ -19,7 +26,10 @@ function GalleryWithModal({ gallerySlides, style, className }) {
     );
 
     return (
-        <div className={styles["container"]}>
+        <div
+            className={classNames(styles["container"], containerClassName)}
+            style={containerStyle}
+        >
             {showModal && modal}
             <Gallery
                 gallerySlides={gallerySlides}

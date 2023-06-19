@@ -12,12 +12,14 @@
     position: relative;
 }
 .col1{
-    width: 70%;
+    // width: 70%;
+    flex: 1;
 }
 .col2{
     border-left: 1px solid gainsboro;
     padding: 8px;
-    width: 30%;
+    // width: 30%;
+    width: 25%;
 }
 
 .col1.creative{

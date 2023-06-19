@@ -1,5 +1,11 @@
 import styles from "./yoky-highlights.module.scss";
 import YokyLogo from "../../assets/images/logos/yoky/logo_black-full.png";
+import Link from "../../components/Link";
+import GalleryWithModal from "../../components/GalleryWithModal";
+
+import yokyTagData from "./yoky-tag-data";
+import yokyGloData from "./yoky-glo-data";
+import yokyRedData from "./yoky-red-data";
 
 export const yokyTravelData = {
     id: "yoky-travel",
@@ -40,35 +46,78 @@ export const yokyData = {
     itemType: "work-exp",
     productType: "hardware",
 
-    headerLabel: "Work > Digital IC design",
-    url: "https://www.analog.com/en/index.html",
-    urlLabel: "analog.com",
-    // footerLabel: "Read more...",
+    headerLabel: "Work > B2C Hardware",
+    url: "https://yoky.io/",
+    urlLabel: "yoky.io",
 
     image: YokyLogo,
-    title: "Design Engineer, Analog Devices",
-    brief: "Analog Devices India Pvt Ltd, Bengaluru",
-    startDate: new Date("1 July 2010"),
-    endDate: new Date("31 May 2012"),
-    skillIds: ["firmwareAssembly", "signalProcessing", "matlab"],
+    title: "Head of Product Development",
+    brief: "Gida Technologies India Pvt. Ltd., Bengaluru",
+    startDate: new Date("1 June 2015"),
+    endDate: new Date("31 May 2018"),
+    skillIds: [
+        "firmwareC",
+        "js",
+        "html",
+        "css",
+        "nodejs",
+        "solidworks",
+        "blender",
+        "productDesign",
+    ],
     highlights: <YokyHighlights />,
 };
 
 function YokyHighlights() {
     return (
-        <div style={{ padding: "8px" }}>
-            <ul>
-                <li>
-                    Developed the firmware (in a proprietary assembly language)
-                    required for a MEMs based Accelerometer & Gyro IC developed
-                    for automobiles
-                </li>
-                <li>
-                    Published a paper on an improved self-test method using
-                    Spread-spectrum at the annual company conference held at
-                    Boston, MA. A US patent granted for the same
-                </li>
-            </ul>
+        <div className={styles["yoky-container"]}>
+            <div className={styles["row1"]}>
+                <ul>
+                    <li>
+                        Led the development and launch of bluetooth based object
+                        tracker & pedometer Yoky Tag
+                    </li>
+                    <li>
+                        <b>Livemint review</b> of the product:{" "}
+                        <Link
+                            urlLabel="Yoky Tag review: For finding misplaced keys and more | Mint"
+                            url="https://www.livemint.com/Leisure/oO9albNSGCcT3RZxBCxgSO/Yoky-Tag-review-For-finding-misplaced-keys-and-more.html"
+                        />
+                    </li>
+                    <li>
+                        Led the development of bluetooth based{" "}
+                        <b>
+                            Smart bulb:{" "}
+                            <Link
+                                urlLabel="Yoky Glo"
+                                url="https://yoky.io/glo/#home"
+                            />
+                        </b>{" "}
+                        and{" "}
+                        <b>
+                            Smart remote:{" "}
+                            <Link
+                                urlLabel="Yoky Red"
+                                url="https://yoky.io/red/#home"
+                            />
+                        </b>
+                    </li>
+                </ul>
+            </div>
+            <div className={styles["row2"]}>
+                <GalleryWithModal
+                    containerClassName={styles["gallery-container"]}
+                    gallerySlides={yokyTagData}
+                />
+                <GalleryWithModal
+                    containerClassName={styles["gallery-container"]}
+                    gallerySlides={yokyGloData}
+                />
+                <GalleryWithModal
+                    containerClassName={styles["gallery-container"]}
+                    gallerySlides={yokyRedData}
+                />
+            </div>
         </div>
     );
 }

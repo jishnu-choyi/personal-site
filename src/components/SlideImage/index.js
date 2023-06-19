@@ -4,14 +4,14 @@ import ProgressBar from "../ProgressBar";
 import Link from "../Link";
 
 function SlideImage(props) {
-    const { imagesrc, bgimagesrc, alt, linkUrl } = props;
+    const { imagesrc, bgimagesrc, alt, linkUrl, ...rest } = props;
     const [loaded, setLoaded] = useState(false);
     const [showCaption, setShowCaption] = useState(false);
 
     return (
         <div
             className={styles.container}
-            {...props}
+            {...rest}
             onMouseEnter={() => setShowCaption(true)}
             onMouseLeave={() => setShowCaption(false)}
         >

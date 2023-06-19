@@ -24,11 +24,11 @@ const showCases = [
     // gamesData,
     // gamesTravelData, //Bihar, Jharkhand, Chattisgarh
 
-    // yokyData,
-    // yokyTravelData, //China
+    yokyData,
+    yokyTravelData, //China
 
-    scrappyData,
-    scrappyTravelData, //Mumbai, Bhagalpur
+    // scrappyData,
+    // scrappyTravelData, //Mumbai, Bhagalpur
 
     //creativeData, //BnB, Fluid animatiom, Product video
 

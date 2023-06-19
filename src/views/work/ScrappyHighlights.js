@@ -53,7 +53,7 @@ export const scrappyData = {
 
     image: ScrappyLogo,
     title: "Scrappy News Web & Mobile app",
-    brief: "Software services as part of Gida Technologies India Pvt. Ltd.",
+    brief: "Software services as part of Gida Technologies India Pvt. Ltd., Bengaluru",
     startDate: new Date("1 Jan 2016"),
     endDate: new Date("31 May 2018"),
     skillIds: [
