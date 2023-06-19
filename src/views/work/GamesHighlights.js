@@ -8,6 +8,9 @@ import Link from "../../components/Link";
 
 import PlayingImage from "../../assets/images/showcase/games/playing.jpg";
 import PlayingImage_LR from "../../assets/images/showcase/games/playing_lr.png";
+import PlayingImage2 from "../../assets/images/showcase/games/impact-report.png";
+import PlayingImage2_LR from "../../assets/images/showcase/games/impact-report_lr.png";
+
 import MatsPoster from "../../assets/images/showcase/games/mats.jpg";
 import MatsPoster_LR from "../../assets/images/showcase/games/mats_lr.png";
 import MatnPoster from "../../assets/images/showcase/games/matn.jpg";
@@ -142,19 +145,18 @@ function GameHighlights() {
                             linkUrl: "kpTWzOC9oSI",
                         },
                         {
+                            type: "slide",
+                            id: "playing-image",
+                            imageSrc: PlayingImage2,
+                            bgImageSrc: PlayingImage2_LR,
+                            alt: "Gaming for change (Source: Going to school Annual report 2015)",
+                            linkUrl: "kpTWzOC9oSI",
+                        },
+                        {
                             type: "video",
                             id: "2",
                             youtubeUrl: "tCh6kLZVj8E",
                             aspectRatio: 16 / 9,
-                        },
-                        {
-                            type: "slide",
-                            id: "3",
-                            imageSrc: GoogleImpactLogo,
-                            bgImageSrc: GoogleImpactLogo_LR,
-                            alt: "Google Impact Challenge 2013 Winners",
-                            linkUrl:
-                                "https://impactchallenge.withgoogle.com/india2013",
                         },
                         {
                             type: "slide",
@@ -186,7 +188,7 @@ function GameHighlights() {
                         },
                         {
                             type: "slide",
-                            id: "matj_poster",
+                            id: "matr_poster",
                             imageSrc: MatrPoster,
                             bgImageSrc: MatrPoster_LR,
                             alt: "Educational game on finance",
@@ -197,6 +199,15 @@ function GameHighlights() {
                             imageSrc: MatoPoster,
                             bgImageSrc: MatoPoster_LR,
                             alt: "Educational game on enviromentalism",
+                        },
+                        {
+                            type: "slide",
+                            id: "3",
+                            imageSrc: GoogleImpactLogo,
+                            bgImageSrc: GoogleImpactLogo_LR,
+                            alt: "Google Impact Challenge 2013 Winners",
+                            linkUrl:
+                                "https://impactchallenge.withgoogle.com/india2013",
                         },
                     ]}
                 />
