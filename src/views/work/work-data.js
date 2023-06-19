@@ -19,10 +19,10 @@ const showCases = [
     // slatedData,
     //juziData,
 
-    // gidaData,
+    gidaData,
 
-    gamesData,
-    gamesTravelData, //Bihar, Jharkhand, Chattisgarh
+    // gamesData,
+    // gamesTravelData, //Bihar, Jharkhand, Chattisgarh
 
     // yokyData,
     // yokyTravelData, //China

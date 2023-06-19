@@ -1,0 +1,15 @@
+.gida-container{
+    display: flex;    
+    flex-direction: column;    
+    .summary{
+        padding: 8px 8px 0px 16px;
+    }
+    ul > li {
+        margin-bottom: 8px;
+        a{
+            color: var(--hover-blue-light);
+        }
+    }
+
+
+}

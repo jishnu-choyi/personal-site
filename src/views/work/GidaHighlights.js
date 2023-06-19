@@ -1,7 +1,7 @@
+import styles from "./gida-highlights.module.scss";
 import React from "react";
 import GidaLogo from "../../assets/images/logos/gida/logo.png";
-import Location from "../../components/Location";
-import Commute from "../../components/Commute";
+import Link from "../../components/Link";
 
 export const gidaData = {
     id: "gida",
@@ -9,37 +9,66 @@ export const gidaData = {
     productType: "software",
     commuteType: "onsite",
 
-    headerLabel: "Work > B2C e-commerce",
-    url: "https://juzifruits.com",
-    urlLabel: "juzifruits.com",
-    footerLabel: "Read more...",
+    headerLabel: "Work > B2B Software services",
+    url: "https://gida.in",
+    urlLabel: "gida.in",
+    // footerLabel: "Read more...",
 
     image: GidaLogo,
-    title: "Founding director (part time)",
-    brief: "Gida Fruits India Pvt. Ltd.",
-    startDate: new Date("1 June 2018"),
+    title: "Full Stack Development",
+    brief: "Gida Fruits India Pvt. Ltd., Bengaluru",
+    startDate: new Date("1 June 2012"),
     endDate: new Date("31 March 2021"),
-    skillIds: ["js", "html", "css", "nodejs", "postgresql"],
+    skillIds: [
+        "js",
+        "ts",
+        "angular",
+        "react",
+        "html",
+        "css",
+        "nodejs",
+        "postgresql",
+        "threejs",
+        "socket",
+        "webrtc",
+        "git",
+        // "gitlab",
+        "nginx",
+        "php",
+    ],
     highlights: <GidaHighlights />,
 };
 
 function GidaHighlights() {
     return (
-        <div style={{ padding: "8px" }}>
-            <div>Launched & marketed a fruit-bowl subscription service:</div>
-            <ul>
-                <li>Developed the front-end for the e-commerce site</li>
-                <li>Led iOS & Android teams for the Gida App</li>
-                <li>Ran marketing, customer service till 1000 paid users</li>
-            </ul>
-            <div style={{ display: "flex" }}>
-                <Location locationLabel="Bengaluru 🇮🇳" />
-                <Location locationLabel="Schenzhen 🇨🇳" />
-                <Location locationLabel="Boston 🇺🇸" />
-                <Commute commuteType="remote" />
-                <Commute commuteType="hybrid" />
-                <Commute commuteType="onsite" />
+        <div className={styles["gida-container"]}>
+            <div className={styles["summary"]}>
+                Finished several high-value projects for top companies, startups
+                and non-profits
             </div>
+            <ul>
+                <li>
+                    <b>
+                        Client:{" "}
+                        <Link
+                            url="https://prismforce.ai"
+                            urlLabel="Prismforce.ai"
+                        ></Link>
+                    </b>{" "}
+                    - Built the first version of the front-end for their SaaS
+                    product which eventually raised
+                    <b>$13.6m</b> from Sequoia
+                </li>
+                <li>
+                    <b>Client: Going to school non-profit</b> - Numerous
+                    web-apps, internal admin portals, data entry apps on Android
+                </li>
+                <li>
+                    <b>Client: Star TV</b> - Implemented a data visualization
+                    dashboard to to visualize all TV channels along with their
+                    demographics using clustering algorithm
+                </li>
+            </ul>
         </div>
     );
 }
