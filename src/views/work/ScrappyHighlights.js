@@ -1,6 +1,7 @@
 import styles from "./scrappy-highlights.module.scss";
 import ScrappyLogo from "../../assets/images/logos/scrappy/scrappy-logo.png";
 import GalleryWithModal from "../../components/GalleryWithModal";
+import Link from "../../components/Link";
 
 export const scrappyTravelData = {
     id: "scrappy-travel",
@@ -43,35 +44,51 @@ function ScrappyTravelHighlights() {
 export const scrappyData = {
     id: "scrappy",
     itemType: "work-exp",
-    productType: "hardware",
+    productType: "software",
 
-    headerLabel: "Work > Digital IC design",
-    url: "https://www.analog.com/en/index.html",
-    urlLabel: "analog.com",
+    headerLabel: "Work > Web & mobile apps",
+    url: "https://www.scrappynews.com/",
+    urlLabel: "scrappynews.com",
     // footerLabel: "Read more...",
 
     image: ScrappyLogo,
-    title: "Design Engineer, Analog Devices",
-    brief: "Analog Devices India Pvt Ltd, Bengaluru",
-    startDate: new Date("1 July 2010"),
-    endDate: new Date("31 May 2012"),
-    skillIds: ["firmwareAssembly", "signalProcessing", "matlab"],
+    title: "Scrappy News Web & Mobile app",
+    brief: "Software services as part of Gida Technologies India Pvt. Ltd.",
+    startDate: new Date("1 Jan 2016"),
+    endDate: new Date("31 May 2018"),
+    skillIds: [
+        "threejs",
+        "glsl",
+        "js",
+        "html",
+        "css",
+        "nodejs",
+        "postgresql",
+        "cordova",
+    ],
     highlights: <ScrappyHighlights />,
 };
 
 function ScrappyHighlights() {
     return (
-        <div style={{ padding: "8px" }}>
+        <div className={styles["scrappy-container"]}>
             <ul>
                 <li>
-                    Developed the firmware (in a proprietary assembly language)
-                    required for a MEMs based Accelerometer & Gyro IC developed
-                    for automobiles
+                    Developed <b>web-app</b> and the{" "}
+                    <b>internal admin portal</b> for the childrens’ news show
+                    (1st version)
                 </li>
                 <li>
-                    Published a paper on an improved self-test method using
-                    Spread-spectrum at the annual company conference held at
-                    Boston, MA. A US patent granted for the same
+                    Developed the <b>Android app</b> "scrAPP" for the news show
+                    and 10 data entry apps
+                </li>
+                <li>
+                    <b>Client:</b> Non-profit Going to School, India (
+                    <Link
+                        url="https://www.goingtoschool.com/"
+                        urlLabel="goingtoschool.com"
+                    />
+                    )
                 </li>
             </ul>
         </div>

@@ -14,3 +14,14 @@
         min-width: 351px;
     }
 }
+
+.scrappy-container{
+    padding: "8px"; 
+    line-height: 1.4;
+    ul > li {
+        margin-bottom: 8px;
+        a{
+            color: var(--hover-blue-light);
+        }
+    }
+}

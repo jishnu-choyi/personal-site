@@ -127,7 +127,7 @@ const skillMap = {
     },
     glsl: {
         id: "glsl",
-        label: "GLSL (OpenGL)",
+        label: "GLSL",
         searchTerms: "WebGL 3D visualization games HTML5 GLSL",
         icon: OpenGLIcon,
     },
@@ -373,7 +373,7 @@ const skillMap = {
     },
     certifications: {
         id: "certifications",
-        label: "Wireless certifications: CE, FCC & RED",
+        label: "Wireless certifications: CE, RED & BIS",
         searchTerms: "",
     },
 };

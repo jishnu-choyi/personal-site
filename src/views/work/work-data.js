@@ -27,10 +27,10 @@ const showCases = [
     // yokyData,
     // yokyTravelData, //China
 
-    // scrappyData,
-    // scrappyTravelData, //Mumbai, Bhagalpur
+    scrappyData,
+    scrappyTravelData, //Mumbai, Bhagalpur
 
-    creativeData, //BnB, Fluid animatiom, Product video
+    //creativeData, //BnB, Fluid animatiom, Product video
 
     // adiData,
     // adiTravelData,
