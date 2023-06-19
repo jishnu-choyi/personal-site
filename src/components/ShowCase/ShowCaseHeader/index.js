@@ -13,11 +13,12 @@ function ShowCaseHeader(props) {
     const intervalCls = classNames(S["interval"], S["main-text"]);
     const durationCls = classNames(S["duration"], S["sub-text"]);
 
-    const renderedInterval = [
-        getMonthAndYear(startDate),
-        getMonthAndYear(endDate),
-    ].join(" - ");
-    const renderedDuration = formatDuration(startDate, endDate);
+    const renderedInterval =
+        startDate && endDate
+            ? [getMonthAndYear(startDate), getMonthAndYear(endDate)].join(" - ")
+            : "";
+    const renderedDuration =
+        startDate && endDate ? formatDuration(startDate, endDate) : "";
 
     return (
         <div className={S["container"]} style={style}>
@@ -26,13 +27,15 @@ function ShowCaseHeader(props) {
                 <div className={jobTitleCls}>{showCaseData.title}</div>
                 <div className={companyCls}>{showCaseData.brief} </div>
             </div>
-            <div className={S["time"]}>
-                <div className={intervalCls}>{renderedInterval}</div>
-                <div className={durationCls}>
-                    {renderedDuration}{" "}
-                    {commuteType && <Commute commuteType={commuteType} />}
+            {startDate && endDate && (
+                <div className={S["time"]}>
+                    <div className={intervalCls}>{renderedInterval}</div>
+                    <div className={durationCls}>
+                        {renderedDuration}{" "}
+                        {commuteType && <Commute commuteType={commuteType} />}
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     );
 }

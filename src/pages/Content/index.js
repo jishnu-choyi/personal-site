@@ -10,7 +10,10 @@ function Content() {
             return <Travel key={data.id} showCaseData={data} />;
         } else if (data.itemType === "education") {
             return <Education key={data.id} showCaseData={data} />;
-        } else if (data.itemType === "work-exp") {
+        } else if (
+            data.itemType === "work-exp" ||
+            data.itemType === "creative"
+        ) {
             return <ShowCase key={data.id} showCaseData={data} />;
         }
     });

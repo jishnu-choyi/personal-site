@@ -1,5 +1,8 @@
 import styles from "./skills.module.scss";
+import AffinityIcon from "../../assets/images/skill-logos/affinity-photo-icon-64.png";
 import AngularIcon from "../../assets/images/skill-logos/angular-icon-64.png";
+import AwsIcon from "../../assets/images/skill-logos/aws-icon-64.png";
+import BlenderIcon from "../../assets/images/skill-logos/blender-logo-64.png";
 import CIcon from "../../assets/images/skill-logos/c-icon-64.png";
 import CordovaIcon from "../../assets/images/skill-logos/cordova-icon-64.png";
 import CssIcon from "../../assets/images/skill-logos/css-icon-64.png";
@@ -22,6 +25,7 @@ import NodeJS2Icon from "../../assets/images/skill-logos/nodejs2-icon-64.png";
 // import NvidiaRivaIcon from "../../assets/images/skill-logos/nvidia-riva-128.png";
 import NvidiaRivaIcon from "../../assets/images/skill-logos/nvidia-riva-64.png";
 import OpenGLIcon from "../../assets/images/skill-logos/opengl-icon-64.png";
+import PhotoshopIcon from "../../assets/images/skill-logos/photoshop-icon-64.png";
 import PhpIcon from "../../assets/images/skill-logos/php-icon-64.png";
 import PostgreSqlIcon from "../../assets/images/skill-logos/postgresql-icon-64.png";
 import PythonIcon from "../../assets/images/skill-logos/python-icon-64.png";
@@ -29,6 +33,7 @@ import ReactIcon from "../../assets/images/skill-logos/react-icon-64.png";
 import ReduxIcon from "../../assets/images/skill-logos/redux-icon-64.png";
 import SassIcon from "../../assets/images/skill-logos/sass-icon-64.png";
 import SocketIcon from "../../assets/images/skill-logos/socket-icon-64.png";
+import SolidworksIcon from "../../assets/images/skill-logos/solidworks-icon-64.png";
 import TailwindIcon from "../../assets/images/skill-logos/tailwind-icon-64.png";
 import ThreeJsIcon from "../../assets/images/skill-logos/threejs-icon-64.png";
 import TsIcon from "../../assets/images/skill-logos/ts-icon-64.png";
@@ -126,6 +131,31 @@ const skillMap = {
         searchTerms: "WebGL 3D visualization games HTML5 GLSL",
         icon: OpenGLIcon,
     },
+    blender: {
+        id: "blender",
+        label: "Blender",
+        searchTerms: "",
+        icon: BlenderIcon,
+    },
+    affinityPhoto: {
+        id: "affinityPhoto",
+        label: "Affinity Photo",
+        searchTerms: "photoshop",
+        icon: AffinityIcon,
+    },
+    photoshop: {
+        id: "photoshop",
+        label: "Photoshop",
+        searchTerms: "",
+        icon: PhotoshopIcon,
+    },
+    solidworks: {
+        id: "solidworks",
+        label: "Solidworks",
+        searchTerms: "",
+        icon: SolidworksIcon,
+    },
+
     webrtc: {
         id: "webrtc",
         label: "WebRTC",
@@ -351,7 +381,6 @@ const skillMap = {
 function Skills(props) {
     const { skillIds } = props;
     const renderedSkills = skillIds.map((id, index) => {
-        console.log("id=", id);
         const icon = skillMap[id]?.icon;
         return (
             <div key={id} className={styles.container}>

@@ -1,65 +1,62 @@
 import styles from "./creative-highlights.module.scss";
-import ScrappyLogo from "../../assets/images/logos/scrappy/scrappy-logo.png";
-
-export const creativeTravelData = {
-    id: "creative-travel",
-    itemType: "travel",
-    commuteType: "hybrid",
-
-    headerLabel: "Travel",
-    highlights: <ScrappyTravelHighlights />,
-    locations: [
-        { id: "boston", label: "Boston, MA   🇺🇸" },
-        { id: "wilmington", label: "Wilmington, MA  🇺🇸" },
-    ],
-    skillIds: ["patent", "spread-spectrum"],
-};
-function ScrappyTravelHighlights() {
-    return (
-        <div className={styles["creative-travel-container"]}>
-            <div className={styles["col1"]}>
-                Selected to attend the annual company conference (General
-                Technical Conference) held at Boston, MA to present a paper on a
-                more efficient self-test method using Spread-spectrum technique
-            </div>
-        </div>
-    );
-}
+import JCLogo from "../../assets/images/logos/logo-orange-transparent.png";
+import GalleryWithModal from "../../components/GalleryWithModal";
+import BluedoorImage from "../../assets/images/showcase/creative/bluedoor.webp";
+import BluedoorImage_LR from "../../assets/images/showcase/creative/bluedoor_lr.png";
 
 export const creativeData = {
     id: "creative",
-    itemType: "work-exp",
-    productType: "hardware",
+    itemType: "creative",
+    productType: "software",
 
-    headerLabel: "Work > Digital IC design",
-    url: "https://www.analog.com/en/index.html",
-    urlLabel: "analog.com",
-    // footerLabel: "Read more...",
+    headerLabel: `"Not all those who wander are lost" - J.R.R. Tolkien`,
 
-    image: ScrappyLogo,
-    title: "Design Engineer, Analog Devices",
-    brief: "Analog Devices India Pvt Ltd, Bengaluru",
-    startDate: new Date("1 July 2010"),
-    endDate: new Date("31 May 2012"),
-    skillIds: ["firmwareAssembly", "signalProcessing", "matlab"],
+    image: JCLogo,
+    title: "Creative side projects",
+    brief: "All side projects that was done during free time",
+    skillIds: ["threejs", "glsl", "webgl", "blender", "affinityPhoto"],
     highlights: <CreativeHighlights />,
 };
 
 function CreativeHighlights() {
     return (
-        <div style={{ padding: "8px" }}>
-            <ul>
-                <li>
-                    Developed the firmware (in a proprietary assembly language)
-                    required for a MEMs based Accelerometer & Gyro IC developed
-                    for automobiles
-                </li>
-                <li>
-                    Published a paper on an improved self-test method using
-                    Spread-spectrum at the annual company conference held at
-                    Boston, MA. A US patent granted for the same
-                </li>
-            </ul>
+        <div className={styles["creative-container"]}>
+            <div className={styles["row1"]}>
+                <ul>
+                    <li>A hill-top BnB (2022)</li>
+                    <li>
+                        Created a company website with fluid animations(2020)
+                    </li>
+                    <li>Programmatically created a product video</li>
+                </ul>
+            </div>
+            <div className={styles["row2"]}>
+                <GalleryWithModal
+                    style={{ width: "100%", height: "200px" }}
+                    gallerySlides={[
+                        {
+                            type: "slide",
+                            id: "1",
+                            imageSrc: BluedoorImage,
+                            bgImageSrc: BluedoorImage_LR,
+                            alt: "Blue door villa, Kerala",
+                            linkUrl: "https://airbnb.co.in/h/thebluedoorvilla",
+                        },
+                        {
+                            type: "video",
+                            id: "2",
+                            youtubeUrl: "aHBnWzXI4l0",
+                            aspectRatio: 16 / 9,
+                        },
+                        {
+                            type: "video",
+                            id: "3",
+                            youtubeUrl: "JIg5gayLbPc",
+                            aspectRatio: 16 / 9,
+                        },
+                    ]}
+                />
+            </div>
         </div>
     );
 }

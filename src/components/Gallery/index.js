@@ -56,6 +56,7 @@ function Gallery(props) {
                     imagesrc={slide.imageSrc}
                     bgimagesrc={slide.bgImageSrc}
                     caption={slide.caption}
+                    linkUrl={slide.linkUrl}
                 />
             );
         }

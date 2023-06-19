@@ -22,22 +22,22 @@ const showCases = [
     // gidaData,
 
     // gamesData,
-    gamesTravelData, //Bihar, Jharkhand, Chattisgarh
+    // gamesTravelData, //Bihar, Jharkhand, Chattisgarh
 
     // yokyData,
-    yokyTravelData, //China
+    // yokyTravelData, //China
 
     // scrappyData,
-    scrappyTravelData, //Mumbai, Bhagalpur
+    // scrappyTravelData, //Mumbai, Bhagalpur
 
-    // creativeData, //BnB, Fluid animatiom, Product video
+    creativeData, //BnB, Fluid animatiom, Product video
 
-    adiData,
-    adiTravelData,
+    // adiData,
+    // adiTravelData,
 
-    iitmData,
-    nusData,
-    enseaData,
+    // iitmData,
+    // nusData,
+    // enseaData,
 
     // {
     //     id: "gida-softwareservices",

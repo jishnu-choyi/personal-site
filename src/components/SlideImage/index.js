@@ -1,9 +1,10 @@
 import { useState } from "react";
 import styles from "./slideImage.module.scss";
 import ProgressBar from "../ProgressBar";
+import Link from "../Link";
 
 function SlideImage(props) {
-    const { imagesrc, bgimagesrc, alt } = props;
+    const { imagesrc, bgimagesrc, alt, linkUrl } = props;
     const [loaded, setLoaded] = useState(false);
     const [showCaption, setShowCaption] = useState(false);
 
@@ -35,7 +36,17 @@ function SlideImage(props) {
                     alt={alt}
                 />
                 {showCaption && alt && (
-                    <div className={styles["caption"]}>{alt}</div>
+                    <div className={styles["caption"]}>
+                        {linkUrl ? (
+                            <Link
+                                urlLabel={alt}
+                                url={linkUrl}
+                                style={{ color: "white" }}
+                            />
+                        ) : (
+                            alt
+                        )}
+                    </div>
                 )}
             </div>
         </div>

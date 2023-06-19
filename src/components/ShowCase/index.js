@@ -3,9 +3,12 @@ import Skills from "../Skills";
 import ShowCaseTab from "./ShowCaseTab";
 import ShowCaseHeader from "./ShowCaseHeader";
 import ShowCaseContent from "./ShowCaseContent";
+import classNames from "classnames";
 
 function ShowCase(props) {
     const { showCaseData } = props;
+    const col1Cls = classNames(styles.col1, styles[showCaseData.itemType]);
+    const col2Cls = classNames(styles.col2, styles[showCaseData.itemType]);
 
     return (
         <div className={styles.container}>
@@ -22,11 +25,11 @@ function ShowCase(props) {
                 />
             </div>
             <div className={styles.content}>
-                <div className={styles.col1}>
+                <div className={col1Cls}>
                     <ShowCaseHeader {...props} />
                     <ShowCaseContent {...props} />
                 </div>
-                <div className={styles.col2}>
+                <div className={col2Cls}>
                     <Skills skillIds={showCaseData.skillIds} />
                 </div>
             </div>
