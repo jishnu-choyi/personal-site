@@ -16,7 +16,7 @@ import { nusData } from "./NUSHighlights";
 import { enseaData } from "./EnseaHighlights";
 
 const showCases = [
-    // slatedData,
+    slatedData,
     juziData,
 
     // gidaData,
