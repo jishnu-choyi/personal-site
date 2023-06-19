@@ -8,7 +8,7 @@ export const scrappyTravelData = {
     itemType: "travel",
     commuteType: "onsite",
 
-    headerLabel: "Travel",
+    headerLabel: "Travel for work",
     highlights: <ScrappyTravelHighlights />,
     skillIds: ["probono", "teaching", "diy"],
     locations: [

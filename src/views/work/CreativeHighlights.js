@@ -9,7 +9,7 @@ export const creativeData = {
     itemType: "creative",
     productType: "software",
 
-    headerLabel: `"Not all those who wander are lost" - J.R.R. Tolkien`,
+    headerLabel: `Not all those who wander are lost - J.R.R. Tolkien`,
 
     image: JCLogo,
     title: "Creative side projects",

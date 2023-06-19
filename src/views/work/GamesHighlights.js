@@ -1,12 +1,32 @@
 import styles from "./games-highlights.module.scss";
 import GtsLogo from "../../assets/images/logos/gts/logo.642f4f3c.png";
+import GoogleImpactLogo from "../../assets/images/logos/gts/Google-Global-Impact-Award.png";
+import GoogleImpactLogo_LR from "../../assets/images/logos/gts/Google-Global-Impact-Award.png";
+import GoogleLogo from "../../assets/images/logos/gts/googlelogo_color_272x92dp.png";
+import GalleryWithModal from "../../components/GalleryWithModal";
+import Link from "../../components/Link";
+
+import PlayingImage from "../../assets/images/showcase/games/playing.jpg";
+import PlayingImage_LR from "../../assets/images/showcase/games/playing_lr.png";
+import MatsPoster from "../../assets/images/showcase/games/mats.jpg";
+import MatsPoster_LR from "../../assets/images/showcase/games/mats_lr.png";
+import MatnPoster from "../../assets/images/showcase/games/matn.jpg";
+import MatnPoster_LR from "../../assets/images/showcase/games/matn_lr.png";
+import MatjPoster from "../../assets/images/showcase/games/matj-report.jpg";
+import MatjPoster_LR from "../../assets/images/showcase/games/matj-report_lr.png";
+import MatbPoster from "../../assets/images/showcase/games/matb-report.png";
+import MatbPoster_LR from "../../assets/images/showcase/games/matb-report_lr.png";
+import MatrPoster from "../../assets/images/showcase/games/matr.jpg";
+import MatrPoster_LR from "../../assets/images/showcase/games/matr_lr.png";
+import MatoPoster from "../../assets/images/showcase/games/mato.jpg";
+import MatoPoster_LR from "../../assets/images/showcase/games/mato_lr.png";
 
 export const gamesTravelData = {
     id: "games-travel",
     itemType: "travel",
     commuteType: "onsite",
 
-    headerLabel: "Travel",
+    headerLabel: "Travel for work",
     highlights: <GamesTravelHighlights />,
     locations: [
         { id: "bihar", label: "Bihar   🇮🇳" },
@@ -41,37 +61,148 @@ export const gamesData = {
     itemType: "work-exp",
     productType: "hardware",
 
-    headerLabel: "Work > Digital IC design",
-    url: "https://www.analog.com/en/index.html",
-    urlLabel: "analog.com",
+    headerLabel: "Work > Game development",
+    url: "https://impactchallenge.withgoogle.com/india2013/charities/gts",
+    urlLabel: "Going to school fund",
     // footerLabel: "Read more...",
 
     image: GtsLogo,
-    title: "Design Engineer, Analog Devices",
-    brief: "Analog Devices India Pvt Ltd, Bengaluru",
-    startDate: new Date("1 July 2010"),
-    endDate: new Date("31 May 2012"),
-    skillIds: ["firmwareAssembly", "signalProcessing", "matlab"],
-    highlights: <AdiHighlights />,
+    title: "Lead Game Developer",
+    brief: "Going To School, Gida Technologies & Google",
+    startDate: new Date("1 April 2013"),
+    endDate: new Date("31 May 2015"),
+    skillIds: [
+        "threejs",
+        "glsl",
+        "blender",
+        "html",
+        "css",
+        "js",
+        "nodejs",
+        "postgresql",
+    ],
+    highlights: <GameHighlights />,
 };
 
-function AdiHighlights() {
+function GameHighlights() {
     return (
-        <div style={{ padding: "8px" }}>
-            <ul>
-                <li>
-                    Developed the firmware (in a proprietary assembly language)
-                    required for a MEMs based Accelerometer & Gyro IC developed
-                    for automobiles
-                </li>
-                <li>
-                    Published a paper on an improved self-test method using
-                    Spread-spectrum at the annual company conference held at
-                    Boston, MA. A US patent granted for the same
-                </li>
-            </ul>
+        <div className={styles["games-container"]}>
+            <div className={styles["row1"]}>
+                <div className={styles["award-container"]}>
+                    <img
+                        className={styles["award-logo"]}
+                        src={GoogleImpactLogo}
+                        alt="google impact awards"
+                    />
+                    <img
+                        className={styles["google-logo"]}
+                        src={GoogleLogo}
+                        alt="google logo"
+                    />
+                </div>
+                <div className={styles["content"]}>
+                    <ul>
+                        <li>
+                            Part of the{" "}
+                            <Link
+                                urlLabel="winning team"
+                                url="https://impactchallenge.withgoogle.com/india2013"
+                            />{" "}
+                            for <b>₹1.5crore (~250k USD)</b> funding from Google{" "}
+                        </li>
+                        <li>
+                            <b>Developed five 3D Games</b> to be played by
+                            children in the Govt. schools of Bihar, Jharkhand &
+                            Chattisgarh
+                        </li>
+                        <li>
+                            <b>Impact:</b> {">"}7000 students in 9th & 10th
+                            played educational games on iPads & Android tablets
+                            for the first time
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className={styles["row2"]}>
+                <GalleryWithModal
+                    style={{ width: "100%", height: "256px" }}
+                    gallerySlides={[
+                        {
+                            type: "video",
+                            id: "1",
+                            youtubeUrl: "BCLmroRsuFk",
+                            aspectRatio: 16 / 9,
+                        },
+                        {
+                            type: "slide",
+                            id: "3",
+                            imageSrc: PlayingImage,
+                            bgImageSrc: PlayingImage_LR,
+                            alt: "Gaming for change (Source: Going to school Annual report 2015)",
+                            linkUrl: "kpTWzOC9oSI",
+                        },
+                        {
+                            type: "video",
+                            id: "2",
+                            youtubeUrl: "tCh6kLZVj8E",
+                            aspectRatio: 16 / 9,
+                        },
+                        {
+                            type: "slide",
+                            id: "3",
+                            imageSrc: GoogleImpactLogo,
+                            bgImageSrc: GoogleImpactLogo_LR,
+                            alt: "Google Impact Challenge 2013 Winners",
+                            linkUrl:
+                                "https://impactchallenge.withgoogle.com/india2013",
+                        },
+                        {
+                            type: "slide",
+                            id: "mats_poster",
+                            imageSrc: MatsPoster,
+                            bgImageSrc: MatsPoster_LR,
+                            alt: "Educational game to teach Time management",
+                        },
+                        {
+                            type: "slide",
+                            id: "matn_poster",
+                            imageSrc: MatnPoster,
+                            bgImageSrc: MatnPoster_LR,
+                            alt: "Educational game on problem solving",
+                        },
+                        {
+                            type: "slide",
+                            id: "matb_poster",
+                            imageSrc: MatbPoster,
+                            bgImageSrc: MatbPoster_LR,
+                            alt: "Educational game on team management",
+                        },
+                        {
+                            type: "slide",
+                            id: "matj_poster",
+                            imageSrc: MatjPoster,
+                            bgImageSrc: MatjPoster_LR,
+                            alt: "Educational game on running a business",
+                        },
+                        {
+                            type: "slide",
+                            id: "matj_poster",
+                            imageSrc: MatrPoster,
+                            bgImageSrc: MatrPoster_LR,
+                            alt: "Educational game on finance",
+                        },
+                        {
+                            type: "slide",
+                            id: "mato_poster",
+                            imageSrc: MatoPoster,
+                            bgImageSrc: MatoPoster_LR,
+                            alt: "Educational game on enviromentalism",
+                        },
+                    ]}
+                />
+            </div>
         </div>
     );
 }
 
-export default AdiHighlights;
+export default GameHighlights;

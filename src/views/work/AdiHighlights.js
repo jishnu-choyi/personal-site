@@ -6,7 +6,7 @@ export const adiTravelData = {
     id: "adi-travel",
     itemType: "travel",
 
-    headerLabel: "Travel",
+    headerLabel: "Travel for work",
     highlights: <AdiTravelHighlights />,
     locations: [
         { id: "boston", label: "Boston, MA   🇺🇸" },

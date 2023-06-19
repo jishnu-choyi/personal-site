@@ -17,7 +17,7 @@ export const juziData = {
     image: JuziLogo,
     title: "Founding director (part time)",
     brief: "Juzi Fruits India Pvt. Ltd.",
-    startDate: new Date("1 June 2018"),
+    startDate: new Date("1 April 2019"),
     endDate: new Date("31 March 2021"),
     skillIds: ["js", "html", "css", "nodejs", "postgresql"],
     highlights: <JuziHighlights />,

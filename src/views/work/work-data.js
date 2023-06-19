@@ -17,20 +17,20 @@ import { enseaData } from "./EnseaHighlights";
 
 const showCases = [
     // slatedData,
-    // juziData,
+    //juziData,
 
     // gidaData,
 
-    // gamesData,
-    // gamesTravelData, //Bihar, Jharkhand, Chattisgarh
+    gamesData,
+    gamesTravelData, //Bihar, Jharkhand, Chattisgarh
 
-    yokyData,
-    yokyTravelData, //China
+    // yokyData,
+    // yokyTravelData, //China
 
     // scrappyData,
     // scrappyTravelData, //Mumbai, Bhagalpur
 
-    //creativeData, //BnB, Fluid animatiom, Product video
+    // creativeData, //BnB, Fluid animatiom, Product video
 
     // adiData,
     // adiTravelData,

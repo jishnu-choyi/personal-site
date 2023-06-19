@@ -12,7 +12,7 @@ export const yokyTravelData = {
     itemType: "travel",
     commuteType: "onsite",
 
-    headerLabel: "Travel",
+    headerLabel: "Travel for work",
     highlights: <YokyTravelHighlights />,
     locations: [
         { id: "schenzhen", label: "Shenzhen, China  🇨🇳" },
@@ -54,10 +54,11 @@ export const yokyData = {
     title: "Head of Product Development",
     brief: "Gida Technologies India Pvt. Ltd., Bengaluru",
     startDate: new Date("1 June 2015"),
-    endDate: new Date("31 May 2018"),
+    endDate: new Date("31 May 2019"),
     skillIds: [
         "firmwareC",
         "js",
+        "threejs",
         "html",
         "css",
         "nodejs",
