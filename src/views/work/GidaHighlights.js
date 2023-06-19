@@ -60,7 +60,7 @@ function GidaHighlights() {
                     <b>$13.6m</b> from Sequoia
                 </li>
                 <li>
-                    <b>Client: Going to school non-profit</b> - Numerous
+                    <b>Client: Going to school non-profit</b> - Multiple
                     web-apps, internal admin portals, data entry apps on Android
                 </li>
                 <li>
