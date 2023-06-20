@@ -69,11 +69,7 @@ function App() {
             <Header />
             <div className="container">
                 <Landing />
-                <Content />
-                {/* <GalleryWithModal
-                    style={{ width: "50%", height: "200px" }}
-                    gallerySlides={gallerySlides}
-                /> */}
+                {/* <Content /> */}
             </div>
         </ThemeProvider>
     );
