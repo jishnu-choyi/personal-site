@@ -1,8 +1,4 @@
-import GidaLogo from "../../assets/images/logos/gida/logo.png";
-import YokyLogo from "../../assets/images/logos/yoky/logo_black-full.png";
-import GtsLogo from "../../assets/images/logos/gts/logo.642f4f3c.png";
-
-import SlatedHighlights, { slatedData } from "./SlatedHighlights";
+import { slatedData } from "./SlatedHighlights";
 import { juziData } from "./JuziHighlights";
 import { gidaData } from "./GidaHighlights";
 import { gamesData, gamesTravelData } from "./GamesHighlights";
