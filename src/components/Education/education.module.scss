@@ -12,10 +12,37 @@
     position: relative;
 }
 .col1{
-    width: 70%;
+    width: 75%;
 }
 .col2{
     border-left: 1px solid gainsboro;
     padding: 8px;
-    width: 30%;
+    width: 25%;
+}
+
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+@media screen and ((orientation: portrait) and (max-width:600px)){
+    .content{
+        flex-direction: column;
+    }
+    .col1{
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
+        box-sizing: border-box;
+        border-left: none;
+        border-top: 1px solid gainsboro;        
+    }
+}
+@media screen and ((orientation: landscape) or (min-height:960px)){
+}
+@media screen and (max-width:768px){
 }

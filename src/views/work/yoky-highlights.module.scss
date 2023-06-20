@@ -9,6 +9,7 @@
 
     ul > li {
         margin-bottom: 8px;
+        margin-right: 8px;
         a{
             color: var(--hover-blue-light);
         }
@@ -34,6 +35,7 @@
 
     ul > li {
         margin-bottom: 8px;
+        margin-right: 8px;
         a{
             color: var(--hover-blue-light);
         }
@@ -46,3 +48,29 @@
     margin-right: 4px;
 }
 
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+@media screen and ((orientation: portrait) and (max-width:600px)){
+    .yoky-container{
+        .row2{
+            flex-direction: column;
+        }
+    }
+    .gallery-container{
+        height: 238px; //Height optimised for iPhone 12
+        margin-right: auto;
+        margin-bottom: 8px;
+    }
+
+}
+
+@media screen and ((orientation: landscape) or (min-height:960px)){
+}
+@media screen and (max-width:768px){
+}

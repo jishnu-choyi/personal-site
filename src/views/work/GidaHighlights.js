@@ -16,7 +16,7 @@ export const gidaData = {
 
     image: GidaLogo,
     title: "Full Stack Development",
-    brief: "Gida Fruits India Pvt. Ltd., Bengaluru",
+    brief: "Gida Technologies India Pvt. Ltd., Bengaluru",
     startDate: new Date("1 June 2012"),
     endDate: new Date("31 March 2021"),
     skillIds: [

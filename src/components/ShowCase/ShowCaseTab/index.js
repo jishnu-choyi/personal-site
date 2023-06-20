@@ -47,8 +47,8 @@ function ShowCaseTab(props) {
     }
     const colorCls = classNames(
         itemType === "education" ? styles["green"] : "",
-        itemType === "travel" ? styles["brown"] : "",
-        itemType === "work-exp" ? styles["blue"] : "",
+        itemType === "travel" ? styles["blue"] : "",
+        itemType === "work-exp" ? styles["brown"] : "",
         itemType === "creative" ? styles["purple"] : ""
     );
 

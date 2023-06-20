@@ -29,7 +29,7 @@ export const slatedData = {
     headerLabel: "Work > B2C SaaS software",
     url: "https://slated.ai",
     urlLabel: "slated.ai",
-    footerLabel: "Read more...",
+    // footerLabel: "Read more...",
 
     image: SlatedLogo,
     title: "Technical Co-founder, Slated.ai",
@@ -43,25 +43,31 @@ export const slatedData = {
         "mongodb",
         "nginx",
         "gcp",
+        "automatedTesting",
         "nvidiaRiva",
         "devOps",
         "jira",
         "docker",
         "kubernetes",
         "mlOps",
-        "automatedTesting",
+        "responsiveWeb",
+        "ml",
+        "speechToText",
     ],
     highlights: <SlatedHighlights />,
 };
 
 function SlatedHighlights() {
     return (
-        <div className={styles["juzi-container"]}>
+        <div className={styles["slated-container"]}>
             <div className={styles["row1"]}>
                 <ul>
                     <li>
                         Led the product development team from ideation to MVP
                         launch
+                    </li>
+                    <li>
+                        Angel funded (<b>$120k</b>)
                     </li>
                 </ul>
             </div>
@@ -93,14 +99,14 @@ function SlatedHighlights() {
                         },
                         {
                             type: "slide",
-                            id: "3a",
+                            id: "4",
                             imageSrc: SlatedHome,
                             bgImageSrc: SlatedHome_LR,
                             alt: "Home",
                         },
                         {
                             type: "slide",
-                            id: "6",
+                            id: "5",
                             imageSrc: SlatedCreateLink,
                             bgImageSrc: SlatedCreateLink_LR,
                             alt: "Create scheduling link",
@@ -114,14 +120,14 @@ function SlatedHighlights() {
                         },
                         {
                             type: "slide",
-                            id: "4",
+                            id: "7",
                             imageSrc: SlatedPreferences,
                             bgImageSrc: SlatedPreferences_LR,
                             alt: "Preferences",
                         },
                         {
                             type: "slide",
-                            id: "5",
+                            id: "8",
                             imageSrc: SlatedAvailability,
                             bgImageSrc: SlatedAvailability_LR,
                             alt: "Availability",

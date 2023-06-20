@@ -22,8 +22,12 @@ export const enseaData = {
 function EnseaHighlights() {
     return (
         <div className={styles.container}>
-            Developed firmware to implement a color-detection algorithm for an
-            outdoor bot
+            <ul>
+                <li>
+                    Developed firmware to implement a color-detection algorithm
+                    for an outdoor bot
+                </li>
+            </ul>
         </div>
     );
 }

@@ -63,6 +63,7 @@ export const gamesData = {
     id: "games",
     itemType: "work-exp",
     productType: "hardware",
+    commuteType: "onsite",
 
     headerLabel: "Work > Game development",
     url: "https://impactchallenge.withgoogle.com/india2013/charities/gts",

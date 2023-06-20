@@ -27,7 +27,7 @@ export default function Travel(props) {
             </div>
             <div className={styles.content}>
                 <div className={styles.col1}>
-                    <RoundIcon type="travel" style={{ marginLeft: "16px" }} />
+                    <RoundIcon type="travel" className={styles.icon} />
                     {showCaseData.highlights}
                 </div>
                 <div className={styles.col2}>

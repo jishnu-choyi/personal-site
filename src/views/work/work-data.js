@@ -19,59 +19,25 @@ const showCases = [
     slatedData,
     juziData,
 
-    // gidaData,
+    gidaData,
 
-    // gamesData,
-    // gamesTravelData, //Bihar, Jharkhand, Chattisgarh
+    gamesData,
+    gamesTravelData, //Bihar, Jharkhand, Chattisgarh
 
-    //yokyData,
-    // yokyTravelData, //China
+    yokyData,
+    yokyTravelData, //China
 
-    // scrappyData,
-    // scrappyTravelData, //Mumbai, Bhagalpur
+    scrappyData,
+    scrappyTravelData, //Mumbai, Bhagalpur
 
-    // creativeData, //BnB, Fluid animatiom, Product video
+    creativeData, //BnB, Fluid animatiom, Product video
 
-    // adiData,
-    // adiTravelData,
+    adiData,
+    adiTravelData,
 
-    // iitmData,
-    // nusData,
-    // enseaData,
-
-    // {
-    //     id: "gida-softwareservices",
-    //     url: "https://gida.in",
-    //     image: GidaLogo,
-    //     title: "Technical Co-founder",
-    //     brief: "Slated Technologies Inc, Dover, DE 19901",
-    //     startDate: new Date("1 April 2021"),
-    //     endDate: new Date("1 April 2023"),
-    //     skillIds: ["js", "ts", "angular", "react"],
-    //     highlights: <SlatedHighlights />,
-    // },
-    // {
-    //     id: "gida-yoky",
-    //     url: "https://yoky.io",
-    //     image: YokyLogo,
-    //     title: "Technical Co-founder",
-    //     brief: "Slated Technologies Inc, Dover, DE 19901",
-    //     startDate: new Date("1 April 2021"),
-    //     endDate: new Date("1 April 2023"),
-    //     skillIds: ["js", "ts", "angular", "react"],
-    //     highlights: <SlatedHighlights />,
-    // },
-    // {
-    //     id: "gts",
-    //     url: "https://goingtoschool.com",
-    //     image: GtsLogo,
-    //     title: "Technical Co-founder",
-    //     brief: "Slated Technologies Inc, Dover, DE 19901",
-    //     startDate: new Date("1 April 2021"),
-    //     endDate: new Date("1 April 2023"),
-    //     skillIds: ["js", "ts", "angular", "react"],
-    //     highlights: <SlatedHighlights />,
-    // },
+    iitmData,
+    nusData,
+    enseaData,
 ];
 
 export default showCases;

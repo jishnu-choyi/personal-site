@@ -1,4 +1,4 @@
-import NusLogo from "../../assets/images/logos/nus/nus_logo_full-horizontal.jpeg";
+import styles from "./nus-highlights.module.scss";
 import NusLogoHalf from "../../assets/images/logos/nus/NUS_coat_of_arms.svg.png";
 
 export const nusData = {
@@ -16,10 +16,17 @@ export const nusData = {
     endDate: new Date("31 Dec 2008"),
     skillIds: ["electrical", "physics"],
     locations: [{ id: "singapore", label: "Singapore 🇸🇬" }],
+    highlights: <NusHighlights />,
 };
 
 function NusHighlights() {
-    return <div></div>;
+    return (
+        <div className={styles.container}>
+            <ul>
+                <li>One semester as exchange student (Electrical engg.)</li>
+            </ul>
+        </div>
+    );
 }
 
 export default NusHighlights;

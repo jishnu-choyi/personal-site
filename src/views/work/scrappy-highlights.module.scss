@@ -20,8 +20,38 @@
     line-height: 1.4;
     ul > li {
         margin-bottom: 8px;
+        margin-right: 8px;
         a{
             color: var(--hover-blue-light);
         }
     }
+}
+
+
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+@media screen and ((orientation: portrait) and (max-width:600px)){
+    .scrappy-travel-container{
+        flex-direction: column;
+        box-sizing: border-box;
+        .col1{
+            margin-bottom: 16px;
+            margin-top: 16px;           
+        }        
+        .col2{
+            min-width: 256px;
+            width: 100%;            
+        }
+    }
+}
+
+@media screen and ((orientation: landscape) or (min-height:960px)){
+}
+@media screen and (max-width:768px){
 }

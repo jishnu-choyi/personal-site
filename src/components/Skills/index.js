@@ -220,6 +220,16 @@ const skillMap = {
         label: "MLOps",
         searchTerms: "Google cloud GCP VertexAI",
     },
+    ml: {
+        id: "ml",
+        label: "AI/ML",
+        searchTerms: "Artificial Intelligence Machine learning",
+    },
+    speechToText: {
+        id: "speechToText",
+        label: "Speech-to-text",
+        searchTerms: "Speech to text",
+    },
     docker: {
         id: "docker",
         label: "Docker",

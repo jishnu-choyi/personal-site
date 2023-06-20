@@ -68,7 +68,7 @@ function App() {
         <ThemeProvider theme={iconTheme}>
             <Header />
             <div className="container">
-                {/* <Landing /> */}
+                <Landing />
                 <Content />
                 {/* <GalleryWithModal
                     style={{ width: "50%", height: "200px" }}
