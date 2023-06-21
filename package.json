@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "dat.gui": "^0.7.9",
     "sass": "^1.62.1",
     "three": "^0.153.0"
   }

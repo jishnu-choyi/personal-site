@@ -9,6 +9,7 @@ import HardwareCTAPhoto from "../../assets/images/landing/hardware.jpg";
 import CTAButton from "../../components/CTAButton";
 import CubeScene from "../../components3d/CubeScene";
 import PlanetScene from "../../components3d/Planet";
+import PlanetScenePortal from "../../components3d/Planet/PlanetScenePortal";
 
 function Landing() {
     return (
@@ -18,16 +19,19 @@ function Landing() {
                     hello, I am <br />
                     jishnu choyi
                 </div>
-                {/* <div className={styles["main-container"] + ' ' + styles["main-image"]}>
-                    <img src={MainPhoto} alt='working desk' />
-                </div> */}
                 <div
+                    //style={{ backgroundColor: "yellow" }}
                     className={
                         styles["main-container"] + " " + styles["main-image"]
                     }
                 >
-                    {/* <CubeScene /> */}
-                    <PlanetScene />
+                    {/* <img
+                        src={MainPhoto}
+                        alt="working desk"
+                        style={{ visibility: "hidden" }}
+                    /> */}
+                    {/* <PlanetScene /> */}
+                    <PlanetScenePortal />
                 </div>
             </div>
             <div className={styles["right"]}>

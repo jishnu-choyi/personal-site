@@ -77,6 +77,14 @@ body {
   left: 0;
   z-index: 100;
 }
+.webgl-container{
+  position: absolute;
+  top: 0;
+  left: -15vw;
+  width: 75vw;
+  height: 100vh;
+  /* background-color: orange; */
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
