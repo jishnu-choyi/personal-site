@@ -106,6 +106,7 @@ function PlanetScenePortal() {
 
         const controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
+        // camera.lookAt(new THREE.Vector3(6, 3, 0));
 
         const loader = new GLTFLoader();
 
