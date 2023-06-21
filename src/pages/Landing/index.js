@@ -24,10 +24,19 @@ function Landing() {
                     </div>
                 </div>
                 <div
+                    // style={{ background: "yellow" }}
                     className={
                         styles["main-container"] + " " + styles["main-image"]
                     }
                 >
+                    <div className={styles["main-img"]}>
+                        <img
+                            src={MainPhoto}
+                            alt="dummy"
+                            style={{ visibility: "hidden" }}
+                        ></img>
+                    </div>
+                    {/* <PlanetScene /> */}
                     <PlanetScenePortal />
                 </div>
             </div>

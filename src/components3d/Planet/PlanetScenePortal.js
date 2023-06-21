@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import styles from "./planet.module.scss";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 function PlanetScenePortal() {
     const canvasContainerRef = useRef();
@@ -14,9 +13,8 @@ function PlanetScenePortal() {
         const W = canvasContainerRef.current.clientWidth;
         const H = canvasContainerRef.current.clientHeight;
         const camera = new THREE.PerspectiveCamera(45, W / H, 0.1, 100);
-        camera.position.z = 60;
-        camera.position.x = 0;
-        camera.position.y = 16.6;
+        camera.position.set(0, 16.6, 60);
+        camera.lookAt(new THREE.Vector3(5.93, 3.33, 0));
 
         const canvas = canvasRef.current;
         const renderer = new THREE.WebGLRenderer({
@@ -56,11 +54,7 @@ function PlanetScenePortal() {
         spotLight3.shadow.mapSize = new THREE.Vector2(2048, 2048);
         spotLight3.name = "spotLight_3";
 
-        const controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-
         const loader = new GLTFLoader();
-
         const rotateObjects = [];
         loader.load(
             "./models/planet-full-scene.glb",
@@ -100,17 +94,27 @@ function PlanetScenePortal() {
         const animate = () => {
             renderer.render(scene, camera);
             window.requestAnimationFrame(animate);
-            // controls.update();
             rotateObjects.forEach((m) => {
                 m.mesh.rotateOnAxis(new THREE.Vector3(0, 0, 1), m.speed);
             });
-            spotLight1.intensity += (Math.random() - 0.5) * 0.1;
-            spotLight1.intensity = Math.abs(spotLight1.intensity);
+            spotLight3.intensity += (Math.random() - 0.5) * 0.05;
+            spotLight3.intensity = Math.abs(spotLight1.intensity);
             spotLight2.intensity += (Math.random() - 0.5) * 0.05;
             spotLight2.intensity = Math.abs(spotLight2.intensity);
         };
         animate();
+        window.addEventListener("resize", onWindowResize, false);
+        function onWindowResize() {
+            const W = canvasContainerRef.current.clientWidth;
+            const H = canvasContainerRef.current.clientHeight;
+            console.log("onWindowResize", W, H);
+            camera.aspect = W / H;
+            camera.updateProjectionMatrix();
+            renderer.setSize(W, H);
+            animate();
+        }
     }, []);
+    console.log("rerender");
 
     return ReactDOM.createPortal(
         <div className={styles["container"]} ref={canvasContainerRef}>
