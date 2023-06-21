@@ -7,8 +7,6 @@ import StartupCTAPhoto from "../../assets/images/landing/startups.jpg";
 import SoftwareCTAPhoto from "../../assets/images/landing/software.jpg";
 import HardwareCTAPhoto from "../../assets/images/landing/hardware.jpg";
 import CTAButton from "../../components/CTAButton";
-import CubeScene from "../../components3d/CubeScene";
-import PlanetScene from "../../components3d/Planet";
 import PlanetScenePortal from "../../components3d/Planet/PlanetScenePortal";
 
 function Landing() {
@@ -24,7 +22,6 @@ function Landing() {
                     </div>
                 </div>
                 <div
-                    // style={{ background: "yellow" }}
                     className={
                         styles["main-container"] + " " + styles["main-image"]
                     }
@@ -36,7 +33,6 @@ function Landing() {
                             style={{ visibility: "hidden" }}
                         ></img>
                     </div>
-                    {/* <PlanetScene /> */}
                     <PlanetScenePortal />
                 </div>
             </div>
