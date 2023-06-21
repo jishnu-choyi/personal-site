@@ -16,21 +16,18 @@ function Landing() {
         <div className={styles["page-container"]}>
             <div className={styles["left"]}>
                 <div className={styles["main-title"]}>
-                    hello, I am <br />
-                    jishnu choyi
+                    <div className={styles["line1"]}>
+                        <span>hello world,</span> <br />I am jishnu choyi
+                    </div>
+                    <div className={styles["line2"]}>
+                        full stack programmer with a flair for frontend
+                    </div>
                 </div>
                 <div
-                    //style={{ backgroundColor: "yellow" }}
                     className={
                         styles["main-container"] + " " + styles["main-image"]
                     }
                 >
-                    {/* <img
-                        src={MainPhoto}
-                        alt="working desk"
-                        style={{ visibility: "hidden" }}
-                    /> */}
-                    {/* <PlanetScene /> */}
                     <PlanetScenePortal />
                 </div>
             </div>

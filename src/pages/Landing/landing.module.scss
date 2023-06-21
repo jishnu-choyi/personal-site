@@ -29,7 +29,18 @@
             font-weight: 700;
             height: 116px;
             line-height: 1.2;
-            visibility: hidden;
+            .line1{
+                span{font-weight: 500;}
+                color: var(--primary-text);
+                font-size: 22px;
+                font-weight: 300;                
+            }
+            .line2{
+                font-size: 12px;
+                font-weight: 300;
+                margin-top: 4px;
+                color: #6d6d6d;                                
+            }
         }
 
         .main-image {

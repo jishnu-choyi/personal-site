@@ -69,7 +69,7 @@ function App() {
             <Header />
             <div className="container">
                 <Landing />
-                {/* <Content /> */}
+                <Content />
             </div>
         </ThemeProvider>
     );
