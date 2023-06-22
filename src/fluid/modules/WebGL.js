@@ -1,4 +1,4 @@
-// import * as THREE from "three";
+import * as THREE from "three";
 import Common from "./Common";
 import Output from "./Output";
 import Mouse from "./Mouse";
@@ -13,7 +13,7 @@ export default class Webgl {
         this.init();
         this.loop();
 
-        // window.addEventListener("resize", this.resize.bind(this));
+        window.addEventListener("resize", this.resize.bind(this));
     }
 
     init() {

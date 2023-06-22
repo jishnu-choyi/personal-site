@@ -99,6 +99,9 @@ body {
   /* background-color: #ffa50099; */
   /* display: none; */
 }
+.dg.ac{
+  z-index: 101;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
