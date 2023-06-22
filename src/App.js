@@ -6,6 +6,7 @@ import * as amplitude from "@amplitude/analytics-browser";
 import Content from "./pages/Content";
 import EventBus from "./fluid/utils/EventBus";
 import WebGL from "./fluid/modules/WebGL";
+import Footer from "./components/Footer";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
@@ -44,6 +45,7 @@ function App() {
             <div className="container">
                 <Landing />
                 <Content />
+                <Footer />
             </div>
         </ThemeProvider>
     );
