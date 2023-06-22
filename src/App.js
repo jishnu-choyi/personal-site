@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Landing from "./pages/Landing";
 import * as amplitude from "@amplitude/analytics-browser";
 import Content from "./pages/Content";
+import EventBus from "./fluid/utils/EventBus";
+import WebGL from "./fluid/modules/WebGL";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
@@ -28,6 +30,13 @@ amplitude.init("71a74323057e3cdb289336830873113f", undefined, {
 
 function App() {
     // amplitude.track("Page view");
+
+    window.EventBus = EventBus;
+    if (!window.isDev) window.isDev = false;
+
+    const webglMng = new WebGL({
+        $wrapper: document.body,
+    });
     return (
         <ThemeProvider theme={iconTheme}>
             <Header />
