@@ -17,6 +17,9 @@ const iconTheme = createTheme({
         secondary: {
             main: "#EBDED4",
         },
+        hoverBlue: {
+            main: "#177dff",
+        },
     },
 });
 
