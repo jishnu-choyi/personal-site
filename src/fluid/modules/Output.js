@@ -3,7 +3,6 @@ import * as THREE from "three";
 
 import Simulation from "./Simulation";
 import face_vert from "./glsl/sim/face.vert";
-//import face_vert from "./glsl/sim/face.vert";
 import color_frag from "./glsl/sim/color.frag";
 
 export default class Output {
@@ -28,17 +27,7 @@ export default class Output {
                 },
             },
         });
-        const material2 = new THREE.MeshBasicMaterial({ color: 0xff0000 });
-
-        this.output = new THREE.Mesh(
-            // new THREE.PlaneBufferGeometry(2, 2),
-            new THREE.PlaneGeometry(2, 2),
-            material2
-        );
-        console.log("face_vert", face_vert);
-        console.log("color_frag", color_frag);
-        console.log("tex", this.simulation.fbos.vel_0.texture);
-
+        this.output = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), material);
         this.scene.add(this.output);
     }
     addScene(mesh) {
@@ -55,7 +44,7 @@ export default class Output {
     }
 
     update() {
-        //this.simulation.update();
+        this.simulation.update();
         this.render();
     }
 }

@@ -34,8 +34,9 @@ function App() {
     window.EventBus = EventBus;
     if (!window.isDev) window.isDev = false;
 
+    let fluidContainer = document.body.querySelector(".webgl-fluid-container");
     const webglMng = new WebGL({
-        $wrapper: document.body,
+        $wrapper: fluidContainer,
     });
     return (
         <ThemeProvider theme={iconTheme}>
