@@ -1,7 +1,7 @@
 import styles from "./ctaCardList.module.scss";
 import cardStyles from "./ctaCard.module.scss";
 
-function CTACardList() {
+function CTACardList({ onClick }) {
     const cardData = [
         {
             title: "Work experience",
@@ -11,6 +11,7 @@ function CTACardList() {
                 backgroundColor: "#FFFFFF",
             },
             isTop: true,
+            id: "work-exp",
         },
         {
             title: "Creative projects",
@@ -18,6 +19,7 @@ function CTACardList() {
             styles: {
                 backgroundColor: "#EBDED4",
             },
+            id: "creative",
         },
         {
             title: "Education",
@@ -26,6 +28,7 @@ function CTACardList() {
                 backgroundColor: "#C47F38",
                 color: "#FFFFFF",
             },
+            id: "education",
         },
     ];
 
@@ -34,13 +37,14 @@ function CTACardList() {
             {cardData.map((item, index) => {
                 return (
                     <div
-                        key={index}
+                        key={item.id}
                         id={styles["cta-card-" + index]}
                         className={cardStyles["container"]}
                         style={{
                             ...item.styles,
                             zIndex: cardData.length - index,
                         }}
+                        onClick={(e) => onClick(e, item.id)}
                     >
                         <div
                             className={`${cardStyles["content"]} ${

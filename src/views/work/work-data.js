@@ -26,10 +26,10 @@ const showCases = [
     scrappyData,
     scrappyTravelData, //Mumbai, Bhagalpur
 
-    creativeData, //BnB, Fluid animatiom, Product video
-
     adiData,
     adiTravelData,
+
+    creativeData, //BnB, Fluid animatiom, Product video
 
     iitmData,
     nusData,

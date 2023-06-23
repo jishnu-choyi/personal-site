@@ -42,11 +42,30 @@ function App() {
     const webglMng = new WebGL({
         $wrapper: fluidContainer,
     });
+
+    const handleClick = (e, id) => {
+        // console.log("handleClick", e, id);
+        let element;
+        if (id === "work-exp") {
+            element = document.querySelector(".slated");
+        } else if (id === "creative") {
+            element = document.querySelector(".creative");
+        } else if (id === "education") {
+            element = document.querySelector(".iitm");
+        }
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest",
+            });
+        }
+    };
     return (
         <ThemeProvider theme={iconTheme}>
             <Header />
             <div className="container">
-                <Landing />
+                <Landing onClick={handleClick} />
                 <Content />
                 <Footer />
             </div>

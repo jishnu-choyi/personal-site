@@ -11,7 +11,7 @@ function ShowCase(props) {
     const col2Cls = classNames(styles.col2, styles[showCaseData.itemType]);
 
     return (
-        <div className={styles.container}>
+        <div className={classNames(styles.container, showCaseData.id)}>
             <div
                 style={{
                     display: "flex",

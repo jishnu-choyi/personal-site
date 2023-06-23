@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Location from "../Location";
 import ShowCaseContent from "../ShowCase/ShowCaseContent";
 import ShowCaseHeader from "../ShowCase/ShowCaseHeader";
@@ -12,7 +13,7 @@ function Education(props) {
     });
 
     return (
-        <div className={styles.container}>
+        <div className={classNames(styles.container, showCaseData.id)}>
             <div
                 style={{
                     display: "flex",
