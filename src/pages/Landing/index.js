@@ -60,7 +60,7 @@ function Landing({ onClick }) {
                         <Link
                             urlLabel="Download resume"
                             download="Resume - Jishnu Choyi"
-                            url="../../downloads/Resume - Jishnu Choyi.pdf"
+                            url="./downloads/Resume - Jishnu Choyi.pdf"
                             className={styles["landing-link"]}
                         />
                     </div>
