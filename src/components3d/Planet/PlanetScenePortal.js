@@ -1,10 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import styles from "./planet.module.scss";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import ProgressBar from "../../components/ProgressBar";
 
 function PlanetScenePortal() {
+    const [loadingPct, setLoadingPct] = useState(0);
     const canvasContainerRef = useRef();
     const canvasRef = useRef();
 
@@ -54,8 +56,10 @@ function PlanetScenePortal() {
         spotLight3.shadow.mapSize = new THREE.Vector2(2048, 2048);
         spotLight3.name = "spotLight_3";
 
-        const loader = new GLTFLoader();
         const rotateObjects = [];
+
+        const loader = new GLTFLoader();
+        const totalSize = 4120252;
         loader.load(
             "./models/planet-full-scene.glb",
             function (gltf) {
@@ -85,7 +89,15 @@ function PlanetScenePortal() {
                 scene.add(gltf.scene);
             },
             (xhr) => {
-                console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+                // console.log(
+                //     (xhr.loaded / totalSize) * 100 + "% loaded",
+                //     totalSize,
+                //     xhr.loaded
+                // );
+                let pct = Math.floor((xhr.loaded / totalSize) * 100);
+                if (pct !== loadingPct) {
+                    setLoadingPct(pct);
+                }
             },
             (error) => {
                 console.log(error);
@@ -107,18 +119,23 @@ function PlanetScenePortal() {
         function onWindowResize() {
             const W = canvasContainerRef.current.clientWidth;
             const H = canvasContainerRef.current.clientHeight;
-            console.log("onWindowResize", W, H);
+            // console.log("onWindowResize", W, H);
             camera.aspect = W / H;
             camera.updateProjectionMatrix();
             renderer.setSize(W, H);
             animate();
         }
     }, []);
-    console.log("rerender");
+    // console.log("rerender");
 
     return ReactDOM.createPortal(
         <div className={styles["container"]} ref={canvasContainerRef}>
             <canvas id="mainCanvas" ref={canvasRef}></canvas>
+            {loadingPct < 100 && (
+                <div className={styles["loading"]}>
+                    <ProgressBar progressPct={loadingPct} msg="Loading..." />
+                </div>
+            )}
         </div>,
         document.querySelector(".webgl-container")
     );

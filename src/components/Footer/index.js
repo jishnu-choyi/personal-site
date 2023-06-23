@@ -27,9 +27,10 @@ function Footer() {
                     <Link
                         url="https://sketchfab.com/shapernode"
                         urlLabel="sketchfab/shapernode"
-                    />{" "}
+                    />
+                    {" - "}
                     <Link
-                        urlLabel="(Creative Commons 4.0)"
+                        urlLabel="Creative Commons 4.0"
                         url="https://creativecommons.org/licenses/by/4.0/"
                     />
                 </div>
@@ -42,7 +43,8 @@ function Footer() {
                     <Link
                         url="https://twitter.com/misaki_mofu"
                         urlLabel="Misaki Nakano"
-                    />{" "}
+                    />
+                    {" - "}
                     <Link
                         urlLabel="MIT License"
                         url="https://en.wikipedia.org/wiki/MIT_License"
@@ -51,8 +53,18 @@ function Footer() {
                 <div className={styles["credit-title"]}>Reading</div>
                 <div className={styles["credit-item"]}>
                     <Link
-                        urlLabel="Pigment based color mixing"
-                        url="https://scrtwpns.com/mixbox/docs/"
+                        urlLabel="Practical Pigment Mixing for Digital Painting (Paper)"
+                        url="https://scrtwpns.com/mixbox.pdf"
+                    />
+                    {" by "}
+                    <Link
+                        urlLabel="Šárka Sochorová"
+                        url="https://scholar.google.com/citations?user=CjquRjAAAAAJ&hl=cs"
+                    />
+                    {" and "}
+                    <Link
+                        urlLabel="Ondřej Jamriška"
+                        url="https://scholar.google.com/citations?user=tiu7twQAAAAJ&hl=fr"
                     />
                 </div>
             </div>

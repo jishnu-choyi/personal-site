@@ -3,7 +3,7 @@ import styles from "./progressBar.module.scss";
 import { FiLoader } from "react-icons/fi";
 
 function ProgressBar(props) {
-    const { className, style } = props;
+    const { className, style, msg } = props;
     let displayType = props.displayType || "bar";
     const containerCls = classNames(
         styles.container,
@@ -16,14 +16,17 @@ function ProgressBar(props) {
     else if (progressPct < 0) progressPct = 0;
 
     const renderedProgressBar = (
-        <div className={containerCls} style={style}>
-            <div
-                className={styles.progress}
-                style={{
-                    width: `${progressPct}%`,
-                }}
-            ></div>
-        </div>
+        <>
+            {msg && <div className={styles.loadingMsg}>{msg}</div>}
+            <div className={containerCls} style={style}>
+                <div
+                    className={styles.progress}
+                    style={{
+                        width: `${progressPct}%`,
+                    }}
+                ></div>
+            </div>
+        </>
     );
     const renderedLoader = (
         <div className={containerCls} style={style}>
