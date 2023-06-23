@@ -2,6 +2,7 @@
   "name": "personal-site",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://jishnu-choyi.github.io/personal-site/",
   "dependencies": {
     "@amplitude/analytics-browser": "^1.10.6",
     "@babel/core": "^7.16.0",
