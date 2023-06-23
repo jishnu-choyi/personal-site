@@ -25,7 +25,7 @@ void main(){
     vec3 skyBlue = vec3(3.0,169.0,244.0)/255.0;
 
     vec3 targetColor = bgColor;
-    vec3 modColor = yellowFromPlanet;
+    vec3 modColor = darkBrownColor;
     if(len!=0.0){
         vec2 nVel = normalize(vel);
         float targetR = bgColor.r*0.9+0.1*mix(bgColor.r,modColor.r, (nVel.y+1.0)/2.0);
