@@ -3,41 +3,41 @@ import poisson_frag from "./glsl/sim/poisson.frag";
 
 import ShaderPass from "./ShaderPass";
 
-export default class Divergence extends ShaderPass{
-    constructor(simProps){
+export default class Divergence extends ShaderPass {
+    constructor(simProps) {
         super({
             material: {
                 vertexShader: face_vert,
                 fragmentShader: poisson_frag,
                 uniforms: {
                     boundarySpace: {
-                        value: simProps.boundarySpace
+                        value: simProps.boundarySpace,
                     },
                     pressure: {
-                        value: simProps.dst_.texture
+                        value: simProps.dst_.texture,
                     },
                     divergence: {
-                        value: simProps.src.texture
+                        value: simProps.src.texture,
                     },
                     px: {
-                        value: simProps.cellScale
-                    }
+                        value: simProps.cellScale,
+                    },
                 },
             },
             output: simProps.dst,
 
             output0: simProps.dst_,
-            output1: simProps.dst
+            output1: simProps.dst,
         });
 
         this.init();
     }
 
-    update({iterations}){
+    update({ iterations }) {
         let p_in, p_out;
 
-        for(var i = 0; i < iterations; i++) {
-            if(i % 2 == 0){
+        for (var i = 0; i < iterations; i++) {
+            if (i % 2 === 0) {
                 p_in = this.props.output0;
                 p_out = this.props.output1;
             } else {

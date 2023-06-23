@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import styles from "./link.module.scss";
-import { GoLinkExternal, GoDownload } from "react-icons/go";
 import { BsDownload } from "react-icons/bs";
 import { RxExternalLink } from "react-icons/rx";
 

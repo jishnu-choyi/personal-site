@@ -15,6 +15,8 @@ function Content() {
             data.itemType === "creative"
         ) {
             return <ShowCase key={data.id} showCaseData={data} />;
+        } else {
+            return <ShowCase key={data.id} showCaseData={data} />;
         }
     });
 

@@ -28,7 +28,7 @@ function Footer() {
                         url="https://sketchfab.com/shapernode"
                         urlLabel="sketchfab/shapernode"
                     />
-                    {" - "}
+                    {" used with modifications - "}
                     <Link
                         urlLabel="Creative Commons 4.0"
                         url="https://creativecommons.org/licenses/by/4.0/"
@@ -44,7 +44,7 @@ function Footer() {
                         url="https://twitter.com/misaki_mofu"
                         urlLabel="Misaki Nakano"
                     />
-                    {" - "}
+                    {" used with modifications - "}
                     <Link
                         urlLabel="MIT License"
                         url="https://en.wikipedia.org/wiki/MIT_License"

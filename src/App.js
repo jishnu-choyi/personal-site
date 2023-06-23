@@ -39,7 +39,7 @@ function App() {
     if (!window.isDev) window.isDev = false;
 
     let fluidContainer = document.body.querySelector(".webgl-fluid-container");
-    const webglMng = new WebGL({
+    new WebGL({
         $wrapper: fluidContainer,
     });
 

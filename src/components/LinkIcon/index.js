@@ -18,6 +18,7 @@ function LinkIcon({ url, iconName }) {
         <a
             href={url}
             target="_blank"
+            rel="noreferrer"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >

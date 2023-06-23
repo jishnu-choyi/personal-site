@@ -125,7 +125,7 @@ function PlanetScenePortal() {
             renderer.setSize(W, H);
             animate();
         }
-    }, []);
+    }, [loadingPct]);
     // console.log("rerender");
 
     return ReactDOM.createPortal(

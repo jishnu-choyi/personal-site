@@ -1,7 +1,6 @@
-import Mouse from "./Mouse";
 import Common from "./Common";
 import * as THREE from "three";
-import Controls from "./Controls";
+//import Controls from "./Controls";
 
 import Advection from "./Advection";
 import ExternalForce from "./ExternalForce";
@@ -46,7 +45,7 @@ export default class Simulation {
             BFECC: true,
         };
 
-        const controls = new Controls(this.options);
+        // const controls = new Controls(this.options);
 
         this.fboSize = new THREE.Vector2();
         this.cellScale = new THREE.Vector2();
