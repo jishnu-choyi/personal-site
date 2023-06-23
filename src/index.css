@@ -77,8 +77,73 @@ body {
   left: 0;
   z-index: 100;
 }
+.webgl-fluid-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;  
+}
+#root{
+  z-index: 2;
+  position: relative;
+}
+.webgl-container{
+  position: absolute;
+  top: -10vh;
+  left: -10vw;
+  width: 75vw;
+  height: 100vh;
+  z-index: 3;
+  /* background-color: #ffa50099; */
+  /* display: none; */
+}
+.dg.ac{
+  z-index: 101;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+@media screen and ((orientation: portrait) and (max-width:600px)){
+  .webgl-container{
+    width: 100vw;
+    height: 70vh;
+    left: 0vw;
+    top:40px;
+    overflow:hidden;
+  }
+}
+@media screen and ((orientation: portrait) and (min-width:600px)){
+  .webgl-container{
+    width: 100vw;
+    height: 60vh;
+    left: 0vw;
+    top:0px;
+    overflow:hidden;
+  }
+}
+@media screen and ((orientation: landscape) and (max-height:600px)){
+  .webgl-container{
+    width: 100vw;
+    height: 90vh;
+    left: 20vw;
+    top:50px;
+    overflow:hidden;
+  }
+}
+@media screen and (max-width:768px){
+}
+

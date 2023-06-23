@@ -1,0 +1,32 @@
+.footer{
+    width: 100%;
+    blockquote{        
+        font-weight: 300;
+        font-size: 14px;    
+        line-height: 1.4;    
+        padding: 16px;        
+        font-style: italic;
+        text-align: center;
+    }    
+}
+.credits{
+    font-weight: 300;
+    font-size: 14px;    
+    line-height: 1.4;
+    background: #ebebeb;
+    text-align: center;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+    margin: 0 16px;
+    box-shadow: 0px 0px 4px #b8b8b866 inset;
+
+    .credit-title{
+        font-weight: 500;
+        padding-bottom: 4px;
+        padding-top: 16px;
+    }
+    .credit-item{
+        margin: 0 8px 8px 8px;
+    }
+}
