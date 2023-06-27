@@ -19,9 +19,16 @@ function GalleryWithModal({
         setShowModal(false);
     };
 
+    let gallerySlidesForModal = [];
+    gallerySlides.forEach((slide) => {
+        gallerySlidesForModal.push({ ...slide, resolution: "high" });
+    });
     const modal = (
         <Modal onClose={handleClose}>
-            <Gallery gallerySlides={gallerySlides} onCollapse={handleClose} />
+            <Gallery
+                gallerySlides={gallerySlidesForModal}
+                onCollapse={handleClose}
+            />
         </Modal>
     );
 

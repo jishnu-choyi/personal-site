@@ -4,20 +4,31 @@ import JuziLogo from "../../assets/images/logos/juzi/logo_full2.png";
 import GalleryWithModal from "../../components/GalleryWithModal";
 
 import JuziLanding from "../../assets/images/showcase/juzi/1-landing.jpg";
+import JuziLanding_MR from "../../assets/images/showcase/juzi/1-landing_mr.jpg";
 import JuziLanding_LR from "../../assets/images/showcase/juzi/1-landing_lr.png";
+
 import JuziBowls from "../../assets/images/showcase/juzi/2-bowls.jpg";
+import JuziBowls_MR from "../../assets/images/showcase/juzi/2-bowls_mr.jpg";
 import JuziBowls_LR from "../../assets/images/showcase/juzi/2-bowls_lr.png";
+
 import JuziLogin from "../../assets/images/showcase/juzi/8-login.jpg";
+import JuziLogin_MR from "../../assets/images/showcase/juzi/8-login_mr.jpg";
 import JuziLogin_LR from "../../assets/images/showcase/juzi/8-login_lr.png";
 
 import JuziCorporate from "../../assets/images/showcase/juzi/4-corporate.jpg";
+import JuziCorporate_MR from "../../assets/images/showcase/juzi/4-corporate_mr.jpg";
 import JuziCorporate_LR from "../../assets/images/showcase/juzi/4-corporate_lr.png";
 
 import JuziSupport from "../../assets/images/showcase/juzi/5-support.jpg";
+import JuziSupport_MR from "../../assets/images/showcase/juzi/5-support_mr.jpg";
 import JuziSupport_LR from "../../assets/images/showcase/juzi/5-support_lr.png";
+
 import JuziAndroid from "../../assets/images/showcase/juzi/6-android.jpg";
+import JuziAndroid_MR from "../../assets/images/showcase/juzi/6-android_mr.jpg";
 import JuziAndroid_LR from "../../assets/images/showcase/juzi/6-android_lr.png";
+
 import JuziIos from "../../assets/images/showcase/juzi/7-ios.jpg";
+import JuziIos_MR from "../../assets/images/showcase/juzi/7-ios_mr.jpg";
 import JuziIos_LR from "../../assets/images/showcase/juzi/7-ios_lr.png";
 
 export const juziData = {
@@ -59,6 +70,7 @@ function JuziHighlights() {
                             type: "slide",
                             id: "1",
                             imageSrc: JuziLanding,
+                            imageSrc_MR: JuziLanding_MR,
                             bgImageSrc: JuziLanding_LR,
                             alt: "Landing page",
                             linkUrl: "https://juzifruits.com",
@@ -67,6 +79,7 @@ function JuziHighlights() {
                             type: "slide",
                             id: "2",
                             imageSrc: JuziBowls,
+                            imageSrc_MR: JuziBowls_MR,
                             bgImageSrc: JuziBowls_LR,
                             alt: "Fruit bowls",
                         },
@@ -74,6 +87,7 @@ function JuziHighlights() {
                             type: "slide",
                             id: "3",
                             imageSrc: JuziLogin,
+                            imageSrc_MR: JuziLogin_MR,
                             bgImageSrc: JuziLogin_LR,
                             alt: "Login page",
                         },
@@ -81,6 +95,7 @@ function JuziHighlights() {
                             type: "slide",
                             id: "3a",
                             imageSrc: JuziCorporate,
+                            imageSrc_MR: JuziCorporate_MR,
                             bgImageSrc: JuziCorporate_LR,
                             alt: "Corporate",
                         },
@@ -89,6 +104,7 @@ function JuziHighlights() {
                             type: "slide",
                             id: "4",
                             imageSrc: JuziSupport,
+                            imageSrc_MR: JuziSupport_MR,
                             bgImageSrc: JuziSupport_LR,
                             alt: "Support",
                         },
@@ -96,6 +112,7 @@ function JuziHighlights() {
                             type: "slide",
                             id: "5",
                             imageSrc: JuziAndroid,
+                            imageSrc_MR: JuziAndroid_MR,
                             bgImageSrc: JuziAndroid_LR,
                             alt: "Android App",
                         },
@@ -103,6 +120,7 @@ function JuziHighlights() {
                             type: "slide",
                             id: "6",
                             imageSrc: JuziIos,
+                            imageSrc_MR: JuziIos_MR,
                             bgImageSrc: JuziIos_LR,
                             alt: "IOS App",
                         },

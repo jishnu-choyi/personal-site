@@ -14,7 +14,7 @@ export const checkMobile = () => {
     return check;
 };
 
-window.checkMobileAndTablet = function () {
+export const checkMobileAndTablet = () => {
     let check = false;
     (function (a) {
         if (

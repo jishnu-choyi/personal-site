@@ -53,7 +53,11 @@ function Gallery(props) {
                 <SlideImage
                     key={slide.id}
                     alt={slide.alt}
-                    imagesrc={slide.imageSrc}
+                    imagesrc={
+                        slide.resolution === "high"
+                            ? slide.imageSrc
+                            : slide.imageSrc_MR
+                    }
                     bgimagesrc={slide.bgImageSrc}
                     caption={slide.caption}
                     linkUrl={slide.linkUrl}

@@ -13,12 +13,36 @@ function LinkIcon({ url, iconName }) {
     const handleMouseLeave = () => {
         setActive(false);
     };
+    let ariaLabel = "Open link from icon";
+    switch (iconName) {
+        case "twitter":
+            ariaLabel = "Open Twitter profile link";
+            break;
+        case "linkedin":
+            ariaLabel = "Open LinkedIn profile link";
+            break;
+        case "call":
+            ariaLabel = "Start a phone call";
+            break;
+        case "github":
+            ariaLabel = "Open Github profile link";
+            break;
+        case "email":
+            ariaLabel = "Open email client";
+            break;
+        default:
+            ariaLabel = "Open link from icon";
+            break;
+    }
 
     return (
         <a
             href={url}
+            aria-label={ariaLabel}
             target="_blank"
             rel="noreferrer"
+            onFocus={handleMouseEnter}
+            onBlur={handleMouseLeave}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >

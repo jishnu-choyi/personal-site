@@ -3,7 +3,7 @@ import React from "react";
 
 const ToolTipWrapper = React.forwardRef(function ToolTipWrapper(props, ref) {
     //  Spread the props to the underlying DOM element.
-    const { title, arrow, ...rest } = props;
+    const { title, arrow, ariaLabel, ...rest } = props;
     return (
         <Tooltip {...props}>
             <div {...rest} ref={ref}>

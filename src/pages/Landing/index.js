@@ -2,7 +2,7 @@ import styles from "./landing.module.scss";
 import SocialMedia from "../../components/SocialMedia";
 import CTACardList from "../../components/CTACardList";
 
-import MainPhoto from "../../assets/images/landing/main-photo-square-3.jpg";
+//import MainPhoto from "../../assets/images/landing/main-photo-square-3.jpg";
 import StartupCTAPhoto from "../../assets/images/landing/startups.jpg";
 import SoftwareCTAPhoto from "../../assets/images/landing/software.jpg";
 import HardwareCTAPhoto from "../../assets/images/landing/hardware.jpg";
@@ -30,13 +30,13 @@ function Landing({ onClick }) {
                         styles["main-container"] + " " + styles["main-image"]
                     }
                 >
-                    <div className={styles["main-img"]}>
+                    {/* <div className={styles["main-img"]}>
                         <img
                             src={MainPhoto}
                             alt="dummy"
                             style={{ visibility: "hidden" }}
                         ></img>
-                    </div>
+                    </div> */}
                     <PlanetScenePortal />
                 </div>
             </div>

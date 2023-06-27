@@ -2,6 +2,7 @@ import styles from "./creative-highlights.module.scss";
 import JCLogo from "../../assets/images/logos/logo-orange-transparent.png";
 import GalleryWithModal from "../../components/GalleryWithModal";
 import BluedoorImage from "../../assets/images/showcase/creative/bluedoor.webp";
+import BluedoorImage_MR from "../../assets/images/showcase/creative/bluedoor_mr.png";
 import BluedoorImage_LR from "../../assets/images/showcase/creative/bluedoor_lr.png";
 
 export const creativeData = {
@@ -38,6 +39,7 @@ function CreativeHighlights() {
                             type: "slide",
                             id: "1",
                             imageSrc: BluedoorImage,
+                            imageSrc_MR: BluedoorImage_MR,
                             bgImageSrc: BluedoorImage_LR,
                             alt: "Blue door villa, Kerala",
                             linkUrl: "https://airbnb.co.in/h/thebluedoorvilla",
