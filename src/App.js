@@ -7,6 +7,7 @@ import Content from "./pages/Content";
 import EventBus from "./fluid/utils/EventBus";
 import WebGL from "./fluid/modules/WebGL";
 import Footer from "./components/Footer";
+import { checkMobile } from "./utils/deviceUtils";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
@@ -38,10 +39,14 @@ function App() {
     window.EventBus = EventBus;
     if (!window.isDev) window.isDev = false;
 
-    let fluidContainer = document.body.querySelector(".webgl-fluid-container");
-    new WebGL({
-        $wrapper: fluidContainer,
-    });
+    if (!checkMobile()) {
+        let fluidContainer = document.body.querySelector(
+            ".webgl-fluid-container"
+        );
+        new WebGL({
+            $wrapper: fluidContainer,
+        });
+    }
 
     const handleClick = (e, id) => {
         // console.log("handleClick", e, id);
