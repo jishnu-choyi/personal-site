@@ -20,7 +20,7 @@
     }
     .left,.right{
         width: 32px;
-        height: 16px;
+        height: 14px;
         background-color: gainsboro;
         .forefront{
             width: 100%;
@@ -40,22 +40,23 @@
             border-radius: 16px 0 0 0;
         }        
     }
-
-    // .center.blue, .left.blue,.right.blue{
-    //     background-color: var(--tab-blue);
-    //     box-shadow: 0px 0px 3px #0000003d;
-    // }
-    // .center.brown, .left.brown,.right.brown{
-    //     background-color: var(--tab-brown);
-    //     box-shadow: 0px 0px 3px #0000003d;
-    // }
-
 }
 .top{
     align-items: flex-start;
 }
 .bottom{
     align-items: flex-end;
+}
+.header.blue,.header.brown,.header.green,.header.purple{
+    .forefront{
+        background: transparent;        
+        border-left: 1px solid gainsboro;
+        position: relative;
+        top: 1px;                
+    }
+    .right,.left{
+        background-color: transparent;        
+    }    
 }
 
 .header.blue{
@@ -64,12 +65,7 @@
         box-shadow: 0px 0px 3px #0000003d;   
     }
     .forefront{
-        box-shadow: 1px -1px 1px #a1a1a13d inset;
-        position: relative;
-        top: 1px;        
-    }
-    .right,.left{
-        background-color: var(--tab-blue);        
+        box-shadow: -8px 0px 0 0 var(--tab-blue);
     }
 }
 .header.brown{
@@ -78,12 +74,7 @@
         box-shadow: 0px 0px 3px #0000003d;   
     }
     .forefront{
-        box-shadow: 1px -1px 1px #a1a1a13d inset;
-        position: relative;
-        top: 1px;                
-    }
-    .right,.left{
-        background-color: var(--tab-brown);
+        box-shadow: -8px 0px 0 0 var(--tab-brown);
     }
 }
 .header.green{
@@ -92,12 +83,7 @@
         box-shadow: 0px 0px 3px #0000003d;   
     }
     .forefront{
-        box-shadow: 1px -1px 1px #a1a1a13d inset;
-        position: relative;
-        top: 1px;                
-    }
-    .right,.left{
-        background-color: var(--tab-green);
+        box-shadow: -8px 0px 0 0 var(--tab-green);
     }
 }
 .header.purple{
@@ -106,12 +92,7 @@
         box-shadow: 0px 0px 3px #0000003d;   
     }
     .forefront{
-        box-shadow: 1px -1px 1px #a1a1a13d inset;
-        position: relative;
-        top: 1px;                
-    }
-    .right,.left{
-        background-color: var(--tab-purple);
+        box-shadow: -8px 0px 0 0 var(--tab-purple);
     }
 }
 
