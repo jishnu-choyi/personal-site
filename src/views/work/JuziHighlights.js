@@ -1,35 +1,35 @@
 import styles from "./juzi-highlights.module.scss";
 import React from "react";
-import JuziLogo from "../../assets/images/logos/juzi/logo_full2.png";
 import GalleryWithModal from "../../components/GalleryWithModal";
 
-import JuziLanding from "../../assets/images/showcase/juzi/1-landing.jpg";
-import JuziLanding_MR from "../../assets/images/showcase/juzi/1-landing_mr.jpg";
-import JuziLanding_LR from "../../assets/images/showcase/juzi/1-landing_lr.png";
+import JuziLogo from "../../assets/images/logos_webp/juzi/logo_full2_64.webp";
+import JuziLanding from "../../assets/images/showcase/juzi_webp/1-landing.webp";
+import JuziLanding_MR from "../../assets/images/showcase/juzi_webp/1-landing_mr.webp";
+import JuziLanding_LR from "../../assets/images/showcase/juzi_webp/1-landing_lr.webp";
 
-import JuziBowls from "../../assets/images/showcase/juzi/2-bowls.jpg";
-import JuziBowls_MR from "../../assets/images/showcase/juzi/2-bowls_mr.jpg";
-import JuziBowls_LR from "../../assets/images/showcase/juzi/2-bowls_lr.png";
+import JuziBowls from "../../assets/images/showcase/juzi_webp/2-bowls.webp";
+import JuziBowls_MR from "../../assets/images/showcase/juzi_webp/2-bowls_mr.webp";
+import JuziBowls_LR from "../../assets/images/showcase/juzi_webp/2-bowls_lr.webp";
 
-import JuziLogin from "../../assets/images/showcase/juzi/8-login.jpg";
-import JuziLogin_MR from "../../assets/images/showcase/juzi/8-login_mr.jpg";
-import JuziLogin_LR from "../../assets/images/showcase/juzi/8-login_lr.png";
+import JuziLogin from "../../assets/images/showcase/juzi_webp/8-login.webp";
+import JuziLogin_MR from "../../assets/images/showcase/juzi_webp/8-login_mr.webp";
+import JuziLogin_LR from "../../assets/images/showcase/juzi_webp/8-login_lr.webp";
 
-import JuziCorporate from "../../assets/images/showcase/juzi/4-corporate.jpg";
-import JuziCorporate_MR from "../../assets/images/showcase/juzi/4-corporate_mr.jpg";
-import JuziCorporate_LR from "../../assets/images/showcase/juzi/4-corporate_lr.png";
+import JuziCorporate from "../../assets/images/showcase/juzi_webp/4-corporate.webp";
+import JuziCorporate_MR from "../../assets/images/showcase/juzi_webp/4-corporate_mr.webp";
+import JuziCorporate_LR from "../../assets/images/showcase/juzi_webp/4-corporate_lr.webp";
 
-import JuziSupport from "../../assets/images/showcase/juzi/5-support.jpg";
-import JuziSupport_MR from "../../assets/images/showcase/juzi/5-support_mr.jpg";
-import JuziSupport_LR from "../../assets/images/showcase/juzi/5-support_lr.png";
+import JuziSupport from "../../assets/images/showcase/juzi_webp/5-support.webp";
+import JuziSupport_MR from "../../assets/images/showcase/juzi_webp/5-support_mr.webp";
+import JuziSupport_LR from "../../assets/images/showcase/juzi_webp/5-support_lr.webp";
 
-import JuziAndroid from "../../assets/images/showcase/juzi/6-android.jpg";
-import JuziAndroid_MR from "../../assets/images/showcase/juzi/6-android_mr.jpg";
-import JuziAndroid_LR from "../../assets/images/showcase/juzi/6-android_lr.png";
+import JuziAndroid from "../../assets/images/showcase/juzi_webp/6-android.webp";
+import JuziAndroid_MR from "../../assets/images/showcase/juzi_webp/6-android_mr.webp";
+import JuziAndroid_LR from "../../assets/images/showcase/juzi_webp/6-android_lr.webp";
 
-import JuziIos from "../../assets/images/showcase/juzi/7-ios.jpg";
-import JuziIos_MR from "../../assets/images/showcase/juzi/7-ios_mr.jpg";
-import JuziIos_LR from "../../assets/images/showcase/juzi/7-ios_lr.png";
+import JuziIos from "../../assets/images/showcase/juzi_webp/7-ios.webp";
+import JuziIos_MR from "../../assets/images/showcase/juzi_webp/7-ios_mr.webp";
+import JuziIos_LR from "../../assets/images/showcase/juzi_webp/7-ios_lr.webp";
 
 export const juziData = {
     id: "juzi",

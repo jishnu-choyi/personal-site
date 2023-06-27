@@ -1,30 +1,30 @@
-import YokyRed1 from "../../assets/images/showcase/yoky/red/home.jpg";
-import YokyRed1_MR from "../../assets/images/showcase/yoky/red/home_mr.jpg";
-import YokyRed1_LR from "../../assets/images/showcase/yoky/red/home_lr.png";
+import YokyRed1 from "../../assets/images/showcase/yoky_webp/red/home.webp";
+import YokyRed1_MR from "../../assets/images/showcase/yoky_webp/red/home_mr.webp";
+import YokyRed1_LR from "../../assets/images/showcase/yoky_webp/red/home_lr.webp";
 
-import YokyRedMarketing1 from "../../assets/images/showcase/yoky/red/7.jpg";
-import YokyRedMarketing1_MR from "../../assets/images/showcase/yoky/red/7_mr.jpg";
-import YokyRedMarketing1_LR from "../../assets/images/showcase/yoky/red/7_lr.png";
+import YokyRedMarketing1 from "../../assets/images/showcase/yoky_webp/red/7.webp";
+import YokyRedMarketing1_MR from "../../assets/images/showcase/yoky_webp/red/7_mr.webp";
+import YokyRedMarketing1_LR from "../../assets/images/showcase/yoky_webp/red/7_lr.webp";
 
-import YokyRedMarketing2 from "../../assets/images/showcase/yoky/red/6.png";
-import YokyRedMarketing2_MR from "../../assets/images/showcase/yoky/red/6_mr.png";
-import YokyRedMarketing2_LR from "../../assets/images/showcase/yoky/red/6_lr.png";
+import YokyRedMarketing2 from "../../assets/images/showcase/yoky_webp/red/6.webp";
+import YokyRedMarketing2_MR from "../../assets/images/showcase/yoky_webp/red/6_mr.webp";
+import YokyRedMarketing2_LR from "../../assets/images/showcase/yoky_webp/red/6_lr.webp";
 
-import YokyRedApp from "../../assets/images/showcase/yoky/red/5.jpg";
-import YokyRedApp_MR from "../../assets/images/showcase/yoky/red/5_mr.jpg";
-import YokyRedApp_LR from "../../assets/images/showcase/yoky/red/5_lr.png";
+import YokyRedApp from "../../assets/images/showcase/yoky_webp/red/5.webp";
+import YokyRedApp_MR from "../../assets/images/showcase/yoky_webp/red/5_mr.webp";
+import YokyRedApp_LR from "../../assets/images/showcase/yoky_webp/red/5_lr.webp";
 
-import YokyRedFeatures0 from "../../assets/images/showcase/yoky/red/2.jpg";
-import YokyRedFeatures0_MR from "../../assets/images/showcase/yoky/red/2_mr.jpg";
-import YokyRedFeatuers0_LR from "../../assets/images/showcase/yoky/red/2_lr.png";
+import YokyRedFeatures0 from "../../assets/images/showcase/yoky_webp/red/2.webp";
+import YokyRedFeatures0_MR from "../../assets/images/showcase/yoky_webp/red/2_mr.webp";
+import YokyRedFeatuers0_LR from "../../assets/images/showcase/yoky_webp/red/2_lr.webp";
 
-import YokyRedFeatures1 from "../../assets/images/showcase/yoky/red/features1.png";
-import YokyRedFeatures1_MR from "../../assets/images/showcase/yoky/red/features1_mr.png";
-import YokyRedFeatuers1_LR from "../../assets/images/showcase/yoky/red/features1_lr.png";
+import YokyRedFeatures1 from "../../assets/images/showcase/yoky_webp/red/features1.webp";
+import YokyRedFeatures1_MR from "../../assets/images/showcase/yoky_webp/red/features1_mr.webp";
+import YokyRedFeatuers1_LR from "../../assets/images/showcase/yoky_webp/red/features1_lr.webp";
 
-import YokyRedFeatures2 from "../../assets/images/showcase/yoky/red/features2.png";
-import YokyRedFeatures2_MR from "../../assets/images/showcase/yoky/red/features2_mr.png";
-import YokyRedFeatuers2_LR from "../../assets/images/showcase/yoky/red/features2_lr.png";
+import YokyRedFeatures2 from "../../assets/images/showcase/yoky_webp/red/features2.webp";
+import YokyRedFeatures2_MR from "../../assets/images/showcase/yoky_webp/red/features2_mr.webp";
+import YokyRedFeatuers2_LR from "../../assets/images/showcase/yoky_webp/red/features2_lr.webp";
 
 const yokyRedData = [
     {

@@ -1,5 +1,5 @@
 import styles from "./nus-highlights.module.scss";
-import NusLogoHalf from "../../assets/images/logos/nus/NUS_coat_of_arms.svg.png";
+import NusLogoHalf from "../../assets/images/logos_webp/nus/NUS_coat_of_arms_64.webp";
 
 export const nusData = {
     id: "nus",

@@ -1,5 +1,5 @@
 import styles from "./scrappy-highlights.module.scss";
-import ScrappyLogo from "../../assets/images/logos/scrappy/scrappy-logo.png";
+import ScrappyLogo from "../../assets/images/logos_webp/scrappy/scrappy-logo_64.webp";
 import GalleryWithModal from "../../components/GalleryWithModal";
 import Link from "../../components/Link";
 

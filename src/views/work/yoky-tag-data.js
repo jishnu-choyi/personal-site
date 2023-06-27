@@ -1,46 +1,46 @@
-import YokyTag1 from "../../assets/images/showcase/yoky/tag/home.jpg";
-import YokyTag1_MR from "../../assets/images/showcase/yoky/tag/home_mr.jpg";
-import YokyTag1_LR from "../../assets/images/showcase/yoky/tag/home_lr.png";
+import YokyTag1 from "../../assets/images/showcase/yoky_webp/tag/home.webp";
+import YokyTag1_MR from "../../assets/images/showcase/yoky_webp/tag/home_mr.webp";
+import YokyTag1_LR from "../../assets/images/showcase/yoky_webp/tag/home_lr.webp";
 
-import YokyTagMarketing1 from "../../assets/images/showcase/yoky/tag/2.png";
-import YokyTagMarketing1_MR from "../../assets/images/showcase/yoky/tag/2_mr.png";
-import YokyTagMarketing1_LR from "../../assets/images/showcase/yoky/tag/2_lr.png";
+import YokyTagMarketing1 from "../../assets/images/showcase/yoky_webp/tag/2.webp";
+import YokyTagMarketing1_MR from "../../assets/images/showcase/yoky_webp/tag/2_mr.webp";
+import YokyTagMarketing1_LR from "../../assets/images/showcase/yoky_webp/tag/2_lr.webp";
 
-import YokyTagMarketing2 from "../../assets/images/showcase/yoky/tag/5.png";
-import YokyTagMarketing2_MR from "../../assets/images/showcase/yoky/tag/5_mr.png";
-import YokyTagMarketing2_LR from "../../assets/images/showcase/yoky/tag/5_lr.png";
+import YokyTagMarketing2 from "../../assets/images/showcase/yoky_webp/tag/5.webp";
+import YokyTagMarketing2_MR from "../../assets/images/showcase/yoky_webp/tag/5_mr.webp";
+import YokyTagMarketing2_LR from "../../assets/images/showcase/yoky_webp/tag/5_lr.webp";
 
-import YokyTagMarketing3 from "../../assets/images/showcase/yoky/tag/6.png";
-import YokyTagMarketing3_MR from "../../assets/images/showcase/yoky/tag/6_mr.png";
-import YokyTagMarketing3_LR from "../../assets/images/showcase/yoky/tag/6_lr.png";
+import YokyTagMarketing3 from "../../assets/images/showcase/yoky_webp/tag/6.webp";
+import YokyTagMarketing3_MR from "../../assets/images/showcase/yoky_webp/tag/6_mr.webp";
+import YokyTagMarketing3_LR from "../../assets/images/showcase/yoky_webp/tag/6_lr.webp";
 
-import YokyTagMarketing4 from "../../assets/images/showcase/yoky/tag/7.jpg";
-import YokyTagMarketing4_MR from "../../assets/images/showcase/yoky/tag/7_mr.jpg";
-import YokyTagMarketing4_LR from "../../assets/images/showcase/yoky/tag/7_lr.png";
+import YokyTagMarketing4 from "../../assets/images/showcase/yoky_webp/tag/7.webp";
+import YokyTagMarketing4_MR from "../../assets/images/showcase/yoky_webp/tag/7_mr.webp";
+import YokyTagMarketing4_LR from "../../assets/images/showcase/yoky_webp/tag/7_lr.webp";
 
-import YokyTagPedometer from "../../assets/images/showcase/yoky/tag/9.png";
-import YokyTagPedometer_MR from "../../assets/images/showcase/yoky/tag/9_mr.png";
-import YokyTagPedometer_LR from "../../assets/images/showcase/yoky/tag/9_lr.png";
+import YokyTagPedometer from "../../assets/images/showcase/yoky_webp/tag/9.webp";
+import YokyTagPedometer_MR from "../../assets/images/showcase/yoky_webp/tag/9_mr.webp";
+import YokyTagPedometer_LR from "../../assets/images/showcase/yoky_webp/tag/9_lr.webp";
 
-import YokyTagCustom from "../../assets/images/showcase/yoky/tag/10.png";
-import YokyTagCustom_MR from "../../assets/images/showcase/yoky/tag/10_mr.png";
-import YokyTagCustom_LR from "../../assets/images/showcase/yoky/tag/10_lr.png";
+import YokyTagCustom from "../../assets/images/showcase/yoky_webp/tag/10.webp";
+import YokyTagCustom_MR from "../../assets/images/showcase/yoky_webp/tag/10_mr.webp";
+import YokyTagCustom_LR from "../../assets/images/showcase/yoky_webp/tag/10_lr.webp";
 
-import YokyTagApp from "../../assets/images/showcase/yoky/tag/11.jpg";
-import YokyTagApp_MR from "../../assets/images/showcase/yoky/tag/11_mr.jpg";
-import YokyTagApp_LR from "../../assets/images/showcase/yoky/tag/11_lr.jpg";
+import YokyTagApp from "../../assets/images/showcase/yoky_webp/tag/11.webp";
+import YokyTagApp_MR from "../../assets/images/showcase/yoky_webp/tag/11_mr.webp";
+import YokyTagApp_LR from "../../assets/images/showcase/yoky_webp/tag/11_lr.webp";
 
-import YokyTagFeatures0 from "../../assets/images/showcase/yoky/tag/8.jpg";
-import YokyTagFeatures0_MR from "../../assets/images/showcase/yoky/tag/8_mr.jpg";
-import YokyTagFeatures0_LR from "../../assets/images/showcase/yoky/tag/8_lr.jpg";
+import YokyTagFeatures0 from "../../assets/images/showcase/yoky_webp/tag/8.webp";
+import YokyTagFeatures0_MR from "../../assets/images/showcase/yoky_webp/tag/8_mr.webp";
+import YokyTagFeatures0_LR from "../../assets/images/showcase/yoky_webp/tag/8_lr.webp";
 
-import YokyTagFeatures1 from "../../assets/images/showcase/yoky/tag/features1.png";
-import YokyTagFeatures1_MR from "../../assets/images/showcase/yoky/tag/features1_mr.png";
-import YokyTagFeatures1_LR from "../../assets/images/showcase/yoky/tag/features1_lr.png";
+import YokyTagFeatures1 from "../../assets/images/showcase/yoky_webp/tag/features1.webp";
+import YokyTagFeatures1_MR from "../../assets/images/showcase/yoky_webp/tag/features1_mr.webp";
+import YokyTagFeatures1_LR from "../../assets/images/showcase/yoky_webp/tag/features1_lr.webp";
 
-import YokyTagFeatures2 from "../../assets/images/showcase/yoky/tag/features2.png";
-import YokyTagFeatures2_MR from "../../assets/images/showcase/yoky/tag/features2_mr.png";
-import YokyTagFeatuers2_LR from "../../assets/images/showcase/yoky/tag/features2_lr.png";
+import YokyTagFeatures2 from "../../assets/images/showcase/yoky_webp/tag/features2.webp";
+import YokyTagFeatures2_MR from "../../assets/images/showcase/yoky_webp/tag/features2_mr.webp";
+import YokyTagFeatuers2_LR from "../../assets/images/showcase/yoky_webp/tag/features2_lr.webp";
 
 const yokyTagData = [
     {

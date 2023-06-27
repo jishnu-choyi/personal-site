@@ -1,45 +1,44 @@
 import styles from "./games-highlights.module.scss";
-import GtsLogo from "../../assets/images/logos/gts/logo.642f4f3c.png";
-
-import GoogleImpactLogo from "../../assets/images/logos/gts/Google-Global-Impact-Award.png";
-import GoogleImpactLogo_MR from "../../assets/images/logos/gts/Google-Global-Impact-Award_mr.png";
-import GoogleImpactLogo_LR from "../../assets/images/logos/gts/Google-Global-Impact-Award.png";
-
-import GoogleLogo from "../../assets/images/logos/gts/googlelogo_color_272x92dp.png";
 import GalleryWithModal from "../../components/GalleryWithModal";
 import Link from "../../components/Link";
 
-import PlayingImage from "../../assets/images/showcase/games/playing.jpg";
-import PlayingImage_MR from "../../assets/images/showcase/games/playing_mr.jpg";
-import PlayingImage_LR from "../../assets/images/showcase/games/playing_lr.png";
+import GtsLogo from "../../assets/images/logos_webp/gts/logo_64.webp";
+import GoogleImpactLogo from "../../assets/images/logos_webp/gts/Google-Global-Impact-Award.webp";
+import GoogleImpactLogo_MR from "../../assets/images/logos_webp/gts/Google-Global-Impact-Award_mr.webp";
+import GoogleImpactLogo_LR from "../../assets/images/logos_webp/gts/Google-Global-Impact-Award.webp";
+import GoogleLogo from "../../assets/images/logos_webp/gts/googlelogo_color_272x92dp.webp";
 
-import PlayingImage2 from "../../assets/images/showcase/games/impact-report.png";
-import PlayingImage2_MR from "../../assets/images/showcase/games/impact-report_mr.png";
-import PlayingImage2_LR from "../../assets/images/showcase/games/impact-report_lr.png";
+import PlayingImage from "../../assets/images/showcase/games_webp/playing.webp";
+import PlayingImage_MR from "../../assets/images/showcase/games_webp/playing_mr.webp";
+import PlayingImage_LR from "../../assets/images/showcase/games_webp/playing_lr.webp";
 
-import MatsPoster from "../../assets/images/showcase/games/mats.jpg";
-import MatsPoster_MR from "../../assets/images/showcase/games/mats_mr.jpg";
-import MatsPoster_LR from "../../assets/images/showcase/games/mats_lr.png";
+import PlayingImage2 from "../../assets/images/showcase/games_webp/impact-report.webp";
+import PlayingImage2_MR from "../../assets/images/showcase/games_webp/impact-report_mr.webp";
+import PlayingImage2_LR from "../../assets/images/showcase/games_webp/impact-report_lr.webp";
 
-import MatnPoster from "../../assets/images/showcase/games/matn.jpg";
-import MatnPoster_MR from "../../assets/images/showcase/games/matn_mr.jpg";
-import MatnPoster_LR from "../../assets/images/showcase/games/matn_lr.png";
+import MatsPoster from "../../assets/images/showcase/games_webp/mats.webp";
+import MatsPoster_MR from "../../assets/images/showcase/games_webp/mats_mr.webp";
+import MatsPoster_LR from "../../assets/images/showcase/games_webp/mats_lr.webp";
 
-import MatjPoster from "../../assets/images/showcase/games/matj-report.jpg";
-import MatjPoster_MR from "../../assets/images/showcase/games/matj-report_mr.jpg";
-import MatjPoster_LR from "../../assets/images/showcase/games/matj-report_lr.png";
+import MatnPoster from "../../assets/images/showcase/games_webp/matn.webp";
+import MatnPoster_MR from "../../assets/images/showcase/games_webp/matn_mr.webp";
+import MatnPoster_LR from "../../assets/images/showcase/games_webp/matn_lr.webp";
 
-import MatbPoster from "../../assets/images/showcase/games/matb-report.png";
-import MatbPoster_MR from "../../assets/images/showcase/games/matb-report_mr.png";
-import MatbPoster_LR from "../../assets/images/showcase/games/matb-report_lr.png";
+import MatjPoster from "../../assets/images/showcase/games_webp/matj-report.webp";
+import MatjPoster_MR from "../../assets/images/showcase/games_webp/matj-report_mr.webp";
+import MatjPoster_LR from "../../assets/images/showcase/games_webp/matj-report_lr.webp";
 
-import MatrPoster from "../../assets/images/showcase/games/matr.jpg";
-import MatrPoster_MR from "../../assets/images/showcase/games/matr_mr.jpg";
-import MatrPoster_LR from "../../assets/images/showcase/games/matr_lr.png";
+import MatbPoster from "../../assets/images/showcase/games_webp/matb-report.webp";
+import MatbPoster_MR from "../../assets/images/showcase/games_webp/matb-report_mr.webp";
+import MatbPoster_LR from "../../assets/images/showcase/games_webp/matb-report_lr.webp";
 
-import MatoPoster from "../../assets/images/showcase/games/mato.jpg";
-import MatoPoster_MR from "../../assets/images/showcase/games/mato_mr.jpg";
-import MatoPoster_LR from "../../assets/images/showcase/games/mato_lr.png";
+import MatrPoster from "../../assets/images/showcase/games_webp/matr.webp";
+import MatrPoster_MR from "../../assets/images/showcase/games_webp/matr_mr.webp";
+import MatrPoster_LR from "../../assets/images/showcase/games_webp/matr_lr.webp";
+
+import MatoPoster from "../../assets/images/showcase/games_webp/mato.webp";
+import MatoPoster_MR from "../../assets/images/showcase/games_webp/mato_mr.webp";
+import MatoPoster_LR from "../../assets/images/showcase/games_webp/mato_lr.webp";
 
 export const gamesTravelData = {
     id: "games-travel",

@@ -1,6 +1,6 @@
 import styles from "./gida-highlights.module.scss";
 import React from "react";
-import GidaLogo from "../../assets/images/logos/gida/logo.png";
+import GidaLogo from "../../assets/images/logos_webp/gida/logo_64.webp";
 import Link from "../../components/Link";
 
 export const gidaData = {

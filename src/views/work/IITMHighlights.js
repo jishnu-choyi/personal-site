@@ -1,5 +1,5 @@
 import styles from "./iitm-highlights.module.scss";
-import IITMLogo from "../../assets/images/logos/iitm/IIT_Madras_Logo.svg.png";
+import IITMLogo from "../../assets/images/logos_webp/iitm/IIT_Madras_Logo_64.webp";
 import { HiAcademicCap } from "react-icons/hi";
 import Link from "../../components/Link";
 

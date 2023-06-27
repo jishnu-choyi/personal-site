@@ -1,5 +1,5 @@
 import styles from "./ensea-highlights.module.scss";
-import EnseaLogo from "../../assets/images/logos/ensea/logo.png";
+import EnseaLogo from "../../assets/images/logos_webp/ensea/logo_64.webp";
 
 export const enseaData = {
     id: "ensea",

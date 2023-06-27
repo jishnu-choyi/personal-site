@@ -1,5 +1,5 @@
 import styles from "./adi-highlights.module.scss";
-import AdiLogo from "../../assets/images/logos/adi/Analog_Devices_Logo-full.png";
+import AdiLogo from "../../assets/images/logos_webp/adi/Analog_Devices_Logo-full_64.webp";
 import Link from "../../components/Link";
 
 export const adiTravelData = {

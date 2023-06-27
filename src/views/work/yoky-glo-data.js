@@ -1,50 +1,50 @@
-import YokyGlo1 from "../../assets/images/showcase/yoky/glo/home.jpg";
-import YokyGlo1_MR from "../../assets/images/showcase/yoky/glo/home_mr.jpg";
-import YokyGlo1_LR from "../../assets/images/showcase/yoky/glo/home_lr.png";
+import YokyGlo1 from "../../assets/images/showcase/yoky_webp/glo/home.webp";
+import YokyGlo1_MR from "../../assets/images/showcase/yoky_webp/glo/home_mr.webp";
+import YokyGlo1_LR from "../../assets/images/showcase/yoky_webp/glo/home_lr.webp";
 
-import YokyGloMarketing1 from "../../assets/images/showcase/yoky/glo/2.jpg";
-import YokyGloMarketing1_MR from "../../assets/images/showcase/yoky/glo/2_mr.jpg";
-import YokyGloMarketing1_LR from "../../assets/images/showcase/yoky/glo/2_lr.png";
+import YokyGloMarketing1 from "../../assets/images/showcase/yoky_webp/glo/2.webp";
+import YokyGloMarketing1_MR from "../../assets/images/showcase/yoky_webp/glo/2_mr.webp";
+import YokyGloMarketing1_LR from "../../assets/images/showcase/yoky_webp/glo/2_lr.webp";
 
-import YokyGloMarketing2 from "../../assets/images/showcase/yoky/glo/3.jpg";
-import YokyGloMarketing2_MR from "../../assets/images/showcase/yoky/glo/3_mr.jpg";
-import YokyGloMarketing2_LR from "../../assets/images/showcase/yoky/glo/3_lr.png";
+import YokyGloMarketing2 from "../../assets/images/showcase/yoky_webp/glo/3.webp";
+import YokyGloMarketing2_MR from "../../assets/images/showcase/yoky_webp/glo/3_mr.webp";
+import YokyGloMarketing2_LR from "../../assets/images/showcase/yoky_webp/glo/3_lr.webp";
 
-import YokyGloMarketing3 from "../../assets/images/showcase/yoky/glo/4.jpg";
-import YokyGloMarketing3_MR from "../../assets/images/showcase/yoky/glo/4_mr.jpg";
-import YokyGloMarketing3_LR from "../../assets/images/showcase/yoky/glo/4_lr.png";
+import YokyGloMarketing3 from "../../assets/images/showcase/yoky_webp/glo/4.webp";
+import YokyGloMarketing3_MR from "../../assets/images/showcase/yoky_webp/glo/4_mr.webp";
+import YokyGloMarketing3_LR from "../../assets/images/showcase/yoky_webp/glo/4_lr.webp";
 
-import YokyGloMarketing4 from "../../assets/images/showcase/yoky/glo/5.jpg";
-import YokyGloMarketing4_MR from "../../assets/images/showcase/yoky/glo/5_mr.jpg";
-import YokyGloMarketing4_LR from "../../assets/images/showcase/yoky/glo/5_lr.png";
+import YokyGloMarketing4 from "../../assets/images/showcase/yoky_webp/glo/5.webp";
+import YokyGloMarketing4_MR from "../../assets/images/showcase/yoky_webp/glo/5_mr.webp";
+import YokyGloMarketing4_LR from "../../assets/images/showcase/yoky_webp/glo/5_lr.webp";
 
-import YokyGloMarketing5 from "../../assets/images/showcase/yoky/glo/6.jpg";
-import YokyGloMarketing5_MR from "../../assets/images/showcase/yoky/glo/6_mr.jpg";
-import YokyGloMarketing5_LR from "../../assets/images/showcase/yoky/glo/6_lr.png";
+import YokyGloMarketing5 from "../../assets/images/showcase/yoky_webp/glo/6.webp";
+import YokyGloMarketing5_MR from "../../assets/images/showcase/yoky_webp/glo/6_mr.webp";
+import YokyGloMarketing5_LR from "../../assets/images/showcase/yoky_webp/glo/6_lr.webp";
 
-import YokyGloMarketing6 from "../../assets/images/showcase/yoky/glo/7.jpg";
-import YokyGloMarketing6_MR from "../../assets/images/showcase/yoky/glo/7_mr.jpg";
-import YokyGloMarketing6_LR from "../../assets/images/showcase/yoky/glo/7_lr.png";
+import YokyGloMarketing6 from "../../assets/images/showcase/yoky_webp/glo/7.webp";
+import YokyGloMarketing6_MR from "../../assets/images/showcase/yoky_webp/glo/7_mr.webp";
+import YokyGloMarketing6_LR from "../../assets/images/showcase/yoky_webp/glo/7_lr.webp";
 
-import YokyGloMarketing7 from "../../assets/images/showcase/yoky/glo/8.jpg";
-import YokyGloMarketing7_MR from "../../assets/images/showcase/yoky/glo/8_mr.jpg";
-import YokyGloMarketing7_LR from "../../assets/images/showcase/yoky/glo/8_lr.png";
+import YokyGloMarketing7 from "../../assets/images/showcase/yoky_webp/glo/8.webp";
+import YokyGloMarketing7_MR from "../../assets/images/showcase/yoky_webp/glo/8_mr.webp";
+import YokyGloMarketing7_LR from "../../assets/images/showcase/yoky_webp/glo/8_lr.webp";
 
-import YokyGloApp from "../../assets/images/showcase/yoky/glo/10.jpg";
-import YokyGloApp_MR from "../../assets/images/showcase/yoky/glo/10_mr.jpg";
-import YokyGloApp_LR from "../../assets/images/showcase/yoky/glo/10_lr.png";
+import YokyGloApp from "../../assets/images/showcase/yoky_webp/glo/10.webp";
+import YokyGloApp_MR from "../../assets/images/showcase/yoky_webp/glo/10_mr.webp";
+import YokyGloApp_LR from "../../assets/images/showcase/yoky_webp/glo/10_lr.webp";
 
-import YokyGloFeatures0 from "../../assets/images/showcase/yoky/glo/9.jpg";
-import YokyGloFeatures0_MR from "../../assets/images/showcase/yoky/glo/9_mr.jpg";
-import YokyGloFeatuers0_LR from "../../assets/images/showcase/yoky/glo/9_lr.png";
+import YokyGloFeatures0 from "../../assets/images/showcase/yoky_webp/glo/9.webp";
+import YokyGloFeatures0_MR from "../../assets/images/showcase/yoky_webp/glo/9_mr.webp";
+import YokyGloFeatuers0_LR from "../../assets/images/showcase/yoky_webp/glo/9_lr.webp";
 
-import YokyGloFeatures1 from "../../assets/images/showcase/yoky/glo/features1.png";
-import YokyGloFeatures1_MR from "../../assets/images/showcase/yoky/glo/features1_mr.png";
-import YokyGloFeatuers1_LR from "../../assets/images/showcase/yoky/glo/features1_lr.png";
+import YokyGloFeatures1 from "../../assets/images/showcase/yoky_webp/glo/features1.webp";
+import YokyGloFeatures1_MR from "../../assets/images/showcase/yoky_webp/glo/features1_mr.webp";
+import YokyGloFeatuers1_LR from "../../assets/images/showcase/yoky_webp/glo/features1_lr.webp";
 
-import YokyGloFeatures2 from "../../assets/images/showcase/yoky/glo/features2.png";
-import YokyGloFeatures2_MR from "../../assets/images/showcase/yoky/glo/features2_mr.png";
-import YokyGloFeatuers2_LR from "../../assets/images/showcase/yoky/glo/features2_lr.png";
+import YokyGloFeatures2 from "../../assets/images/showcase/yoky_webp/glo/features2.webp";
+import YokyGloFeatures2_MR from "../../assets/images/showcase/yoky_webp/glo/features2_mr.webp";
+import YokyGloFeatuers2_LR from "../../assets/images/showcase/yoky_webp/glo/features2_lr.webp";
 
 const yokyGloData = [
     {

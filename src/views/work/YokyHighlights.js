@@ -1,5 +1,5 @@
 import styles from "./yoky-highlights.module.scss";
-import YokyLogo from "../../assets/images/logos/yoky/logo_black-full.png";
+import YokyLogo from "../../assets/images/logos_webp/yoky/logo_black-full.webp";
 import Link from "../../components/Link";
 import GalleryWithModal from "../../components/GalleryWithModal";
 

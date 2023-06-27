@@ -1,39 +1,39 @@
 import styles from "./slated-highlights.module.scss";
 import React from "react";
-import SlatedLogo from "../../assets/images/logos/slated/slated-full-logo.png";
+import SlatedLogo from "../../assets/images/logos_webp/slated/slated-full-logo_64.webp";
 import GalleryWithModal from "../../components/GalleryWithModal";
 
-import SlatedLanding from "../../assets/images/showcase/slated/landing.png";
-import SlatedLanding_MR from "../../assets/images/showcase/slated/landing_mr.png";
-import SlatedLanding_LR from "../../assets/images/showcase/slated/landing_lr.png";
+import SlatedLanding from "../../assets/images/showcase/slated_webp/landing.webp";
+import SlatedLanding_MR from "../../assets/images/showcase/slated_webp/landing_mr.webp";
+import SlatedLanding_LR from "../../assets/images/showcase/slated_webp/landing_lr.webp";
 
-import SlatedCalendar from "../../assets/images/showcase/slated/calendar.png";
-import SlatedCalendar_MR from "../../assets/images/showcase/slated/calendar_mr.png";
-import SlatedCalendar_LR from "../../assets/images/showcase/slated/calendar_lr.png";
+import SlatedCalendar from "../../assets/images/showcase/slated_webp/calendar.webp";
+import SlatedCalendar_MR from "../../assets/images/showcase/slated_webp/calendar_mr.webp";
+import SlatedCalendar_LR from "../../assets/images/showcase/slated_webp/calendar_lr.webp";
 
-import SlatedLogin from "../../assets/images/showcase/slated/login.png";
-import SlatedLogin_MR from "../../assets/images/showcase/slated/login_mr.png";
-import SlatedLogin_LR from "../../assets/images/showcase/slated/login_lr.png";
+import SlatedLogin from "../../assets/images/showcase/slated_webp/login.webp";
+import SlatedLogin_MR from "../../assets/images/showcase/slated_webp/login_mr.webp";
+import SlatedLogin_LR from "../../assets/images/showcase/slated_webp/login_lr.webp";
 
-import SlatedHome from "../../assets/images/showcase/slated/home.png";
-import SlatedHome_MR from "../../assets/images/showcase/slated/home_mr.png";
-import SlatedHome_LR from "../../assets/images/showcase/slated/home_lr.png";
+import SlatedHome from "../../assets/images/showcase/slated_webp/home.webp";
+import SlatedHome_MR from "../../assets/images/showcase/slated_webp/home_mr.webp";
+import SlatedHome_LR from "../../assets/images/showcase/slated_webp/home_lr.webp";
 
-import SlatedPreferences from "../../assets/images/showcase/slated/preferences.png";
-import SlatedPreferences_MR from "../../assets/images/showcase/slated/preferences_mr.png";
-import SlatedPreferences_LR from "../../assets/images/showcase/slated/preferences_lr.png";
+import SlatedPreferences from "../../assets/images/showcase/slated_webp/preferences.webp";
+import SlatedPreferences_MR from "../../assets/images/showcase/slated_webp/preferences_mr.webp";
+import SlatedPreferences_LR from "../../assets/images/showcase/slated_webp/preferences_lr.webp";
 
-import SlatedAvailability from "../../assets/images/showcase/slated/availability.png";
-import SlatedAvailability_MR from "../../assets/images/showcase/slated/availability_mr.png";
-import SlatedAvailability_LR from "../../assets/images/showcase/slated/availability_lr.png";
+import SlatedAvailability from "../../assets/images/showcase/slated_webp/availability.webp";
+import SlatedAvailability_MR from "../../assets/images/showcase/slated_webp/availability_mr.webp";
+import SlatedAvailability_LR from "../../assets/images/showcase/slated_webp/availability_lr.webp";
 
-import SlatedCreateLink from "../../assets/images/showcase/slated/createLink.png";
-import SlatedCreateLink_MR from "../../assets/images/showcase/slated/createLink_mr.png";
-import SlatedCreateLink_LR from "../../assets/images/showcase/slated/createLink_lr.png";
+import SlatedCreateLink from "../../assets/images/showcase/slated_webp/createLink.webp";
+import SlatedCreateLink_MR from "../../assets/images/showcase/slated_webp/createLink_mr.webp";
+import SlatedCreateLink_LR from "../../assets/images/showcase/slated_webp/createLink_lr.webp";
 
-import SlatedLink from "../../assets/images/showcase/slated/link.png";
-import SlatedLink_MR from "../../assets/images/showcase/slated/link_mr.png";
-import SlatedLink_LR from "../../assets/images/showcase/slated/link_lr.png";
+import SlatedLink from "../../assets/images/showcase/slated_webp/link.webp";
+import SlatedLink_MR from "../../assets/images/showcase/slated_webp/link_mr.webp";
+import SlatedLink_LR from "../../assets/images/showcase/slated_webp/link_lr.webp";
 
 export const slatedData = {
     id: "slated",

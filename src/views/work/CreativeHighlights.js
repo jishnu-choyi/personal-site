@@ -1,9 +1,11 @@
 import styles from "./creative-highlights.module.scss";
-import JCLogo from "../../assets/images/logos/logo-orange-transparent.png";
 import GalleryWithModal from "../../components/GalleryWithModal";
+
+import JCLogo from "../../assets/images/logos_webp/logo-orange-transparent_64.webp";
+
 import BluedoorImage from "../../assets/images/showcase/creative/bluedoor.webp";
-import BluedoorImage_MR from "../../assets/images/showcase/creative/bluedoor_mr.png";
-import BluedoorImage_LR from "../../assets/images/showcase/creative/bluedoor_lr.png";
+import BluedoorImage_MR from "../../assets/images/showcase/creative/bluedoor_mr.webp";
+import BluedoorImage_LR from "../../assets/images/showcase/creative/bluedoor_lr.webp";
 
 export const creativeData = {
     id: "creative",
