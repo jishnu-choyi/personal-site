@@ -6,8 +6,9 @@ import StartupCTAPhoto from "../../assets/images/landing/startups.jpg";
 import SoftwareCTAPhoto from "../../assets/images/landing/software.jpg";
 import HardwareCTAPhoto from "../../assets/images/landing/hardware.jpg";
 import CTAButton from "../../components/CTAButton";
-import PlanetScenePortal from "../../components3d/Planet/PlanetScenePortal";
+//import PlanetScenePortal from "../../components3d/Planet/PlanetScenePortal";
 import Link from "../../components/Link";
+import MainPhoto from "../../assets/images/landing/rocket-photo-transparent.png";
 
 function Landing({ onClick }) {
     const showCtaButtons = false;
@@ -21,7 +22,13 @@ function Landing({ onClick }) {
                         <span>hello world,</span> <br />I am jishnu choyi
                     </div>
                     <div className={styles["line2"]}>
-                        full stack programmer with a flair for frontend
+                        <span style={{ borderBottom: "1px solid gainsboro" }}>
+                            full stack programmer
+                        </span>{" "}
+                        <span style={{ opacity: 1.6 }}>with a flair for</span>{" "}
+                        <span style={{ borderBottom: "1px solid gainsboro" }}>
+                            front-end
+                        </span>
                     </div>
                 </div>
                 <div
@@ -29,14 +36,10 @@ function Landing({ onClick }) {
                         styles["main-container"] + " " + styles["main-image"]
                     }
                 >
-                    {/* <div className={styles["main-img"]}>
-                        <img
-                            src={MainPhoto}
-                            alt="dummy"
-                            style={{ visibility: "hidden" }}
-                        ></img>
-                    </div> */}
-                    <PlanetScenePortal />
+                    <div className={styles["main-image"]}>
+                        <img src={MainPhoto} alt="dummy"></img>
+                    </div>
+                    {/* <PlanetScenePortal /> */}
                 </div>
             </div>
             <div className={styles["right"]}>

@@ -7,7 +7,7 @@ import Content from "./pages/Content";
 import EventBus from "./fluid/utils/EventBus";
 import WebGL from "./fluid/modules/WebGL";
 import Footer from "./components/Footer";
-import { checkMobile } from "./utils/deviceUtils";
+//import { checkMobile } from "./utils/deviceUtils";
 
 // Or Create your Own theme:
 const iconTheme = createTheme({
@@ -34,19 +34,17 @@ amplitude.init("71a74323057e3cdb289336830873113f", undefined, {
 });
 
 function App() {
-    // amplitude.track("Page view");
+    amplitude.track("Page view");
 
     window.EventBus = EventBus;
     if (!window.isDev) window.isDev = false;
 
-    if (!checkMobile()) {
-        let fluidContainer = document.body.querySelector(
-            ".webgl-fluid-container"
-        );
-        new WebGL({
-            $wrapper: fluidContainer,
-        });
-    }
+    // if (!checkMobile()) {
+    let fluidContainer = document.body.querySelector(".webgl-fluid-container");
+    new WebGL({
+        $wrapper: fluidContainer,
+    });
+    // }
 
     const handleClick = (e, id) => {
         // console.log("handleClick", e, id);

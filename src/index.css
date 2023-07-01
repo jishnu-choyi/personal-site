@@ -138,8 +138,8 @@ code {
 @media screen and ((orientation: landscape) and (max-height:600px)){
   .webgl-container{
     width: 100vw;
-    height: 90vh;
-    left: 20vw;
+    height: 60vh;
+    left: 0vw;
     top:50px;
     overflow:hidden;
   }
