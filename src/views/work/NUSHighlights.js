@@ -10,7 +10,7 @@ export const nusData = {
     urlLabel: "nus.edu.sg",
 
     image: NusLogoHalf,
-    title: "Exchange Student at National University of Singapore (NUS)",
+    title: "National University of Singapore (NUS), Exchange Student",
     brief: "Selected based on academic performance",
     startDate: new Date("1 Jul 2008"),
     endDate: new Date("31 Dec 2008"),

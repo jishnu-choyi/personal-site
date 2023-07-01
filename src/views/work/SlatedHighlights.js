@@ -81,6 +81,7 @@ function SlatedHighlights() {
                         Led the product development team from ideation to MVP
                         launch
                     </li>
+                    <li>B2C SaaS with Open source AI/ML for Speech-to-text</li>
                     <li>
                         Angel funded (<b>$120k</b>)
                     </li>

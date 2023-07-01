@@ -15,16 +15,16 @@ const showCases = [
     slatedData,
     juziData,
 
-    gidaData,
+    yokyData,
+    yokyTravelData, //China
 
     gamesData,
     gamesTravelData, //Bihar, Jharkhand, Chattisgarh
 
-    yokyData,
-    yokyTravelData, //China
-
     scrappyData,
     scrappyTravelData, //Mumbai, Bhagalpur
+
+    gidaData,
 
     adiData,
     adiTravelData,

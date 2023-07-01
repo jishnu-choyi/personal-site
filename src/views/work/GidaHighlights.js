@@ -15,7 +15,7 @@ export const gidaData = {
     // footerLabel: "Read more...",
 
     image: GidaLogo,
-    title: "Full Stack Development",
+    title: "Software services projects",
     brief: "Gida Technologies India Pvt. Ltd., Bengaluru",
     startDate: new Date("1 June 2012"),
     endDate: new Date("31 March 2021"),

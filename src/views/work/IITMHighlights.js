@@ -12,7 +12,7 @@ export const iitmData = {
     urlLabel: "iitm.ac.in",
 
     image: IITMLogo,
-    title: "Electrical Engineering at IIT Madras, Chennai",
+    title: "IIT Madras, Electrical Engineering",
     brief: "Dual degree (Bachelors & Masters 5 years)",
     startDate: new Date("1 June 2005"),
     endDate: new Date("31 May 2010"),

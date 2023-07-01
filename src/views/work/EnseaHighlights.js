@@ -10,7 +10,7 @@ export const enseaData = {
     urlLabel: "ensea.fr",
 
     image: EnseaLogo,
-    title: "Summer Internship, Neurocybernetics team",
+    title: "ENSEA, Summer Internship at Neurocybernetics team",
     brief: "ETIS Lab, ENSEA, University Cergy-Pontoise, France - CNRS",
     startDate: new Date("1 May 2008"),
     endDate: new Date("31 July 2008"),
