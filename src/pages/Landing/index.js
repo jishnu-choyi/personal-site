@@ -8,7 +8,7 @@ import HardwareCTAPhoto from "../../assets/images/landing/hardware.jpg";
 import CTAButton from "../../components/CTAButton";
 //import PlanetScenePortal from "../../components3d/Planet/PlanetScenePortal";
 import Link from "../../components/Link";
-import MainPhoto from "../../assets/images/landing/rocket-photo-transparent.png";
+import MainPhoto from "../../assets/images/landing/rocket-photo-transparent.webp";
 
 function Landing({ onClick }) {
     const showCtaButtons = false;
